@@ -12,133 +12,112 @@ workspace "Viora - Software Architecture" "System Context and Container Diagrams
         viora = softwareSystem "Viora Platform" "Web platform for olive crop monitoring, phytosanitary risk management, technical service coordination and subscription management." {
             tags "CoreSystem"
 
-            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "Vue.js" {
+            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "HTML5, CSS3, & Vanilla JavaScript" {
             tags "Browser"
         
-            hero = component "Hero Section Component" "Presents the core value proposition, segmented CTA and primary conversion actions." "Vue.js Component" {
+            landingPageHeader = component "Landing Header Component" "Provides the landing header navigation, scrolling behaviors, and segment-switching trigger." "ES Module / DOM Controller" {
                 tags "Component"
             }
-        
-            problem = component "Problem & Solution Section Component" "Explains the climatic and phytosanitary problem and Viora's proposed solution." "Vue.js Component" {
+            hero = component "Hero Section Component" "Presents the core value proposition, manages background movements, and delegates ambient audio triggering." "ES Module / DOM Controller" {
                 tags "Component"
             }
-        
-            roles = component "Role Benefits Section Component" "Shows segmented benefits for olive producers and agricultural specialists." "Vue.js Component" {
+            interactiveAudio = component "Interactive Audio Module" "Manages audio playback toggle and plays background ambient audio depending on the current section." "ES Module / Audio Service" {
                 tags "Component"
             }
-        
-            plans = component "Plans, Trial & Affiliates Section Component" "Presents pricing plans, free trial and affiliate/referral program." "Vue.js Component" {
+            visualEffects = component "Visual Effects Component" "Applies custom visual filters and interactives such as liquid-glass rendering and magnetic pull to UI elements." "ES Module / Canvas & CSS Effects" {
                 tags "Component"
             }
-        
-            trust = component "Testimonials & About Section Component" "Presents testimonials, team information and trust-building content." "Vue.js Component" {
+            i18n = component "i18n Localization Component" "Fetches multilinguistic translations from JSON files and injects translations dynamically into DOM elements." "ES Module / Localization Service" {
                 tags "Component"
             }
-        
-            contact = component "Contact & Footer Section Component" "Presents contact data, legal links, navigation links and footer content." "Vue.js Component" {
+            sectionPanels = component "Section Panels Controllers" "Orchestrates direct DOM updates and event handling for individual content sections (About, Pricing, Expected Outcomes, Team, Referrals, etc.)." "ES Module / DOM Controller" {
                 tags "Component"
             }
-        
-            cta = component "CTA Routing Component" "Handles navigation from landing CTAs toward sign in, sign up and trial flows in the Web Application." "Vue Router / Navigation Service" {
-                tags "Component"
-            }
-        
-            landingshared = component "Shared Landing UI Components" "Reusable buttons, cards, badges, section headers and layout primitives for the landing page." "Vue.js Shared Components" {
-                tags "Component"
-            }
-        
-            contentmodels = component "Landing Content Models" "Defines models for hero content, benefits, plans, testimonials, FAQ and CTA content." "TypeScript Models / Interfaces" {
-                tags "Component"
-            }
-        
-            assembler = component "Landing ViewModel Assembler" "Builds section view models from static content/models for presentation components." "TypeScript Assembler" {
+            footer = component "Footer Section Component" "Controls links structure, interactive content, and rendering within the website's footer." "ES Module / DOM Controller" {
                 tags "Component"
             }
         }
 
-            webapp = container "Web Application" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions." "Vue.js" {
+            webapp = container "Web Application" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions." "Angular" {
                 tags "Browser"
         
-            authui = component "Authentication UI Component" "Handles sign in, password recovery and session entry flows." "Vue.js Component / Services" {
+            authui = component "Authentication UI Component" "Handles sign in, password recovery and session entry flows." "Angular Component / Services" {
                 tags "Component"
             }
         
-            dashboardui = component "Dashboard UI Component" "Displays crop health, climate, NDVI, risk status and alert summaries." "Vue.js Component" {
+            dashboardui = component "Dashboard UI Component" "Displays crop health, climate, NDVI, risk status and alert summaries." "Angular Component" {
                 tags "Component"
             }
         
-            plotsui = component "Plot Management UI Component" "Allows plot registration, polygon delimitation and agronomic traceability input." "Vue.js Component" {
+            plotsui = component "Plot Management UI Component" "Allows plot registration, polygon delimitation and agronomic traceability input." "Angular Component" {
                 tags "Component"
             }
         
-            marketplaceui = component "Marketplace & Intervention UI Component" "Shows specialists, critical cases and intervention workflows." "Vue.js Component" {
+            marketplaceui = component "Marketplace & Intervention UI Component" "Shows specialists, critical cases and intervention workflows." "Angular Component" {
                 tags "Component"
             }
         
-            billingui = component "Subscription & Billing UI Component" "Allows users to manage trial, subscription, payments and renewals." "Vue.js Component" {
+            billingui = component "Subscription & Billing UI Component" "Allows users to manage trial, subscription, payments and renewals." "Angular Component" {
                 tags "Component"
             }
         
-            profileui = component "Profile UI Component" "Allows producer and specialist profile visualization and update." "Vue.js Component" {
+            profileui = component "Profile UI Component" "Allows producer and specialist profile visualization and update." "Angular Component" {
                 tags "Component"
             }
         
-            notificationsui = component "Notification Center Component" "Displays alerts, warnings and notification summaries in the UI." "Vue.js Component" {
+            notificationsui = component "Notification Center Component" "Displays alerts, warnings and notification summaries in the UI." "Angular Component" {
                 tags "Component"
             }
         
-            routing = component "Routing & Guards Component" "Protects routes and redirects users according to authentication state and role." "Vue Router / Navigation Guards" {
+            routing = component "Routing & Guards Component" "Protects routes and redirects users according to authentication state and role." "Angular Router / Navigation Guards" {
                 tags "Component"
             }
         
-            sharedui = component "Shared UI Components" "Reusable layout, navbar, sidebar, cards, dialogs, tables and common widgets." "Vue.js Shared Components" {
+            sharedui = component "Shared UI Components" "Reusable layout, navbar, sidebar, cards, dialogs, tables and common widgets." "Angular Shared Components" {
                 tags "Component"
             }
         
-            apiclient = component "API Client Services" "Encapsulates HTTP communication with the API Application." "Vue.js Services / Axios" {
+            apiclient = component "API Client Services" "Encapsulates HTTP communication with the API Application." "Angular Service / HTTP Client" {
                 tags "Component"
             }
         }
 
-            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." "ASP.NET Core" {
+            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows and subscriptions." "Java, Spring Boot" {
                 tags "RoundedBox" "CodeSystem"
                 // componentes internos
-                iam = component "IAM Component" "Handles authentication, authorization, JWT validation and password recovery." "ASP.NET Core / Identity" {
+                iam = component "IAM Component" "Handles authentication, authorization, JWT validation and password recovery." "Spring Security" {
                     tags "Component"
                 }
-                profile = component "Profile Component" "Manages producer and specialist profile information." "ASP.NET Core Service" {
+                profile = component "Profile Component" "Manages producer and specialist profile information." "Spring Component" {
                     tags "Component"
                 }
-                plots = component "Plot Management Component" "Registers productive areas, validates polygons and manages plot traceability." "ASP.NET Core Service" {
+                plots = component "Plot Management Component" "Registers productive areas, validates polygons and manages plot traceability." "Spring Component" {
                     tags "Component"
                 }
-                monitoring = component "Agrometeorological Monitoring Component" "Synchronizes weather, satellite and vegetation index data for registered plots." "ASP.NET Core Service" {
+                monitoring = component "Agrometeorological Monitoring Component" "Synchronizes weather, satellite and vegetation index data for registered plots." "Spring Component" {
                     tags "Component"
                 }
-                prediction = component "Prediction & Risk Engine" "Calculates chill portions, crop health, yield projections and phenological risk." "ASP.NET Core Service" {
+                prediction = component "Prediction & Risk Engine" "Calculates chill portions, crop health, yield projections and phenological risk." "Spring Component" {
                     tags "Component"
                 }
-                alerts = component "Alert & Notification Component" "Generates phytosanitary, phenological and community preventive alerts." "ASP.NET Core Service" {
+                alerts = component "Alert & Notification Component" "Generates phytosanitary, phenological and community preventive alerts." "Spring Component" {
                     tags "Component"
                 }
-                marketplace = component "Marketplace & Intervention Component" "Matches producers with specialists and manages technical intervention workflows." "ASP.NET Core Service" {
+                marketplace = component "Marketplace & Intervention Component" "Matches producers with specialists and manages technical intervention workflows." "Spring Component" {
                     tags "Component"
                 }
-                billing = component "Subscription & Billing Component" "Manages trials, subscriptions, payments, renewals and refunds." "ASP.NET Core Service" {
+                billing = component "Subscription & Billing Component" "Manages trials, subscriptions, payments, renewals and refunds." "Spring Component" {
                     tags "Component"
                 }
-                moderation = component "Moderation & Strikes Component" "Evaluates misconduct reports and applies strikes, suspensions or account blocking." "ASP.NET Core Service" {
+                integrations = component "External Integrations Component" "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo and Cloudinary data sources." "Spring Component" {
                     tags "Component"
                 }
-                integrations = component "External Integrations Component" "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo, Cloudinary and SENASA data sources." "ASP.NET Core Service" {
-                    tags "Component"
-                }
-                repositories = component "Repository Components" "Persist and retrieve domain data from the relational database." "Entity Framework Core" {
+                repositories = component "Repository Components" "Persist and retrieve domain data from the relational database." "Spring Data JPA" {
                     tags "Component"
                 }
             }
 
-            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data." "MySQL" {
+            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions and subscriptions." "PostgreSQL" {
                 tags "Container" "Database"
             }
 
@@ -168,10 +147,6 @@ workspace "Viora - Software Architecture" "System Context and Container Diagrams
             tags "ExternalSystem"
         }
 
-        senasa = softwareSystem "SENASA Official/Open Data Source" "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context." {
-            tags "ExternalSystem"
-        }
-
         // Relaciones de System Context 
         visitor  -> viora "Explores the landing page, plans and value proposition"
         producer -> viora "Monitors plots, receives alerts, requests services and manages subscription"
@@ -182,7 +157,6 @@ workspace "Viora - Software Architecture" "System Context and Container Diagrams
         viora -> brevo "Sends password recovery and transactional email notifications"
         viora -> mapbox "Uses maps and geocoding for plot delimitation and location services"
         viora -> cloudinary "Stores and delivers profile images and field evidence media"
-        viora -> senasa "Consults official phytosanitary information and reference data"
 
         // Relaciones internas de Container
         visitor    -> viora.landing "Explores content and calls to action"
@@ -191,7 +165,7 @@ workspace "Viora - Software Architecture" "System Context and Container Diagrams
 
         viora.landing -> viora.webapp "Redirects authenticated users to"
         viora.webapp  -> viora.api   "Makes API requests to" "JSON/HTTPS"
-        viora.api     -> viora.db    "Reads from and writes to" "ADO.NET"
+        viora.api     -> viora.db    "Reads from and writes to" "JDBC"
         viora.api     -> viora.media "Stores and retrieves media assets" "HTTPS/API"
 
         viora.api -> agromonitoring "Retrieves satellite imagery, vegetation indices and agro-weather data" "HTTPS/JSON"
@@ -199,7 +173,6 @@ workspace "Viora - Software Architecture" "System Context and Container Diagrams
         viora.api -> brevo          "Sends password recovery and transactional emails" "HTTPS/API"
         viora.api -> mapbox         "Uses maps and geocoding services" "HTTPS/JSON"
         viora.api -> cloudinary     "Uploads and delivers profile/evidence media" "HTTPS/API"
-        viora.api -> senasa         "Consults official phytosanitary information and reference data" "HTTPS/Open data"
         
         // Relaciones de los componentes
         viora.webapp -> viora.api.iam         "Authenticates users and validates sessions" "JSON/HTTPS"
@@ -213,7 +186,6 @@ workspace "Viora - Software Architecture" "System Context and Container Diagrams
         viora.api.monitoring -> viora.api.prediction  "Provides climate, NDVI and historical agronomic data"
         viora.api.prediction -> viora.api.alerts      "Triggers risk alerts"
         viora.api.alerts     -> viora.api.marketplace "Publishes critical cases for specialist response"
-        viora.api.moderation -> viora.api.iam         "Requests account suspension or blocking"
 
         viora.api.iam         -> viora.api.repositories "Reads/writes identity data"
         viora.api.profile     -> viora.api.repositories "Reads/writes profile data"
@@ -223,17 +195,15 @@ workspace "Viora - Software Architecture" "System Context and Container Diagrams
         viora.api.alerts      -> viora.api.repositories "Stores alert records"
         viora.api.marketplace -> viora.api.repositories "Stores service and intervention records"
         viora.api.billing     -> viora.api.repositories "Stores subscription data"
-        viora.api.moderation  -> viora.api.repositories "Stores reports and strikes"
 
         viora.api.monitoring   -> agromonitoring "Retrieves weather, forecast, historical climate, satellite and NDVI data" "HTTPS/JSON"
         viora.api.plots        -> mapbox         "Uses maps and geocoding for plot location" "HTTPS/JSON"
         viora.api.billing      -> mercadopago    "Processes payments and receives payment webhooks" "HTTPS/JSON"
         viora.api.alerts       -> brevo          "Sends transactional email notifications" "HTTPS/API"
         viora.api.integrations -> cloudinary     "Uploads and retrieves media assets" "HTTPS/API"
-        viora.api.alerts       -> senasa         "Consults official phytosanitary reference data" "HTTPS/Open data"
         
         // Relaciones hacia containers internos de almacenamiento
-        viora.api.repositories -> viora.db "Persists and retrieves relational domain data" "ADO.NET"
+        viora.api.repositories -> viora.db "Persists and retrieves relational domain data" "JDBC"
         viora.api.repositories -> viora.media "Stores media references and asset metadata" "HTTPS/API"
 
         viora.api.integrations -> viora.media "Stores and retrieves field evidence and profile media" "HTTPS/API"
@@ -283,32 +253,25 @@ workspace "Viora - Software Architecture" "System Context and Container Diagrams
         viora.webapp.apiclient -> viora.api "Makes API requests to" "JSON/HTTPS"
      
         // Relaciones de Landing Page Components
-        visitor -> viora.landing.hero    "Views the primary value proposition and CTA"
-        visitor -> viora.landing.roles   "Explores role-specific benefits"
-        visitor -> viora.landing.plans   "Reviews plans, free trial and affiliate program"
-        visitor -> viora.landing.trust   "Reviews testimonials and team information"
-        visitor -> viora.landing.contact "Reviews contact, footer and legal links"
+        visitor -> viora.landing.landingPageHeader "Interacts with header navigation"
+        visitor -> viora.landing.hero              "Views hero value proposition and CTAs"
+        visitor -> viora.landing.sectionPanels     "Interacts with visual section panels"
+        visitor -> viora.landing.footer            "Navigates footer links"
 
-        viora.landing.hero    -> viora.landing.landingshared "Uses reusable hero and CTA UI"
-        viora.landing.problem -> viora.landing.landingshared "Uses reusable layout and content blocks"
-        viora.landing.roles   -> viora.landing.landingshared "Uses reusable cards and section blocks"
-        viora.landing.plans   -> viora.landing.landingshared "Uses reusable pricing and CTA widgets"
-        viora.landing.trust   -> viora.landing.landingshared "Uses reusable testimonial and team widgets"
-        viora.landing.contact -> viora.landing.landingshared "Uses reusable footer and link widgets"
+        viora.landing.landingPageHeader -> viora.landing.i18n "Retrieves header translations from"
+        viora.landing.hero              -> viora.landing.i18n "Retrieves hero translations from"
+        viora.landing.sectionPanels     -> viora.landing.i18n "Retrieves section translations from"
+        viora.landing.footer            -> viora.landing.i18n "Retrieves footer translations from"
 
-        viora.landing.hero    -> viora.landing.assembler "Consumes hero view model from"
-        viora.landing.problem -> viora.landing.assembler "Consumes problem/solution view model from"
-        viora.landing.roles   -> viora.landing.assembler "Consumes benefits view model from"
-        viora.landing.plans   -> viora.landing.assembler "Consumes plans and affiliate view model from"
-        viora.landing.trust   -> viora.landing.assembler "Consumes testimonial/about view model from"
-        viora.landing.contact -> viora.landing.assembler "Consumes contact/footer view model from"
+        viora.landing.hero          -> viora.landing.interactiveAudio "Triggers hero audio triggers through"
+        viora.landing.sectionPanels -> viora.landing.interactiveAudio "Triggers panel sound cues through"
 
-        viora.landing.assembler -> viora.landing.contentmodels "Builds section view models from"
+        viora.landing.landingPageHeader -> viora.landing.visualEffects "Applies scroll effects and transitions via"
+        viora.landing.hero              -> viora.landing.visualEffects "Applies background parallax via"
+        viora.landing.sectionPanels     -> viora.landing.visualEffects "Applies magnetic and sound hover behaviors via"
 
-        viora.landing.hero  -> viora.landing.cta "Uses CTA navigation from"
-        viora.landing.roles -> viora.landing.cta "Uses CTA navigation from"
-        viora.landing.plans -> viora.landing.cta "Uses CTA navigation from"
-        viora.landing.cta   -> viora.webapp      "Redirects visitors to"
+        viora.landing.hero          -> viora.webapp "Redirects visitors to sign-in or trial flows in"
+        viora.landing.sectionPanels -> viora.webapp "Redirects visitors to sign-in or trial flows in"
         
     }
 
@@ -341,6 +304,7 @@ workspace "Viora - Software Architecture" "System Context and Container Diagrams
         }
         
 
+        /*
         styles {
             element "Element" {
                 background #ffffff
@@ -428,6 +392,7 @@ workspace "Viora - Software Architecture" "System Context and Container Diagrams
                 dashed true
             }
         }
+        */
     }
 
     configuration {

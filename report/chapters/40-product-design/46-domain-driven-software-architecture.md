@@ -271,7 +271,7 @@ En términos de diseño estratégico, los tres bounded contexts trabajados —Ag
 
 ### Software Architecture Context Diagram
 
-A continuación se presenta el Context Diagram del modelo C4 para la plataforma Viora. Este diagrama ofrece una vista de alto nivel del sistema, ilustrando cómo interactúa con sus principales usuarios (Productores, Especialistas y Visitantes) y con los sistemas externos de los que depende para su funcionamiento (AgroMonitoring API, Mercado Pago, Brevo, Mapbox, Cloudinary y fuentes de datos abiertos de SENASA).
+A continuación se presenta el Context Diagram del modelo C4 para la plataforma Viora. Este diagrama ofrece una vista de alto nivel del sistema, ilustrando cómo interactúa con sus principales usuarios (Productores, Especialistas y Visitantes) y con los sistemas externos de los que depende para su funcionamiento (AgroMonitoring API, Mercado Pago, Brevo, Mapbox y Cloudinary).
 
 \begin{figure}[H]
     \caption{System Context Diagram para Viora.}

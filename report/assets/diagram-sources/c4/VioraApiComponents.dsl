@@ -16,9 +16,6 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
         brevo = softwareSystem "Brevo" "Transactional email service for password recovery and account notifications." {
             tags "ExternalSystem"
         }
-        senasa = softwareSystem "SENASA Official/Open Data Source" "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context." {
-            tags "ExternalSystem"
-        }
         mercadoPago = softwareSystem "Mercado Pago" "External payment gateway for subscriptions, renewals, refunds and payment status updates." {
             tags "ExternalSystem"
         }
@@ -27,52 +24,49 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
         vioraPlatform = softwareSystem "Viora Platform" "Web platform for olive crop monitoring, phytosanitary risk management, technical service coordination and subscription management." {
             tags "CoreSystem"
 
-            webApplication = container "Web Application" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions." "Vue.js" {
+            webApplication = container "Web Application" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions." "Angular" {
                 tags "Browser"
             }
 
-            database = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data." "MySQL" {
+            database = container "Database" "Stores users, plots, agronomic records, alerts, interventions and subscriptions." "PostgreSQL" {
                 tags "Container" "Database"
             }
 
-            mediaStorage = container "Media Storage" "Stores field evidence images, profile images and related media assets." "Cloudinary-based media storage" {
+            mediaStorage = container "Media Storage" "Stores field evidence images, profile images and related media assets." "Cloudinary-backed media storage" {
                 tags "Bucket"
             }
 
-            apiApplication = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." "ASP.NET Core" {
+            apiApplication = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows and subscriptions." "Java, Spring Boot" {
                 tags "RoundedBox" "CodeSystem"
 
-                externalIntegrations = component "External Integrations Component" "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo, Cloudinary and SENASA data sources." "ASP.NET Core Service" {
+                externalIntegrations = component "External Integrations Component" "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo and Cloudinary data sources." "Spring Component" {
                     tags "Component"
                 }
-                plotManagement = component "Plot Management Component" "Registers productive areas, validates polygons and manages plot traceability." "ASP.NET Core Service" {
+                plotManagement = component "Plot Management Component" "Registers productive areas, validates polygons and manages plot traceability." "Spring Component" {
                     tags "Component"
                 }
-                agroMonitoringComp = component "Agrometeorological Monitoring Component" "Synchronizes weather, satellite and vegetation index data for registered plots." "ASP.NET Core Service" {
+                agroMonitoringComp = component "Agrometeorological Monitoring Component" "Synchronizes weather, satellite and vegetation index data for registered plots." "Spring Component" {
                     tags "Component"
                 }
-                moderationStrikes = component "Moderation & Strikes Component" "Evaluates misconduct reports and applies strikes, suspensions or account blocking." "ASP.NET Core Service" {
+                predictionRisk = component "Prediction & Risk Engine" "Calculates chill portions, crop health, yield projections and phenological risk." "Spring Component" {
                     tags "Component"
                 }
-                predictionRisk = component "Prediction & Risk Engine" "Calculates chill portions, crop health, yield projections and phenological risk." "ASP.NET Core Service" {
+                marketplaceIntervention = component "Marketplace & Intervention Component" "Matches producers with specialists and manages technical intervention workflows." "Spring Component" {
                     tags "Component"
                 }
-                marketplaceIntervention = component "Marketplace & Intervention Component" "Matches producers with specialists and manages technical intervention workflows." "ASP.NET Core Service" {
+                iam = component "IAM Component" "Handles authentication, authorization, JWT validation and password recovery." "Spring Security" {
                     tags "Component"
                 }
-                iam = component "IAM Component" "Handles authentication, authorization, JWT validation and password recovery." "ASP.NET Core / Identity" {
+                alertNotification = component "Alert & Notification Component" "Generates phytosanitary, phenological and community preventive alerts." "Spring Component" {
                     tags "Component"
                 }
-                alertNotification = component "Alert & Notification Component" "Generates phytosanitary, phenological and community preventive alerts." "ASP.NET Core Service" {
+                subscriptionBilling = component "Subscription & Billing Component" "Manages trials, subscriptions, payments, renewals and refunds." "Spring Component" {
                     tags "Component"
                 }
-                subscriptionBilling = component "Subscription & Billing Component" "Manages trials, subscriptions, payments, renewals and refunds." "ASP.NET Core Service" {
+                profile = component "Profile Component" "Manages producer and specialist profile information." "Spring Component" {
                     tags "Component"
                 }
-                profile = component "Profile Component" "Manages producer and specialist profile information." "ASP.NET Core Service" {
-                    tags "Component"
-                }
-                repository = component "Repository Components" "Persist and retrieve domain data from the relational database." "Entity Framework Core" {
+                repository = component "Repository Components" "Persist and retrieve domain data from the relational database." "Spring Data JPA" {
                     tags "Component"
                 }
             }
@@ -85,7 +79,6 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
         vioraPlatform.webApplication -> vioraPlatform.apiApplication.profile "Manages profile data" "JSON/HTTPS"
 
         // Relaciones internas de componentes de API
-        vioraPlatform.apiApplication.iam -> vioraPlatform.apiApplication.moderationStrikes "Requests account suspension or blocking"
         vioraPlatform.apiApplication.predictionRisk -> vioraPlatform.apiApplication.alertNotification "Triggers risk alerts"
         vioraPlatform.apiApplication.plotManagement -> vioraPlatform.apiApplication.marketplaceIntervention "Provides plot coordinates and polygons"
         vioraPlatform.apiApplication.agroMonitoringComp -> vioraPlatform.apiApplication.predictionRisk "Provides climate, NDVI and historical agronomic data"
@@ -93,7 +86,6 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
 
         vioraPlatform.apiApplication.plotManagement -> vioraPlatform.apiApplication.repository "Reads/writes plot data"
         vioraPlatform.apiApplication.agroMonitoringComp -> vioraPlatform.apiApplication.repository "Stores synchronized climate and satellite data"
-        vioraPlatform.apiApplication.moderationStrikes -> vioraPlatform.apiApplication.repository "Stores reports and strikes"
         vioraPlatform.apiApplication.predictionRisk -> vioraPlatform.apiApplication.repository "Stores risk and yield projections"
         vioraPlatform.apiApplication.marketplaceIntervention -> vioraPlatform.apiApplication.repository "Stores service and intervention records"
         vioraPlatform.apiApplication.iam -> vioraPlatform.apiApplication.repository "Reads/writes identity data"
@@ -102,7 +94,7 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
         vioraPlatform.apiApplication.profile -> vioraPlatform.apiApplication.repository "Reads/writes profile data"
 
         // Repositorios a almacenamiento
-        vioraPlatform.apiApplication.repository -> vioraPlatform.database "Persists and retrieves relational domain data" "ADO.NET"
+        vioraPlatform.apiApplication.repository -> vioraPlatform.database "Persists and retrieves relational domain data" "JDBC"
         vioraPlatform.apiApplication.repository -> vioraPlatform.mediaStorage "Stores media references and asset metadata" "HTTPS/API"
         vioraPlatform.apiApplication.plotManagement -> vioraPlatform.mediaStorage "Uploads and retrieves media assets" "HTTPS/API"
 
@@ -111,7 +103,6 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
         vioraPlatform.apiApplication.marketplaceIntervention -> mapbox "Uses maps and geocoding for plot location" "HTTPS/JSON"
         vioraPlatform.apiApplication.subscriptionBilling -> mercadoPago "Processes payments and receives payment webhooks" "HTTPS/JSON"
         vioraPlatform.apiApplication.subscriptionBilling -> brevo "Sends transactional email notifications" "HTTPS/API"
-        vioraPlatform.apiApplication.alertNotification -> senasa "Consults official phytosanitary reference data" "HTTPS/Open data"
         vioraPlatform.apiApplication.externalIntegrations -> cloudinary "Delegates media storage and delivery" "HTTPS/API"
     }
 
@@ -123,6 +114,7 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
             autoLayout tb
         }
 
+        /*
         styles {
             element "Element" {
                 background #ffffff
@@ -210,6 +202,7 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
                 dashed true
             }
         }
+        */
     }
 
     configuration {

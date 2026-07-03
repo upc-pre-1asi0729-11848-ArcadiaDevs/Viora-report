@@ -1,5 +1,5 @@
 @startuml VioraApiComponents
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4/master/C4_Component.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
 title Component Diagram - API Application
 
@@ -11,14 +11,13 @@ Container_Boundary(apiApp, "API Application") {
     Component(alertNotif, "Alert & Notification Component", "Spring Component", "Generates phytosanitary, phenological and community preventive alerts.")
     Component(marketplaceIntervention, "Marketplace & Intervention Component", "Spring Component", "Matches producers with specialists and manages technical intervention workflows.")
     Component(subscriptionBilling, "Subscription & Billing Component", "Spring Component", "Manages trials, subscriptions, payments, renewals and refunds.")
-    Component(moderationStrikes, "Moderation & Strikes Component", "Spring Component", "Evaluates misconduct reports and applies strikes, suspensions or account blocking.")
     Component(profileComponent, "Profile Component", "Spring Component", "Manages producer and specialist profile information.")
-    Component(externalIntegrations, "External Integrations Component", "Spring Component", "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo, Cloudinary and SENASA data sources.")
+    Component(externalIntegrations, "External Integrations Component", "Spring Component", "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo and Cloudinary data sources.")
     Component(repositoryComponents, "Repository Components", "Spring Data JPA", "Persist and retrieve domain data from the relational database.")
 }
 
 Container(webApp, "Web Application", "Angular", "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions.")
-ContainerDb(database, "Database", "MySQL", "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data.")
+ContainerDb(database, "Database", "PostgreSQL", "Stores users, plots, agronomic records, alerts, interventions and subscriptions.")
 ContainerDb(mediaStorage, "Media Storage", "Cloudinary-backed media storage", "Stores field evidence images, profile images and related media assets.")
 
 System_Ext(agroMonitoring, "AgroMonitoring API", "External provider of satellite imagery, vegetation indices and agro-weather data.")
@@ -26,7 +25,6 @@ System_Ext(mercadoPago, "Mercado Pago", "External payment gateway for subscripti
 System_Ext(brevo, "Brevo", "Transactional email service for password recovery and account notifications.")
 System_Ext(mapbox, "Mapbox", "Maps and geocoding service used for plot delimitation and location-based features.")
 System_Ext(cloudinary, "Cloudinary", "Cloud media storage and delivery service for profile images and field evidence.")
-System_Ext(senasa, "SENASA Official/Open Data Source", "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context.")
 
 Rel(webApp, plotManagement, "Registers plots and traceability records", "JSON/HTTPS")
 Rel(webApp, agrometMonitoring, "Requests dashboard climate and satellite data", "JSON/HTTPS")
@@ -41,7 +39,6 @@ Rel(predictionRisk, alertNotif, "Triggers risk alerts")
 Rel(alertNotif, marketplaceIntervention, "Publishes critical cases for specialist response")
 Rel(marketplaceIntervention, subscriptionBilling, "Stores synchronized climate and satellite data")
 Rel(subscriptionBilling, externalIntegrations, "Delegates media storage and delivery", "HTTPS/API")
-Rel(moderationStrikes, repositoryComponents, "Stores reports and strikes")
 Rel(profileComponent, externalIntegrations, "Stores and retrieves field evidence and profile media", "HTTPS/API")
 Rel(profileComponent, repositoryComponents, "Reads/writes profile data")
 Rel(iamComponent, repositoryComponents, "Reads/writes identity data")
@@ -52,7 +49,6 @@ Rel(externalIntegrations, mercadoPago, "Processes payments and receives payment 
 Rel(externalIntegrations, brevo, "Sends transactional email notifications", "HTTPS/API")
 Rel(externalIntegrations, mapbox, "", "HTTPS/JSON")
 Rel(externalIntegrations, cloudinary, "", "HTTPS/API")
-Rel(externalIntegrations, senasa, "Consults official phytosanitary reference data", "HTTPS/Open data")
 
 SHOW_LEGEND()
 @enduml

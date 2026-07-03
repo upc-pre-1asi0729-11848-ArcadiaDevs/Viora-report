@@ -11,16 +11,16 @@ workspace "Viora Platform" "Container diagram for the Viora Platform" {
         viora = softwareSystem "Viora Platform" "Web platform for olive crop monitoring, phytosanitary risk management, technical service coordination and subscription management." {
             tags "CoreSystem"
 
-            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "Vue.js" {
+            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "HTML5, CSS3, & Vanilla JavaScript" {
                 tags "Browser"
             }
-            webapp = container "Web Application" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions." "Vue.js" {
+            webapp = container "Web Application" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions." "Angular" {
                 tags "Browser"
             }
-            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." "ASP.NET Core" {
+            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows and subscriptions." "Java, Spring Boot" {
                 tags "RoundedBox" "CodeSystem"
             }
-            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data." "MySQL" {
+            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions and subscriptions." "PostgreSQL" {
                 tags "Container" "Database"
             }
             media = container "Media Storage" "Stores field evidence images, profile images and related media assets." "Cloudinary-backed media storage" {
@@ -44,9 +44,6 @@ workspace "Viora Platform" "Container diagram for the Viora Platform" {
         cloudinary = softwareSystem "Cloudinary" "Cloud media storage and delivery service for profile images and field evidence." {
             tags "ExternalSystem"
         }
-        senasa = softwareSystem "SENASA Official/Open Data Source" "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context." {
-            tags "ExternalSystem"
-        }
 
         // Relaciones de personas
         visitor    -> viora.landing  "Explores content and calls to action"
@@ -56,7 +53,7 @@ workspace "Viora Platform" "Container diagram for the Viora Platform" {
         // Relaciones internas de containers
         viora.landing -> viora.webapp  "Redirects authenticated users to"
         viora.webapp  -> viora.api     "Makes API requests to" "JSON/HTTPS"
-        viora.api     -> viora.db      "Reads from and writes to" "ADO.NET"
+        viora.api     -> viora.db      "Reads from and writes to" "JDBC"
         viora.api     -> viora.media   "Stores and retrieves media assets" "HTTPS/API"
 
         // Relaciones con servicios externos
@@ -65,7 +62,6 @@ workspace "Viora Platform" "Container diagram for the Viora Platform" {
         viora.api -> brevo          "Sends password recovery and transactional emails" "HTTPS/API"
         viora.api -> mapbox         "Uses maps and geocoding services" "HTTPS/JSON"
         viora.api -> cloudinary     "Uploads and delivers profile/evidence media" "HTTPS/API"
-        viora.api -> senasa         "Consults official phytosanitary information and reference data" "HTTPS/Open data"
     }
 
     views {
@@ -74,6 +70,7 @@ workspace "Viora Platform" "Container diagram for the Viora Platform" {
             autoLayout lr
         }
 
+        /*
         styles {
             element "Element" {
                 background #ffffff
@@ -161,6 +158,7 @@ workspace "Viora Platform" "Container diagram for the Viora Platform" {
                 dashed true
             }
         }
+        */
     }
 
     configuration {

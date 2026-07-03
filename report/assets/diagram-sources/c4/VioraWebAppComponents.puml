@@ -1,5 +1,5 @@
 @startuml VioraWebAppComponents
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4/master/C4_Component.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
 title Component Diagram - Web Application
 
@@ -20,7 +20,7 @@ Container_Boundary(webApp, "Web Application") {
 }
 
 Container(landingPage, "Landing Page", "HTML, CSS, TypeScript", "Static website that presents Viora's value proposition, plans, testimonials and calls to action.")
-Container(apiApp, "API Application", "Java, Spring Boot", "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions.")
+Container(apiApp, "API Application", "Java, Spring Boot", "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows and subscriptions.")
 
 Rel(oliveProducer, authUI, "Signs in and recovers account access")
 Rel(agriSpecialist, authUI, "Signs in and recovers account access")
