@@ -68,7 +68,137 @@ A continuación, se presenta la matriz de control de versiones correspondiente a
 
 #### Execution Evidence for Sprint Review
 
-&nbsp;
+Para la revisión del Sprint 4, el equipo ha preparado un conjunto de evidencias de ejecución que demuestran el cumplimiento del Sprint Goal. La demostración principal abarca el flujo end-to-end del ecosistema colaborativo de respuesta fitosanitaria correspondiente al Bounded Context de **Intervention**. Durante la sesión, se ejecutó el ciclo de vida de una solicitud de intervención: desde la solicitud de servicio por parte de un productor olivarero, pasando por la recepción de propuestas de servicio (*Service Proposals*) de los especialistas candidatos, hasta la aceptación del presupuesto, la emisión de la prescripción de tratamiento y la resolución final del caso. Esto demuestra la interoperabilidad entre las nuevas pantallas de la aplicación web (`viora-webapp`) y los endpoints del backend (`viora-platform`).
+
+Adicionalmente, se presentaron evidencias de ejecución funcional para los dominios de soporte del producto. En primer lugar, se demostró el flujo de Identity and Access Management (**IAM**), incluyendo el registro, cambio de contraseñas y la verificación de correos transaccionales. En segundo lugar, se validó el módulo de **Billing** mediante la simulación de la adquisición de una suscripción, recorriendo el flujo de *checkout* integrado con MercadoPago y visualizando el *overview* de facturación. Finalmente, las actualizaciones de diseño y presentación en la **Landing Page** fueron expuestas, evidenciando los nuevos recursos audiovisuales. Toda la ejecución de los servicios RESTful subyacentes fue respaldada mediante pruebas de integración en Swagger UI, confirmando que las reglas de negocio operan según los criterios de aceptación.
+
+A continuación, se exponen las capturas de pantalla de las principales vistas implementadas en el entorno de producción. Asimismo, para evidenciar el comportamiento dinámico del sitio, se adjunta un enlace a un video demostrativo que ilustra a detalle la visualización interactiva y la navegación fluida lograda en este Sprint.
+
+\begin{figure}[H]
+\caption{Vista general de Asistencia de Expertos.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/02-expert-assitance-overview.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Modal para solicitar asistencia técnica a un especialista.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/03-expert-assitance-overview-requesting-asssitance.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Confirmación de envío exitoso de la solicitud de asistencia.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/04-expert-assitance-overview-request-sent-successfully.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Detalle del caso de asistencia.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/05-expert-assistance-case-detail.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Aceptación de la propuesta de servicio (Service Proposal) por parte del productor.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/06-expert-assistance-proposal-accepted.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Vista general de Intervenciones en curso.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/07-intervetions-overview-1.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Vista detallada de la gestión de Intervenciones.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/08-intervention-overview-2.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Modal para certificar la aplicación de la prescripción de tratamiento.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/09-interventions-overview-certify-application.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Vista de intervenciones mostrando el resumen de la prescripción del especialista.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/10-interventions-overview-with-prescription-summary.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Formulario para reportar el impacto de la intervención en el cultivo.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/11-interventions-overview-report-intervetion-impact.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Confirmación para cerrar la intervención como resuelta.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/13-interventions-overviews-close-intervention.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Formulario para el registro manual de un nuevo gasto operativo.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/14-expense-history-register-expense.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Vista general del historial de gastos agrónomicos.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/15-expense-history-overview.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Pantalla de configuración mostrando el programa de referidos y cupones.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/18-configuration-referrals-1.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Vista general de suscripciones y facturación integrada con MercadoPago.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/21-subscription-overview-1.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Sección de soporte al usuario con Preguntas Frecuentes (FAQ) y documentos legales.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/23-support.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Sección audiovisual «About the Product» implementada en la Landing Page.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/24-about-the-product.jpg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Sección «About the Team» actualizada en la Landing Page.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/25-about-the-team.jpg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
 
 #### Services Documentation Evidence for Sprint Review
 
