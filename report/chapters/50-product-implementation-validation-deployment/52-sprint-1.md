@@ -6,7 +6,7 @@
 
 &nbsp;
 
-En esta sección se detallan los acuerdos fundamentales alcanzados por el equipo ArcadiaDevs durante la sesión de planificación del Sprint 1, llevada a cabo de manera virtual mediante la plataforma Discord. El propósito central de esta reunión fue alinear los esfuerzos técnicos con la estrategia de captación de la marca Viora, definiendo un compromiso de trabajo basado en una velocidad de 20 puntos para abordar un conjunto de historias de usuario que suman 18 puntos de esfuerzo.
+En esta sección se detallan los acuerdos fundamentales alcanzados por el equipo ArcadiaDevs durante la sesión de planificación del Sprint 1, llevada a cabo de manera virtual mediante la plataforma Discord. El propósito central de esta reunión fue alinear los esfuerzos técnicos con la estrategia de captación de la marca Viora, definiendo un compromiso de trabajo basado en una velocidad de 20 puntos para abordar un conjunto de historias de usuario que suman 14 puntos de esfuerzo.
 
 A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el cual integra la logística de la sesión, los responsables de la documentación y el Sprint Goal diseñado para garantizar que este primer incremento de software entregue valor real a los productores y especialistas del sector olivarero.
 
@@ -17,9 +17,9 @@ A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el c
 | **Location** | Discord (Virtual) |
 | **Prepared By** | Trinidad Leon, Jahat Jassiel |
 | **Attendees (to planning meeting)** | Espada Lazo, Piero Anthony / Li Gayoso, Diana Carolina / Paredes Maza, Victor Juan de Dios / Santi Guerrero, Fabrizio Alonso / Trinidad Leon, Jahat Jassiel |
-| **Sprint 1 Goal** | Nuestro enfoque está en proporcionar una experiencia informativa y persuasiva mediante la Landing Page oficial, destacando la conexión entre datos climáticos y acción en campo; creemos que entrega claridad inmediata sobre la propuesta de valor, confianza institucional y una ruta directa de conversión hacia el periodo de prueba a los visitantes productores y especialistas fitosanitarios; esto se confirmará cuando los usuarios puedan navegar los beneficios segmentados, validar la eficacia mediante testimonios y completar la transición hacia el flujo de registro o contacto comercial sin fricciones. |
+| **Sprint 1 Goal** | Nuestro enfoque se orienta a ilustrar los elementos diferenciales de la solución y dar a conocer la propuesta de valor de Viora a los nuevos visitantes, abarcando las necesidades tanto de productores agrícolas como de especialistas fitosanitarios. Creemos que esto proporciona una decisión de registro más informada, confianza inicial en el ecosistema, y una comprensión inmediata de los beneficios y modelo de acceso a los futuros usuarios. Esto se confirmará cuando se registre un incremento medible en el tiempo de retención en la Landing Page, y una reducción en la tasa de rebote.|
 | **Sprint 1 Velocity** | 20 |
-| **Sum of Story Points** | 18 |
+| **Sum of Story Points** | 14 |
 
 #### Aspect Leaders and Collaborators 
 
@@ -67,42 +67,38 @@ El objetivo principal de este Sprint es establecer la presencia digital estraté
 \textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Estimation} & \textbf{Assigned To} & \textbf{Status} \\ \hline
 \endhead
 
-% US54
-US54 & Presentación de la propuesta de valor central 
+% US43
+US43 & Presentación de la propuesta de valor central 
 & TK01 & Header UI \& Navigation & Maquetación, estilos y programación del comportamiento de navegación responsiva del encabezado principal. & 0.75 & Li, Diana & Done \\ \cline{3-8}
 & & TK02 & Hero Section Layout & Estructuración semántica y diseño visual de la sección principal de inicio. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK03 & Hero Ambient Audio Logic & Implementación del comportamiento interactivo y control del reproductor de audio ambiental. & 0.5 & Santi, Fabrizio & Done \\ \hline
 
-% US55
-US55 & Redirección hacia el ecosistema transaccional 
+% US44
+US44 & Redirección hacia el ecosistema transaccional 
 & TK04 & Problem \& Solution Layout & Diseño estructural visual de la sección persuasiva enfocada en los retos del rubro olivarero. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK05 & Persuasive CTAs Behavior & Programación de interacciones y animaciones para los botones de llamado a la acción (CTA). & 0.5 & Santi, Fabrizio & Done \\ \hline
 
-% US56
-US56 & Exploración de beneficios para el Productor 
+% US45
+US45 & Exploración de beneficios para el Productor 
 & TK06 & Producer Segment Interface & Maquetación y estilos de la vista de beneficios orientada exclusivamente a productores. & 0.5 & Santi, Fabrizio & Done \\ \hline
 
-% US57
-US57 & Exploración de beneficios para el Especialista 
+% US46
+US46 & Exploración de beneficios para el Especialista 
 & TK07 & Specialist Segment Interface & Maquetación y estilos de la vista de beneficios orientada a especialistas fitosanitarios. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK08 & Segment Toggle Behavior & Programación del comportamiento dinámico para alternar la interfaz entre perfiles de usuario. & 0.5 & Santi, Fabrizio & Done \\ \hline
 
-% US58
-US58 & Presentación del modelo de acceso 
+% US50
+US50 & Visualización de planes de precio 
 & TK09 & Pricing Layout \& Parallax & Implementación visual de los planes de suscripción junto con el efecto de fondo parallax. & 0.75 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK10 & Referrals Logic \& UI & Desarrollo de la interfaz e interactividad de la tarjeta del programa de referidos. & 0.5 & Trinidad, Jahat & Done \\ \hline
 
-% US59
-US59 & Validación de eficacia mediante experiencias de usuarios 
-& TK11 & Testimonials Carousel & Diseño de tarjetas de reseña e implementación de la lógica del carrusel interactivo. & 0.75 & Espada, Piero & Done \\ \hline
-
-% US60
-US60 & Exploración del respaldo corporativo y humano 
+% US49
+US49 & Exploración del equipo detrás de la plataforma 
 & TK12 & Mission \& Vision Intro & Creación de la interfaz para la sección introductoria y panel descriptivo de la misión. & 0.5 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK13 & Team \& Partners Displays & Maquetación y efectos visuales de los perfiles del equipo de desarrollo y grilla de socios. & 0.5 & Paredes, Victor & Done \\ \hline
 
-% US61
-US61 & Consulta de normativas / Contacto 
+% US47
+US47 & Presentación del programa de referidos 
 & TK14 & Contact UI & Maquetación y estilos de los datos de contacto. & 0.75 & Espada, Piero & Done \\ \cline{3-8}
 & & TK15 & Footer Semantic Layout & Estructuración semántica y diseño responsivo del pie de página. & 0.5 & Santi, Fabrizio & Done \\ \hline
 
@@ -228,9 +224,9 @@ A continuación, se exponen las capturas de pantalla de las principales vistas i
 \caption*{\textit{Nota.} Elaboración propia.}
 \end{figure}
 
-[Link del Landing Page](https://viora-website.vercel.app/)
+Link de la Landing Page: [https://viora-website.vercel.app/](https://viora-website.vercel.app/)
 
-[Link del video evidencia](https://tinyurl.com/viora-sprint-1)
+Link del video evidencia: [https://tinyurl.com/viora-sprint-1](https://tinyurl.com/viora-sprint-1)
 
 &nbsp;
 
