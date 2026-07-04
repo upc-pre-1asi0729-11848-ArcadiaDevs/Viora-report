@@ -208,4 +208,74 @@ A continuación, se exponen las capturas de pantalla de las principales vistas i
 
 &nbsp;
 
+Durante el Sprint 4, el equipo ejecutó actividades de despliegue orientadas a consolidar la infraestructura del backend de la plataforma Viora, incluyendo la configuración de la base de datos relacional PostgreSQL en la nube y el despliegue del Web Service Spring Boot en el entorno de producción. A continuación se detallan los procesos realizados.
+
+**1. Base de Datos (PostgreSQL) — Filess**
+
+Se configuró y desplegó la base de datos PostgreSQL en Filess, plataforma que provee almacenamiento relacional en la nube. Este paso es fundamental para soportar la persistencia de información del backend de intervenciones, suscripciones y sesiones.
+
+Pasos realizados:
+
+1. Se inició sesión en la cuenta de Filess con las credenciales del equipo.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-deployment/sprint-4/db-filess-account-login.jpeg}
+\caption{Inicio de sesión en Filess.}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-deployment/sprint-3/wp-render-project-view.jpeg}
+\caption{Vista del proyecto en Render.}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+2. Se accedió a la vista del proyecto para confirmar que no hubiera problemas con la  base de datos anteriormente desplegada.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-deployment/sprint-4/db-overview.jpg}
+\caption{Comprobación de estado de la base de datos en Filess.}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+**2. Web Service (Spring Boot) — Render**
+
+El Web Service fue desplegado en Render, plataforma que gestiona el hospedaje de aplicaciones en la nube con integración directa a GitHub para despliegue continuo. La versión desplegada incluye los endpoints RESTful para los subdominios de intervención, suscripciones, identificación y perfiles.
+
+Pasos realizados:
+
+1. Se accedió a la vista del proyecto en Render para confirmar la configuración del servicio desplegado.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-deployment/sprint-4/ws-overview-project.jpeg}
+\caption{Vista del proyecto en Render.}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+2. Se verificaron los ambientes configurados (producción y desarrollo).
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-deployment/sprint-4/ws-environments.jpeg}
+\caption{Vista de ambientes en Render.}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+Enlace del Servicio Web: \url{https://os-viora-platform.onrender.com/swagger-ui/index.html/}
+
+**3. Landing Page (viora-website) — Vercel**
+
+La Landing Page continuó desplegada en Vercel con despliegue automático (CI/CD) vinculado al repositorio de GitHub. Durante este Sprint se incorporaron las nuevas versiones de los videos About the Team y About the Product. Cada merge a la rama develop activó un nuevo build y despliegue automático en Vercel.
+
+Pasos realizados:
+
+
+Enlace de la Landing Page: \url{https://viora-website.vercel.app/}
+
+#### Team Collaboration Insights for Sprint Review
+
+&nbsp;
+
+
+
 \newpage
