@@ -49,14 +49,13 @@ nocite: '[@*]'
 {\small
 \renewcommand{\arraystretch}{1.2}
 \setlength{\tabcolsep}{10pt}
-\begin{tabular}{|p{7.2cm}|p{2.6cm}|} \textbf{Código} & \textbf{Apellidos y Nombres} \tabularnewline 
+\begin{tabular}{cl} \textbf{Código} & \textbf{Apellidos y Nombres} \tabularnewline 
 U202519273 & Carpio Peña, Josué Francisco \tabularnewline
 U20241d924 & Espada Lazo, Piero Anthony \tabularnewline  
 U202416274 & Paredes Maza, Víctor Juan de Dios \tabularnewline
 U202411774 & Santi Guerrero, Fabrizio Alonso \tabularnewline
 U202412248 & Trinidad León, Jahat Jassiel \tabularnewline 
 \end{tabular} }
-
 
 \vspace{1.0cm}
 
