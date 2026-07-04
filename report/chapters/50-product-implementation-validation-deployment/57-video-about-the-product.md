@@ -18,3 +18,6 @@ La duración del video es 00:02:05.
 Finalmente, las versiones publicadas del video para su visualización se encuentran alojadas en los siguientes enlaces:
 * **Microsoft Stream (Uso Académico):** [https://tinyurl.com/4566e57b](https://tinyurl.com/4566e57b)
 * **YouTube (Integración Landing Page):** https://youtu.be/hsNiK7cX_3k
+
+\newpage
+\

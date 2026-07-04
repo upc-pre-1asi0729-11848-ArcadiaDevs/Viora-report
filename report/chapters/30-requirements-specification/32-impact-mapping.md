@@ -80,3 +80,5 @@ El mapa se estructura en cuatro niveles que nacen de seis Business Goals enfocad
     \includegraphics[width=0.8\textwidth]{report/assets/impact-map/Impact-map-part11.png}
     \caption*{\textit{Nota.} Visualización correspondiente a la parte 11 del Impact Map. Elaboración propia.}
 \end{figure}
+
+\newpage

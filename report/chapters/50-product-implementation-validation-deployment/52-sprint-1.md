@@ -48,13 +48,6 @@ El objetivo principal de este Sprint es establecer la presencia digital estraté
 \caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://trello.com/invite/b/69ee3364a0402cb22cd14dec/ATTI41e197d9a1a090a8630eda1d8f3252f33AB6B10F/1asi0729-viora-sb1}
 \end{figure}
 
-\begin{figure}[H]
-\caption{Vista General del Sprint Backlog 1}
-\centering
-\includegraphics[width=0.8\textwidth]{report/assets/sprint-backlog/sb1.png}
-\caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://trello.com/invite/b/69ee3364a0402cb22cd14dec/ATTI41e197d9a1a090a8630eda1d8f3252f33AB6B10F/1asi0729-viora-sb1}
-\end{figure}
-
 \begin{longtable}{|p{0.05\textwidth}|p{0.14\textwidth}|p{0.05\textwidth}|p{0.14\textwidth}|p{0.24\textwidth}|p{0.08\textwidth}|p{0.12\textwidth}|p{0.07\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Sprint \#}} & \multicolumn{6}{l|}{Sprint 1} \\ \hline

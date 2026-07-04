@@ -108,19 +108,6 @@ Lógica de pasarelas de pago y asignación de privilegios de suscripción.
     \caption*{\textit{Nota.} Diagrama de clases correspondiente al componente Subscription y Billing Component. Elaboración propia.}
 \end{figure}
 
-##### Moderation & Strikes Component (Spring Boot)
-
-&nbsp;
-
-Administración de bloqueos y penalizaciones en la plataforma para mantener los términos de la comunidad de especialistas e intervencionistas limpios.
-
-\begin{figure}[H]
-    \caption{Diagrama de clases para Moderation y Strikes Component.}
-    \centering
-    \includegraphics[width=1\textwidth]{report/assets/class-diagrams/moderation-and-strikes-component-diagram.png}
-    \caption*{\textit{Nota.} Diagrama de clases correspondiente al componente Moderation y Strikes Component. Elaboración propia.}
-\end{figure}
-
 #### Web Application Class Diagrams (Angular UI)
 
 &nbsp;
