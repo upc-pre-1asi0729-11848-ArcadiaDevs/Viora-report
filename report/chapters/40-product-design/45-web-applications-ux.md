@@ -5,7 +5,7 @@
 \begin{figure}[H]
 \caption{Wireframe de la aplicación.}
 \centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/dashboard-P.png}
+\includegraphics[width=0.3\textwidth]{report/assets/webapplication-ui/wireframes/dashboard-P.png}
 \caption*{\textit{Nota.} Diseño visual del dashboardpara productor. Elaboración propia.}
 \end{figure} 
 
