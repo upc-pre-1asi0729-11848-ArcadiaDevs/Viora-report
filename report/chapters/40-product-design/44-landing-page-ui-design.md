@@ -576,7 +576,7 @@ La versión móvil en alta fidelidad optimiza los recursos gráficos para una ca
 \begin{figure}[H]
 \caption{Mock-up de la Landing Page - Mobile (Parte 18).}
 \centering
-\includegraphics[width=0.4\textwidth]{report/assets/landingpage-ui/mockups-mobile/landingpage-ui-mockup-mobile-18.png}
+\includegraphics[width=0.3\textwidth]{report/assets/landingpage-ui/mockups-mobile/landingpage-ui-mockup-mobile-18.png}
 \caption*{\textit{Nota.} Diseño visual de alta fidelidad optimizado para dispositivos móviles. Elaboración propia.}
 \end{figure} 
 
