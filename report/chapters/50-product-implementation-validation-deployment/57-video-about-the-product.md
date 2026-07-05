@@ -2,8 +2,6 @@
 
 El video About The Product presenta una demostración integral de la solución desarrollada, mostrando las principales funcionalidades implementadas y el valor que aporta a los usuarios finales. A través de un recorrido por la aplicación, se explica cómo la plataforma responde a las necesidades identificadas durante el análisis del problema, destacando los flujos más relevantes, la experiencia de usuario propuesta y sus características. Asimismo, el video evidencia el avance alcanzado durante el desarrollo del proyecto y la forma en que los distintos componentes de la solución trabajan de manera integrada para cumplir los objetivos planteados.
 
-<br>
-
 La duración del video es 00:02:05.
 
 \begin{figure}[H]
