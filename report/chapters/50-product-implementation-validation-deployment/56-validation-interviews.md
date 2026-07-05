@@ -71,47 +71,79 @@ Los participantes visualizarán la Landing Page y posteriormente interactuarán 
 **1. Datos generales**
 
 - ¿Cuál es su nombre completo?
+
 - ¿Qué edad tiene?
+
 - ¿En qué distrito, ciudad o región reside actualmente?
+
 - ¿Cuál es su ocupación o profesión?
+
 - ¿Cuántos años de experiencia tiene en el sector agrícola?
+
 - ¿Cuántas hectáreas de cultivo administra actualmente?
 
 **2. Landing Page:**   
 
 - ¿Qué cree que hace Viora?
+
 - ¿Qué problema considera que resuelve la plataforma?
+
 - ¿La información presentada le parece clara y fácil de entender?
+
 - ¿Qué beneficio le llamó más la atención?
+
 - ¿Utilizaría una solución como esta en sus actividades diarias? ¿Por qué?
+
 - ¿Hay algo que le haya generado dudas o confusión?
 
 **3. Aplicación:**
 
 Se solicitará al participante realizar las tareas definidas en los user flows correspondientes a su perfil.
+
 - ¿Qué tan fácil le resultó navegar por la aplicación y completar las tareas asignadas?
+
 - ¿Encontró alguna dificultad al utilizar el Dashboard, revisar una parcela o consultar la información climática?
+
 - ¿La información mostrada en el Dashboard le permite conocer rápidamente el estado de sus parcelas?
+
 - ¿La vista detallada de la parcela contiene la información que normalmente necesita para gestionar su cultivo?
+
 - ¿La información climática presentada le parece clara y fácil de interpretar para la toma de decisiones?
+
 - ¿Considera útil recibir recomendaciones nutricionales desde la misma plataforma?
+
 - ¿La gestión de parcelas (crear, editar y eliminar) le pareció sencilla de realizar?
+
 - ¿Qué funcionalidad considera más valiosa para su trabajo diario?
+
 - ¿Qué funcionalidad considera menos útil o considera que necesita mejoras?
+
 - ¿Qué información adicional le gustaría visualizar dentro de la plataforma?
+
 - ¿Qué aspectos de la interfaz o experiencia de uso mejoraría?
+
 - Si utilizara Viora diariamente, ¿qué funcionalidad usaría con mayor frecuencia?
+
 - En general, ¿utilizaría esta plataforma para apoyar la gestión de sus cultivos? ¿Por qué?
 
 **4. Preguntas de cierre**
+
 - En una escala del 1 al 5, ¿qué tan útil considera la plataforma Viora?
+
 - ¿Considera que las alertas y recomendaciones mostradas podrían ayudarle a prevenir problemas en su parcela?
+
 - ¿Le resulta útil visualizar información sobre clima, suelo y sanidad en un solo lugar? ¿Por qué?
+
 - ¿La información presentada le permitiría tomar decisiones con mayor anticipación frente a posibles riesgos climáticos o fitosanitarios?
+
 - ¿Considera que Viora podría mejorar la gestión de su cultivo de olivo? ¿De qué manera?
+
 - ¿Estaría dispuesto a utilizar una herramienta como esta en sus actividades diarias?
+
 - ¿Estaría dispuesto a probar futuras versiones de la plataforma?
+
 - En caso de que la plataforma estuviera completamente desarrollada, ¿estaría dispuesto a pagar por su uso? ¿Por qué?
+
 - ¿Desea agregar algún comentario, sugerencia o recomendación para mejorar la plataforma?
 
 **Segmento: Profesionales especializados en control de plagas agrícolas** 
@@ -150,50 +182,79 @@ Se solicitará al participante realizar las tareas definidas en los user flows c
 **1. Datos generales**
 
 - ¿Cuál es su nombre completo?
+
 - ¿Qué edad tiene?
+
 - ¿En qué distrito, ciudad o región reside actualmente?
+
 - ¿Cuál es su ocupación o profesión?
+
 - ¿Cuántos años de experiencia tiene en el sector agrícola?
+
 - ¿Cuál es su especialidad dentro del sector agrícola?
+
 - ¿Cuántos productores, clientes o parcelas asesora aproximadamente al mes?
 
 **2. Landing Page:**   
 
 - ¿Qué cree que hace Viora?
+
 - ¿Qué problema considera que resuelve la plataforma?
+
 - ¿La información presentada le parece clara y fácil de entender?
+
 - ¿Qué beneficio le llamó más la atención?
+
 - ¿Considera que una solución como esta podría aportar valor a su trabajo profesional? ¿Por qué?
+
 - ¿Hay algo que le haya generado dudas o confusión?
 
 **3. Aplicación:**
 
 Se solicitará al participante realizar las tareas definidas en los user flows correspondientes a su perfil.
+
 - ¿Qué tan fácil le resultó navegar por la aplicación y completar las tareas asignadas?
+
 - ¿Encontró alguna dificultad al revisar el Dashboard, consultar parcelas o acceder a la información climática?
+
 - ¿El Dashboard le permite identificar rápidamente parcelas que requieren atención o seguimiento?
+
 - ¿La información detallada de cada parcela es suficiente para realizar una evaluación preliminar o brindar recomendaciones técnicas?
+
 - ¿Los datos climáticos presentados le parecen claros y útiles para anticipar posibles riesgos fitosanitarios?
+
 - ¿Considera que el módulo Dynamic Nutrition podría complementar sus análisis o recomendaciones técnicas? ¿Por qué?
 - ¿La navegación entre parcelas le resultó rápida y eficiente?
+
 - ¿Qué funcionalidad considera más valiosa para apoyar su trabajo profesional?
+
 - ¿Qué funcionalidad considera menos útil o considera que necesita mejoras?
+
 - ¿Qué información adicional necesitaría para realizar diagnósticos o recomendaciones más precisas?
+
 - ¿Qué aspectos de la interfaz o experiencia de uso mejoraría?
+
 - En general, ¿utilizaría esta plataforma como apoyo en sus actividades profesionales? ¿Por qué?
 
 **4. Preguntas de cierre**
-- En una escala del 1 al 5, ¿qué tan útil considera la plataforma Viora?
-- ¿Considera que las alertas fitosanitarias podrían ayudarle a identificar y atender problemas con mayor rapidez?
-- ¿Le resulta útil disponer de información climática, sanitaria y de parcelas en una sola plataforma? ¿Por qué?
-- ¿La información presentada le permitiría brindar recomendaciones más oportunas a los productores?
-- ¿Considera que Viora podría mejorar la coordinación entre especialistas y productores agrícolas? ¿De qué manera?
-- ¿Estaría dispuesto a utilizar una herramienta como esta en sus actividades profesionales?
-- ¿Estaría dispuesto a probar futuras versiones de la plataforma?
-- En caso de que la plataforma estuviera completamente desarrollada, ¿estaría dispuesto a pagar por su uso o recomendarla a sus clientes? ¿Por qué?
-- ¿Desea agregar algún comentario, sugerencia o recomendación para mejorar la plataforma?
 
-<br>
+- En una escala del 1 al 5, ¿qué tan útil considera la plataforma Viora?
+
+- ¿Considera que las alertas fitosanitarias podrían ayudarle a identificar y atender problemas con mayor rapidez?
+
+- ¿Le resulta útil disponer de información climática, sanitaria y de parcelas en una sola plataforma? ¿Por qué?
+
+- ¿La información presentada le permitiría brindar recomendaciones más oportunas a los productores?
+
+- ¿Considera que Viora podría mejorar la coordinación entre especialistas y productores agrícolas? ¿De qué manera?
+
+- ¿Estaría dispuesto a utilizar una herramienta como esta en sus actividades profesionales?
+
+- ¿Estaría dispuesto a probar futuras versiones de la plataforma?
+
+- En caso de que la plataforma estuviera completamente desarrollada, ¿estaría dispuesto a pagar por su uso o recomendarla a sus clientes? ¿Por qué?
+
+- ¿Desea agregar algún comentario, sugerencia o recomendación para mejorar la plataforma?
 
 ### Registro de Entrevistas
 
@@ -206,11 +267,8 @@ Se solicitará al participante realizar las tareas definidas en los user flows c
 \textbf{Nombre} & Diego Diaz & \textbf{Edad} & 28 \\
 \textbf{Distrito} & \multicolumn{3}{p{0.75\textwidth}}{Sama, Tacna} \\
 \textbf{Ocupación} & \multicolumn{3}{p{0.75\textwidth}}{Productor Olivarero y Administrador de Operaciones} \\
-\textbf{Inicio} & 00:04 & \textbf{Enlace} & \url{https://tinyurl.com/interview-validation-1} \\ \hline
-\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} Diego Díaz es un administrador de operaciones de 28 años, egresado de administración de empresas, que reside en el distrito de Sama, en la región de Tacna (siendo originalmente de Lima). Cuenta con 6 años de experiencia en el sector olivicultor dentro de una empresa familiar, donde administra de forma directa un fundo de aproximadamente 45 topos de cultivo de olivo (equivalentes a unas 15 hectáreas).
-El evaluador identificó a Viora como un software enfocado en el monitoreo del terreno de cultivo que permite verificar el estado de las parcelas, recibir alertas sobre plagas, obtener recomendaciones según factores como la temperatura o el clima, y contactar con especialistas del rubro. Considera que la plataforma resuelve la centralización de los datos del campo y automatiza tareas manuales (como el control del clima y la temperatura del suelo) que quitan tiempo y personal. Afirmó que, ante la situación agrícola actual de la región, una herramienta así es una necesidad real para no perder producción. No obstante, criticó que la landing page es demasiado técnica, compleja en diseño y transiciones para los agricultores locales, y reportó textos sin traducir (en inglés) junto con tipografías muy pequeñas en escritorio. Valoró enormemente el seguimiento del clima y el Marketplace de especialistas por la dificultad de hallar ingenieros de confianza en la zona, manifestando dudas sobre el monitoreo satelital NDVI.
-Manifestó que la navegación inicial le resultó un poco complicada y sugirió hacerla más práctica y directa. Al revisar el Dashboard, criticó que sus siete secciones comparten el mismo peso visual, dificultando la priorización; por ello, recomendó destacar las alertas críticas fitosanitarias o hídricas con colores vivos (como naranja o rojo), priorizando los bloques de salud de la parcela y el clima. En "Mis Parcelas", experimentó severas dificultades para localizar el botón de registro debido a su color blanco y nulo contraste con el fondo. Para optimizar el formulario, sugirió usar listas desplegables de cultivos en lugar de la digitación manual. Además, catalogó la métrica de humedad del suelo como un promedio global ineficiente y solicitó la capacidad de listar e identificar por separado cada sensor instalado en el campo para ubicar con exactitud el déficit hídrico. Finalmente, propuso habilitar subdivisiones en parcelas extensas y reportó un bloqueo en Nutrición Dinámica por la falta de indicaciones para pre-seleccionar la parcela antes de cargar el plan de acción, sugiriendo ampliar el tamaño visual de las amenazas y protocolos de emergencia.
-Calificó la utilidad global con un 4 de 5, destacando su valor analítico para optimizar los tiempos del personal, reducir paseos ciegos al campo y permitir una gestión puramente preventiva para salvar las campañas. Expresó una intención de compra favorable bajo la condición obligatoria de contar con un mes de prueba gratuito. Este periodo es indispensable para introducir sus datos reales, conectar sus sensores y comprobar de manera efectiva la veracidad y estabilidad de la plataforma antes de invertir económicamente.} \\ [10pt]
+\textbf{Timing} & 00:04 (Dur: 10:22) & \textbf{Enlace} & \url{https://tinyurl.com/interview-validation-1} \\ \hline
+\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} Diego valoró positivamente que Viora centralice datos del campo y automatice tareas, considerándola una herramienta necesaria para evitar pérdidas. Al realizar las tareas, destacó el módulo climático y el Marketplace de especialistas. Sin embargo, criticó que la Landing Page es muy técnica y con textos en inglés. En la aplicación, sugirió mejorar la jerarquía visual del Dashboard resaltando alertas con colores vivos (rojo/naranja), criticó la nula visibilidad del botón para registrar parcelas y pidió ver datos independientes por cada sensor IoT en vez de promedios. Le otorgó 4/5 de utilidad y mostró intención de pago si se ofrece un mes de prueba gratuito para validar el sistema con sus propios sensores.} \\ [10pt]
 \multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/validation-interview-1.png}} \\ \hline
 \end{tabular}
 
@@ -221,11 +279,8 @@ Calificó la utilidad global con un 4 de 5, destacando su valor analítico para 
 \textbf{Nombre} & Diego Alonso Alcántara & \textbf{Edad} & 27 \\
 \textbf{Distrito} & \multicolumn{3}{p{0.75\textwidth}}{Ica, Pisco} \\
 \textbf{Ocupación} & \multicolumn{3}{p{0.75\textwidth}}{Recolección de cultivos y administrador} \\
-\textbf{Inicio} & 10:26 & \textbf{Enlace} & \url{https://tinyurl.com/interview-validation-1} \\ \hline
-\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} Diego Alonso Alcántara es un productor olivarero de 27 años con 3 años de experiencia en el sector. Se dedica principalmente a la recolección y gestión de cultivos tanto en el sector rural como en su articulación comercial hacia la capital (Lima), y administra actualmente un total de 50 hectáreas de cultivo en Pisco, Ica.
-Identificó a Viora como una plataforma orientada al monitoreo de parcelas, detección de plagas, control de temperatura y conexión con ingenieros agrónomos. Considera que resuelve la centralización de datos y reduce los incidentes fitosanitarios al mitigar el trabajo manual que quita tiempo en el campo. La considera una herramienta de gran utilidad frente al cambio climático, aunque opinó que la interfaz es algo técnica para el agricultor tradicional, tiene transiciones complejas y observó partes en inglés o letras muy pequeñas en escritorio. Valoró especialmente el control de temperatura por parcelas y el Marketplace de ingenieros por la escasez de asesores calificados, manifestando dudas sobre la precisión y escala del monitoreo satelital NDVI.
-Sugirió simplificar la navegación para hacerla más intuitiva y fluida, evitando que el usuario se pierda. En el Dashboard, criticó que sus siete secciones comparten el mismo peso visual y sugirió que las alertas críticas de plagas o riego resalten con colores de advertencia (como naranja o rojo), priorizando los bloques de salud vegetal y clima. En "Mis Parcelas", tuvo severas dificultades para hallar el botón de registro por su color blanco y falta de contraste; asimismo, recomendó usar un menú desplegable de cultivos en vez de escribir el texto a mano. Consideró la métrica de humedad del suelo muy genérica y solicitó poder identificar de forma independiente cada sensor en el campo para localizar con exactitud el lote seco. Finalmente, propuso permitir la subdivisión de parcelas grandes y reportó un bloqueo en Nutrición Dinámica por la falta de indicaciones para pre-seleccionar la parcela antes de cargar las recomendaciones, pidiendo también un mayor tamaño visual para los protocolos de emergencia.
-Calificó la utilidad global con un 4 de 5, destacando su valor predictivo para anticipar riesgos climáticos y optimizar los tiempos del personal. Expresó una clara intención de compra bajo la condición obligatoria de contar con una versión de prueba gratuita primero, con el fin de evaluar todas las funcionalidades de la página y ver si realmente se acopla a sus necesidades antes de pagar por la versión completa.} \\ [10pt]
+\textbf{Timing} & 10:26 (Dur: 05:44) & \textbf{Enlace} & \url{https://tinyurl.com/interview-validation-1} \\ \hline
+\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} Diego Alonso destacó que Viora reduce el trabajo manual y es muy útil frente al cambio climático. Al interactuar con la plataforma, apreció el control de temperatura y la conexión con agrónomos. Sus críticas principales en las tareas asignadas fueron: navegación confusa del Dashboard al no resaltar alertas críticas, dificultad extrema para encontrar el botón de registro de parcelas por falta de contraste, y la necesidad de identificar los sensores individualmente. También reportó bloqueos al usar Nutrición Dinámica sin pre-seleccionar una parcela. Calificó la utilidad con 4/5 y condicionó la compra a una prueba gratuita.} \\ [10pt]
 \multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/validation-interview-2.png}} \\ \hline
 \end{tabular}
 
@@ -236,15 +291,12 @@ Calificó la utilidad global con un 4 de 5, destacando su valor predictivo para 
 \textbf{Nombre} & Jared Nieto & \textbf{Edad} & 22 \\
 \textbf{Distrito} & \multicolumn{3}{p{0.75\textwidth}}{Samegua, Moquegua} \\
 \textbf{Ocupación} & \multicolumn{3}{p{0.75\textwidth}}{Productor y agroexportador} \\
-\textbf{Inicio} & 16:10 & \textbf{Enlace} & \url{https://tinyurl.com/interview-validation-1} \\ \hline
-\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} Jaret Nieto es un productor y agroexportador olivarero de 22 años residente en Samegua, Moquegua. Cuenta con 6 años de trayectoria en el sector, habiendo aprendido el manejo de la tierra desde los 16 años junto a sus padres, y actualmente administra de forma directa 6 hectáreas de cultivo de olivo destinadas a la exportación.
-Identificó a Viora como una plataforma tecnológica para el monitoreo agronómico y la gestión fitosanitaria de olivares. Considera que centraliza los datos de campo y mitiga la carga operativa de las evaluaciones manuales cotidianas en el fundo, siendo una necesidad crítica ante el cambio climático. No obstante, criticó que posee un enfoque comercial muy abstracto para el productor tradicional, alta densidad de interfaz, transiciones complejas, textos sin traducir del inglés y fuentes tipográficas reducidas en escritorio. Valoró enormemente el módulo de clima predictivo y el Marketplace de especialistas por la escasez de asesores técnicos de confianza en la región, manifestando dudas sobre el funcionamiento técnico del monitoreo satelital NDVI.
-Reportó restricciones de fluidez iniciales y sugirió simplificar los accesos para lograr una navegación más directa y práctica. En el Dashboard Overview, criticó la falta de jerarquía visual entre sus siete secciones y solicitó un patrón cromático restrictivo (tonalidades naranja o rojo) para las alertas críticas de plagas o estrés hídrico, priorizando la salud vegetal y el clima. En "Mis Parcelas", tuvo dificultades severas para localizar el botón de registro por su color blanco y nulo contraste; además, recomendó usar un menú desplegable de cultivos en lugar de la digitación manual. Calificó la métrica de humedad del suelo como un promedio global ineficiente y solicitó listar de forma independiente cada tensiómetro en sus 6 hectáreas para geolocalizar el déficit hídrico por sector. Finalmente, propuso permitir la creación de subparcelas y reportó un bloqueo en Nutrición Dinámica por la falta de indicaciones para pre-seleccionar la parcela antes de cargar el plan de acción, pidiendo ampliar el tamaño visual de los protocolos de enmienda.
-Calificó la utilidad global con un 4 de 5, destacando su valor para optimizar las jornadas del personal y permitir una gestión predictiva en el fundo. Expresó una intención de pago favorable bajo la condición obligatoria de contar con un periodo de prueba de un mes sin costo para enlazar sus propios dispositivos de medición en Moquegua, registrar su cartografía real y validar la veracidad y estabilidad de la telemetría antes de realizar cualquier inversión económica.} \\ [10pt]
+\textbf{Timing} & 16:10 (Dur: ~06:00) & \textbf{Enlace} & \url{https://tinyurl.com/interview-validation-1} \\ \hline
+\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} Jared identificó a Viora como una plataforma que mitiga la carga operativa manual. Durante las tareas, valoró el clima predictivo y el contacto con especialistas, pero observó que la interfaz es muy abstracta para el productor tradicional, con textos en inglés. Sus apreciaciones clave fueron: necesidad de jerarquía visual en el Dashboard mediante colores de advertencia, problemas graves para hallar el botón de registro de parcelas, y la petición de medir humedad con cada tensiómetro de forma independiente. Calificó la plataforma con 4/5, indicando que pagaría si cuenta con un periodo de prueba gratuito para validar la telemetría.} \\ [10pt]
 \multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/validation-interview-3.png}} \\ \hline
 \end{tabular}
 
-<br>
+\newpage
 
 ### Evaluaciones según heurísticas
 
