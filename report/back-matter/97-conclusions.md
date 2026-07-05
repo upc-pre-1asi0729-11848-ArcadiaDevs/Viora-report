@@ -1,12 +1,12 @@
 # Conclusiones
 
-## Conclusiones y recomendaciones {-}
+**Conclusiones y recomendaciones**
 
 El desarrollo del proyecto **Viora** ha culminado de manera exitosa, consolidando una solución SaaS que responde de forma directa a problemáticas específicas y complementarias de sus dos segmentos objetivo en el sector olivarero. Por un lado, los productores agrícolas enfrentaban el riesgo de vecerías extendidas por el desconocimiento de umbrales de temperatura y una tardía detección de plagas; una necesidad resuelta estructuralmente mediante la integración de telemetría IoT y el análisis satelital NDVI (Agronomic). Por otro lado, los especialistas fitosanitarios dependían de métodos de comunicación primitivos, limitados al "boca a boca", y carecían de un canal de atención estructurado para ofrecer sus servicios. Ante este escenario, la solución propuesta demuestra ser la correcta porque vincula ambas necesidades a través de un ecosistema colaborativo: el módulo de *Intervention*. Esta digitalización del ciclo de asistencia técnica cierra la brecha, transformando el monitoreo de datos en acción inmediata y empoderando a ambos actores para salvaguardar la rentabilidad agrícola.
 
 Desde una perspectiva de investigación, implementación y validación, la aplicación del marco de trabajo Scrum garantizó la adaptación iterativa a los hallazgos de la etapa inicial de Lean UX, permitiendo una entrega continua de valor. A nivel técnico, la adopción de Domain-Driven Design (DDD) en el backend aseguró una alta cohesión del dominio, lo cual, integrado con un frontend reactivo (Angular) y servicios externos (MercadoPago, Brevo) operando bajo flujos automatizados de CI/CD, certifica un producto escalable y robusto. Finalmente, como trabajo futuro se sugiere continuar validando empíricamente la usabilidad con los *early adopters* del sector y preparar la infraestructura para integrar modelos predictivos de *Machine Learning* que potencien la analítica de riesgos apoyados en el historial de campo.
 
-## Video About-the-Team {-}
+**Video About-the-Team**
 
 El video *About-The-Team* resume el arduo proceso de trabajo realizado por ArcadiaDevs durante el ciclo de desarrollo de Viora. En este material audiovisual se evidencia el proceso integral de ingeniería: desde la investigación inicial y diseño en Figma, hasta la arquitectura técnica y la implementación final utilizando GitHub, Trello y Swagger. A través de escenas que muestran las dinámicas de planificación y validación colaborativa, complementadas con testimonios individuales, cada integrante detalla sus principales actividades, los *outcomes* logrados y las competencias técnicas y blandas fortalecidas durante la construcción del ecosistema de Viora.
 
