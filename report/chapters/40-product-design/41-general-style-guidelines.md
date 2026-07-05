@@ -39,14 +39,16 @@ La siguiente guía se implementa operativamente bajo las directrices del lenguaj
   <br>
 
 \begin{figure}[H]
-\caption{Imagen de la tipografía de Viora.}
+\caption{Imagen de la tipografía de Viora - 1.}
 \centering
-\includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/02-Typography-1.jpg}
+\includegraphics[width=0.5\textwidth]{report/assets/style-guidelines/02-Typography-1.jpg}
+\caption*{\textit{Nota.} Selección de fuentes para títulos y cuerpo de texto que garantizan legibilidad. Elaboración propia.}
+\end{figure}
 
-\newpage
-
-\vspace{1em}
-\includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/02-Typography-2.jpg}
+\begin{figure}[H]
+\caption{Imagen de la tipografía de Viora - 2.}
+\centering
+\includegraphics[width=0.5\textwidth]{report/assets/style-guidelines/02-Typography-2.jpg}
 \caption*{\textit{Nota.} Selección de fuentes para títulos y cuerpo de texto que garantizan legibilidad. Elaboración propia.}
 \end{figure}
 

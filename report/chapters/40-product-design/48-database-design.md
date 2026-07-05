@@ -100,18 +100,3 @@ Este diagrama modela la lógica de suscripciones y facturación de la plataforma
     \includegraphics[width=0.85\textwidth]{report/assets/database-design-diagrams/subscription-billing-and-referral-bounded-context-database-diagram.png}
     \caption*{\textit{Nota.} Esquema relacional correspondiente al módulo de suscripciones y facturación. Elaboración propia.}
 \end{figure}
-
-#### Community Governance & Reputation Bounded Context
-
-&nbsp;
-
-El bounded context de gobernanza comunitaria modela el sistema de moderación y penalizaciones de la plataforma. La tabla `strike_records` registra cada sanción aplicada a un usuario, incluyendo el motivo, la fecha y su estado de vigencia, permitiendo al módulo de moderación evaluar el historial acumulado y aplicar restricciones progresivas —incluyendo el bloqueo definitivo— a los usuarios que incumplan los términos de servicio.
-
-\begin{figure}[H]
-    \caption{Diagrama de base de datos para el bounded context Community Governance \& Reputation.}
-    \centering
-    \includegraphics[width=0.55\textwidth]{report/assets/database-design-diagrams/community-governance-and-reputation-bounded-context-database-diagram.png}
-    \caption*{\textit{Nota.} Esquema relacional correspondiente al módulo de moderación y sistema de penalizaciones. Elaboración propia.}
-\end{figure}
-
-\newpage
