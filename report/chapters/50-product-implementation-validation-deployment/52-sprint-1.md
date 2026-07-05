@@ -17,7 +17,7 @@ A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el c
 | **Location** | Discord (Virtual) |
 | **Prepared By** | Trinidad Leon, Jahat Jassiel |
 | **Attendees (to planning meeting)** | Espada Lazo, Piero Anthony / Li Gayoso, Diana Carolina / Paredes Maza, Victor Juan de Dios / Santi Guerrero, Fabrizio Alonso / Trinidad Leon, Jahat Jassiel |
-| **Sprint 1 Goal** | Nuestro enfoque se orienta a ilustrar los elementos diferenciales de la solución y dar a conocer la propuesta de valor de Viora a los nuevos visitantes, abarcando las necesidades tanto de productores agrícolas como de especialistas fitosanitarios. Creemos que esto proporciona una decisión de registro más informada, confianza inicial en el ecosistema, y una comprensión inmediata de los beneficios y modelo de acceso a los futuros usuarios. Esto se confirmará cuando se registre un incremento medible en el tiempo de retención en la Landing Page, y una reducción en la tasa de rebote.|
+| **Sprint 1 Goal** | **Nuestro enfoque** se orienta a ilustrar los elementos diferenciales de la solución y dar a conocer la propuesta de valor de Viora a los nuevos visitantes, abarcando las necesidades tanto de productores agrícolas como de especialistas fitosanitarios. **Creemos que esto proporciona** una decisión de registro más informada, confianza inicial en el ecosistema, y una comprensión inmediata de los beneficios y modelo de acceso a los futuros usuarios. **Esto se confirmará cuando** se registre un incremento medible en el tiempo de retención en la Landing Page, y una reducción en la tasa de rebote.|
 | **Sprint 1 Velocity** | 20 |
 | **Sum of Story Points** | 14 |
 
