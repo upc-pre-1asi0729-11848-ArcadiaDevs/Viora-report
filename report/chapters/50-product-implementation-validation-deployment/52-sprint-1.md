@@ -97,7 +97,7 @@ US47 & Presentación del programa de referidos
 
 \end{longtable}
 
-#### Deployment Evidence for Sprint Review
+#### Development Evidence for Sprint Review 
 
 &nbsp;
 

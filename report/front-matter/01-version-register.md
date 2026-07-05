@@ -52,3 +52,5 @@
 \textbf{v2.2.0} & 15/05/26 & Santi Guerrero, Fabrizio Alonso & Sprint 2 completado. \tabularnewline \hline
 
 \end{longtable}
+
+\newpage

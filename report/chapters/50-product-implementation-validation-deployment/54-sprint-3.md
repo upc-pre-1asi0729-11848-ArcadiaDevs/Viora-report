@@ -387,7 +387,7 @@ TS35 & Implementar Locale Configuration & TK01 & Configurar LocaleResolver & Def
 & & TK03 & Internacionalizar GlobalExceptionHandler & Ajustar el GlobalExceptionHandler para resolver los mensajes de error utilizando el MessageSource y el LocaleContext actual. & 0.2 & Santi, Fabrizio & Done \\ \hline
 \end{longtable}
 
-#### Deployment Evidence for Sprint Review
+#### Development Evidence for Sprint Review
 
 &nbsp;
 

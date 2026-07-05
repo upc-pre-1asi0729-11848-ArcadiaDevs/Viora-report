@@ -41,7 +41,9 @@ Para respaldar visualmente el contenido, a continuación se adjunta un cuadro re
 \end{figure}
 
 Finalmente, las versiones publicadas del video para su visualización se encuentran alojadas en los siguientes enlaces:
+
 * **Microsoft Stream (Uso Académico):** https://tinyurl.com/ycxkyfw8
+
 * **YouTube (Integración Landing Page):** https://youtu.be/ZuZTO8dkBBo
 
 \newpage

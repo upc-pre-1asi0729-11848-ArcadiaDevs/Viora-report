@@ -1,24 +1,29 @@
 # Project Report Collaboration Insights {-}
 
-## Enlaces a la organización de github y sus repositorios {-}
+**Enlaces a la organización de github y sus repositorios**
 
-- **Organizacion de GitHub** upc-pre-202610-1asi0729-11848-arcadiadevs: 
+- **Organizacion de GitHub** upc-pre-202610-1asi0729-11848-arcadiadevs:
+
   [https://github.com/upc-pre-1asi0729-11848-arcadiadevs](https://github.com/upc-pre-1asi0729-11848-arcadiadevs)
 
-- **Repositorio del informe** upc-pre-1asi0729-11848-arcadiadevs/viora-report: 
+- **Repositorio del informe** upc-pre-1asi0729-11848-arcadiadevs/viora-report:
+
   [https://github.com/upc-pre-1asi0729-11848-arcadiadevs/viora-report](https://github.com/upc-pre-1asi0729-11848-arcadiadevs/viora-report)
   
-- **Repositorio de la Landingpage** upc-pre-1asi0729-11848-arcadiaDevs/viora-website: 
+- **Repositorio de la Landingpage** upc-pre-1asi0729-11848-arcadiaDevs/viora-website:
+
   [https://github.com/upc-pre-1asi0729-11848-arcadiadevs/viora-website](https://github.com/upc-pre-1asi0729-11848-arcadiadevs/viora-website)
   
-- **Repositorio de la aplicacion web** upc-pre-1asi0729-11848-ArcadiaDevs/viora-webapp: 
+- **Repositorio de la aplicacion web** upc-pre-1asi0729-11848-ArcadiaDevs/viora-webapp:
+
   [https://github.com/upc-pre-1asi0729-11848-arcadiadevs/viora-webapp](https://github.com/upc-pre-1asi0729-11848-arcadiadevs/viora-webapp)
 
-- **Repositorio del servicio web** upc-pre-1asi0729-11848-arcadiadevs/viora-platform: 
+- **Repositorio del servicio web** upc-pre-1asi0729-11848-arcadiadevs/viora-platform:
+
   [https://github.com/upc-pre-1asi0729-11848-arcadiadevs/viora-platform](https://github.com/upc-pre-1asi0729-11848-arcadiadevs/viora-platform)
   
 
-## Estadísticas de colaboración {-}
+**Estadísticas de colaboración**
 
 \begin{figure}[H]
 \caption{Contributors del repositorio de informe - Parte 1}

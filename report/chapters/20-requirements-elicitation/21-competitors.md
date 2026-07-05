@@ -78,13 +78,9 @@ Análisis competitivo para competidores **indirectos**
 | ![Agroptima](report/assets/competitors/agroptima.png){width=80px} | **"Motor predictivo vs. Registro pasivo"**: Viora procesa el clima y advierte automáticamente; no es solo una libreta digital de data-entry. | Usabilidad en campo líder europea y potente registro de costos operativos y trazabilidad. | Es un sistema pasivo; sin registro del agricultor, no emite alertas epidemiológicas predictivas autónomas ante crisis climáticas. |
 | ![Xarvio](report/assets/competitors/xarvio.png){width=80px} | **"Hiper-nicho olivarero + Coordinación humana"**: Foco en la vecería y enlace técnico inmediato con un especialista humano local. | Profundidad técnica corporativa, excelente análisis algorítmico y UX simple (mapas de colores intuitivos). | Aislamiento corporativo: Solo te alertan y derivan a químicos propios sin asistencia técnica humana. Riesgo de mala calibración. |
 
-<br />
-
-<!-- Test markdown + latex -->
-
 \newpage
 
-### Matriz F.O.D.A y C.A.M.E.
+**Matriz F.O.D.A y C.A.M.E.**
 
 \definecolor{fodaDark}{RGB}{47,84,63}
 \definecolor{fodaLight}{RGB}{183,198,190}
