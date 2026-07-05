@@ -1,4 +1,4 @@
-# Domain-Driven Software Architecture
+## Domain-Driven Software Architecture
 
 La arquitectura de software de Viora se ha planteado siguiendo los principios de Domain-Driven Design (DDD), tomando como punto de partida los hallazgos obtenidos en el Big Picture Event Storming desarrollado en el capítulo previo. A partir de ello, esta sección profundiza en la identificación de Bounded Contexts, Aggregates, Events, Commands y Queries, estableciendo además una base conceptual sólida para su posterior representación mediante el modelo C4.
 

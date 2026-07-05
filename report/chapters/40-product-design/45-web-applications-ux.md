@@ -158,7 +158,7 @@ Para el diseño y conceptualización de los wireframes de la aplicación Viora, 
 
 Esta sección presenta la propuesta de **Wireflows** para el ecosistema **Viora**. Un **Wireflow** combina la arquitectura de los **Wireframes** con el flujo de navegación para representar de manera técnica cómo cambia el estado de la interfaz ante la interacción del usuario.
 
-### 4.4.1. Wireflow: Gestión de Nutrición Dinámica ante Riesgo Climático
+***Wireflow: Gestión de Nutrición Dinámica ante Riesgo Climático***
 
 * **User Goal:** Estabilizar el vigor de la planta frente a anomalías (como el fenómeno ENOS) mediante respuestas nutricionales exactas, evitando pérdidas drásticas.
 * **User Persona:** Pedro Huamán (Productor Olivarero).
@@ -207,38 +207,6 @@ Esta sección presenta la propuesta de **Wireflows** para el ecosistema **Viora*
    **Path B: Contacto tras validación exitosa**
    * **Pests in your plots:** Representa el tiempo de espera del productor en la pantalla principal mientras el especialista procesa la solicitud.
    * **Contact Details - NO HIDDEN:** Una vez aprobada la asistencia, la interacción con el botón de contacto despliega el modal en su estado final, revelando la información necesaria para la coordinación directa.
-
-
-
-\newpage
-
-### Web Applications Wireflow Diagrams
-Esta sección presenta la propuesta de **Wireflows** para el ecosistema **Viora**. Un **Wireflow** combina la arquitectura de los **Wireframes** con el flujo de navegación para representar de manera técnica cómo cambia el estado de la interfaz ante la interacción del usuario.
-
-Wireflow: Gestión de nutrición dinámica ante riesgo climático
-
-* **User Goal:** Estabilizar el vigor de la planta frente a anomalías (como el fenómeno ENOS) mediante respuestas nutricionales exactas, evitando pérdidas drásticas.
-* **User Persona:** Pedro Huamán (Productor Olivarero).
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{report/assets/webapplication-ui/wireflows/wireflow1.png}
-\caption{Wireflow de Gestión Nutricional y Proyección Predictiva.}
-\label{fig:wireflow1}
-\caption*{\textit{Nota.} El diagrama ilustra la transición desde el Dashboard hacia módulos de resolución técnica, destacando el uso del Navigation Sidebar y la bifurcación hacia el motor predictivo.}
-\end{figure} 
-
-**Explicación técnica del flujo:**
-
-**Path A: Gestión de Alertas y Nutrición (Flujo Secuencial)**
-1. **Dashboard:** Pantalla de inicio que muestra los indicadores de monitoreo (NDVI e índices climáticos). La activación del "**Side menu**" dispara un cambio de estado en la interfaz.
-2. **Dashboard with Side Bar:** Representación del **Navigation Sidebar** superpuesto. Al seleccionar "**Alerts**", el sistema ejecuta un evento de navegación hacia el módulo de incidencias.
-3. **Alerts:** Vista que centraliza el listado de alertas detectadas. La interacción con el botón "**Dynamic Nutrition Details**" transiciona al usuario hacia la pantalla de detalle técnico.
-4. **Dynamic Nutrition Details:** Estado final donde se presentan las recomendaciones y guías técnicas de fertilización y manejo.
-
-**Path B: Proyección Preventiva (Flujo Directo)**
-1. **Dashboard:** El usuario interactúa directamente con el control "**See alternate bearing projection**" sin necesidad de navegar por el menú lateral.
-2. **Alternative bearing projection:** El sistema transiciona a la vista de análisis predictivo para una evaluación inmediata del impacto esperado de la alternancia productiva.
 
 \newpage
 
