@@ -28,7 +28,7 @@ A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el c
 En esta sección se presenta la matriz Leadership-and-Collaboration Matrix (LACX) del Sprint 1, diseñada para optimizar la coordinación interna y asegurar la calidad técnica de la plataforma Viora. Para este primer incremento, el alcance de desarrollo se ha segmentado en cinco ejes: la estructuración de la interfaz y navegación base, la comunicación de la propuesta de valor segmentada, el desarrollo lógico del modelo de acceso, la consolidación de la credibilidad corporativa, y la implementación técnica de la conversión y contacto.
 
 | Team Member (Last Name, First Name) | GitHub Username | Core UI Leader (L) / Collab (C) | Value & Seg Leader (L) / Collab (C) | Access Model Leader (L) / Collab (C) | Corp Trust Leader (L) / Collab (C) | Conversion Leader (L) / Collab (C) |
-|---|---|---|---|---|---|---|
+|---|---|:---:|:---:|:---:|:---:|:---:|
 | Espada, Piero | espadita2510 | C | C | C | C | L |
 | Li, Diana | peruvianMiau | L | C | C | C | C |
 | Paredes, Victor | DaronCameloft | C | C | C | L | C |
@@ -45,19 +45,19 @@ El objetivo principal de este Sprint es establecer la presencia digital estraté
 \caption{Vista General del Sprint Backlog 1}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/sprint-backlog/sb1.png}
-\caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://trello.com/invite/b/69ee3364a0402cb22cd14dec/ATTI41e197d9a1a090a8630eda1d8f3252f33AB6B10F/1asi0729-viora-sb1}
+\caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://tinyurl.com/1asi0729-trello-sb1}
 \end{figure}
 
 \begin{longtable}{|p{0.05\textwidth}|p{0.14\textwidth}|p{0.05\textwidth}|p{0.14\textwidth}|p{0.24\textwidth}|p{0.08\textwidth}|p{0.12\textwidth}|p{0.07\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Sprint \#}} & \multicolumn{6}{l|}{Sprint 1} \\ \hline
 \multicolumn{2}{|l|}{\textbf{User Story}} & \multicolumn{6}{l|}{\textbf{Work-Item / Task}} \\ \hline
-\textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Estimation (Hours)} & \textbf{Assigned To} & \textbf{Status (To-do / In-Process / To-Review / Done)} \\ \hline
+\textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Est. (Hrs)} & \textbf{Assigned To} & \textbf{Status} \\ \hline
 \endfirsthead
 
 \hline
 \multicolumn{2}{|l|}{\textbf{User Story}} & \multicolumn{6}{l|}{\textbf{Work-Item / Task (Continuación)}} \\ \hline
-\textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Estimation} & \textbf{Assigned To} & \textbf{Status} \\ \hline
+\textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Est. (Hrs)} & \textbf{Assigned To} & \textbf{Status} \\ \hline
 \endhead
 
 % US43
@@ -68,32 +68,32 @@ US43 & Presentación de la propuesta de valor central
 
 % US44
 US44 & Redirección hacia el ecosistema transaccional 
-& TK04 & Problem \& Solution Layout & Diseño estructural visual de la sección persuasiva enfocada en los retos del rubro olivarero. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8}
-& & TK05 & Persuasive CTAs Behavior & Programación de interacciones y animaciones para los botones de llamado a la acción (CTA). & 0.5 & Santi, Fabrizio & Done \\ \hline
+& TK01 & Problem \& Solution Layout & Diseño estructural visual de la sección persuasiva enfocada en los retos del rubro olivarero. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK02 & Persuasive CTAs Behavior & Programación de interacciones y animaciones para los botones de llamado a la acción (CTA). & 0.5 & Santi, Fabrizio & Done \\ \hline
 
 % US45
 US45 & Exploración de beneficios para el Productor 
-& TK06 & Producer Segment Interface & Maquetación y estilos de la vista de beneficios orientada exclusivamente a productores. & 0.5 & Santi, Fabrizio & Done \\ \hline
+& TK01 & Producer Segment Interface & Maquetación y estilos de la vista de beneficios orientada exclusivamente a productores. & 0.5 & Santi, Fabrizio & Done \\ \hline
 
 % US46
 US46 & Exploración de beneficios para el Especialista 
-& TK07 & Specialist Segment Interface & Maquetación y estilos de la vista de beneficios orientada a especialistas fitosanitarios. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8}
-& & TK08 & Segment Toggle Behavior & Programación del comportamiento dinámico para alternar la interfaz entre perfiles de usuario. & 0.5 & Santi, Fabrizio & Done \\ \hline
+& TK01 & Specialist Segment Interface & Maquetación y estilos de la vista de beneficios orientada a especialistas fitosanitarios. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK02 & Segment Toggle Behavior & Programación del comportamiento dinámico para alternar la interfaz entre perfiles de usuario. & 0.5 & Santi, Fabrizio & Done \\ \hline
 
 % US50
 US50 & Visualización de planes de precio 
-& TK09 & Pricing Layout \& Parallax & Implementación visual de los planes de suscripción junto con el efecto de fondo parallax. & 0.75 & Trinidad, Jahat & Done \\ \cline{3-8}
-& & TK10 & Referrals Logic \& UI & Desarrollo de la interfaz e interactividad de la tarjeta del programa de referidos. & 0.5 & Trinidad, Jahat & Done \\ \hline
+& TK01 & Pricing Layout \& Parallax & Implementación visual de los planes de suscripción junto con el efecto de fondo parallax. & 0.75 & Trinidad, Jahat & Done \\ \cline{3-8}
+& & TK02 & Referrals Logic \& UI & Desarrollo de la interfaz e interactividad de la tarjeta del programa de referidos. & 0.5 & Trinidad, Jahat & Done \\ \hline
 
 % US49
 US49 & Exploración del equipo detrás de la plataforma 
-& TK12 & Mission \& Vision Intro & Creación de la interfaz para la sección introductoria y panel descriptivo de la misión. & 0.5 & Paredes, Victor & Done \\ \cline{3-8}
-& & TK13 & Team \& Partners Displays & Maquetación y efectos visuales de los perfiles del equipo de desarrollo y grilla de socios. & 0.5 & Paredes, Victor & Done \\ \hline
+& TK01 & Mission \& Vision Intro & Creación de la interfaz para la sección introductoria y panel descriptivo de la misión. & 0.5 & Paredes, Victor & Done \\ \cline{3-8}
+& & TK02 & Team \& Partners Displays & Maquetación y efectos visuales de los perfiles del equipo de desarrollo y grilla de socios. & 0.5 & Paredes, Victor & Done \\ \hline
 
 % US47
 US47 & Presentación del programa de referidos 
-& TK14 & Contact UI & Maquetación y estilos de los datos de contacto. & 0.75 & Espada, Piero & Done \\ \cline{3-8}
-& & TK15 & Footer Semantic Layout & Estructuración semántica y diseño responsivo del pie de página. & 0.5 & Santi, Fabrizio & Done \\ \hline
+& TK01 & Contact UI & Maquetación y estilos de los datos de contacto. & 0.75 & Espada, Piero & Done \\ \cline{3-8}
+& & TK02 & Footer Semantic Layout & Estructuración semántica y diseño responsivo del pie de página. & 0.5 & Santi, Fabrizio & Done \\ \hline
 
 \end{longtable}
 
@@ -107,62 +107,64 @@ Para garantizar la centralización, trazabilidad y correcta auditoría del códi
 
 A continuación, se presenta la matriz de control de versiones, la cual detalla el historial cronológico de commits realizados en el repositorio del proyecto.
 
-\begin{longtable}{|p{0.16\textwidth}|p{0.18\textwidth}|p{0.10\textwidth}|p{0.40\textwidth}|p{0.08\textwidth}|}
+\begin{longtable}{|p{0.14\textwidth}|p{0.18\textwidth}|p{0.10\textwidth}|p{0.38\textwidth}|p{0.12\textwidth}|}
 \hline
-\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Commited on (Date)} \\ \hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
 \endfirsthead
 
 \hline
-\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Commited on} \\ \hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
 \endhead
 
 % --- CRONOLOGÍA SPRINT 1 ---
-Viora-website & feature/plans-trial-afiliates & f32e856 & feat(plans-trial-affiliates): add pricing plans section with initial structure. & 26/04/2026 \\ \hline
-Viora-website & feature/landing-header & 619c1a0 & feat(landing-header): implement landing page header styles and mobile drawer. & 26/04/2026 \\ \hline
-Viora-website & feature/plans-trial-afiliates & 84f0dea & feat(plans-trial-affiliates): add css styles for plans trial affiliates section. & 26/04/2026 \\ \hline
-Viora-website & feature/about-section & b57ba9b & feat(about): add about intro and team members panel components. & 26/04/2026 \\ \hline
-Viora-website & feature/about-section & 13dd0c8 & feat(about): add learning from best panel with animations and layout. & 26/04/2026 \\ \hline
-Viora-website & feature/about-section & 6d6d545 & feat(about): add mission panel with responsive design and parallax effect. & 26/04/2026 \\ \hline
-Viora-website & feature/plans-trial-afiliates & 046c272 & feat(plans-trial-affiliates): implement plans trial affiliates section with html loading and initialization. & 26/04/2026 \\ \hline
-Viora-website & feature/about-section & 7c137e8 & feat(about): implement about section with mission, team members, and learning panels. & 26/04/2026 \\ \hline
-Viora-website & feature/landing-header & c06f8b9 & feat(landing-header): implement landing header HTML with i18n and accessibility support. & 26/04/2026 \\ \hline
-Viora-website & feature/landing-header & e36c60f & feat(landing-header): implement landing header logic and smooth scroll navigation. & 26/04/2026 \\ \hline
-Viora-website & feature/plans-trial-afiliates & e3fc6ad & feat(plans-trial-affiliates): add parallax intro section with pricing plans and images. & 26/04/2026 \\ \hline
-Viora-website & feature/plans-trial-afiliates & e40f2a5 & feat(plans-trial-affiliates): add css styles for parallax intro section. & 26/04/2026 \\ \hline
-Viora-website & & 9a8b785 & feat(plans-trial-affiliates): add parallax intro functionality with responsive image states. & 26/04/2026 \\ \hline
-Viora-website & feature/plans-trial-afiliates & 4071c15 & feat(plans-trial-affiliates): add html, css, and js files for pricing plans panel component. & 26/04/2026 \\ \hline
-Viora-website & feature/plans-trial-afiliates & bbf0b56 & feat(plans-trial-affiliates): add css styles for pricing plans panel component. & 26/04/2026 \\ \hline
-Viora-website & feature/plans-trial-afiliates & f32fc07 & feat(plans-trial-affiliates): implement pricing plans panel functionality with active plan and billing options. & 26/04/2026 \\ \hline
-Viora-website & feature/problem-solution & 3cc666a & feat(problem-solution): add html file for the problem-solution section. & 26/04/2026 \\ \hline
-Viora-website & feature/problem-solution & 303e405 & feat(problem-solution): add css file for the problem-solution section. & 26/04/2026 \\ \hline
-Viora-website & feature/problem-solution & 36ce286 & feat(problem-solution): add js file for the problem-solution section. & 26/04/2026 \\ \hline
-Viora-website & feature/plans-trial-afiliates & c4f2c9b & feat(plans-trial-affiliates): add referrals info section with html, css, and js files. & 26/04/2026 \\ \hline
-Viora-website & feature/problem-solution & 4aa1962 & feat(problem-solution): add html file for the solution panel. & 26/04/2026 \\ \hline
-Viora-website & feature/plans-trial-afiliates & db699d2 & feat(plans-trial-affiliates): add referrals info section styles and layout. & 26/04/2026 \\ \hline
-Viora-website & feature/problem-solution & 0ad082f & feat(problem-solution): add css file for the solution-panel. & 26/04/2026 \\ \hline
-Viora-website & feature/plans-trial-afiliates & 31df806 & feat(plans-trial-affiliates): implement referrals carousel functionality with pointer events and responsive behavior. & 26/04/2026 \\ \hline
-Viora-website & feature/problem-solution & c31e7cc & feat(problem-solution): add js file for the problem-panel. & 26/04/2026 \\ \hline
-Viora-website & feature/problem-solution & 9116e2d & feat(problem-solution): add html file for the problem-panel. & 26/04/2026 \\ \hline
-Viora-website & feature/problem-solution & 2dab8cf & feat(problem-solution): add css file for the problem-panel. & 26/04/2026 \\ \hline
-Viora-website & feature/problem-solution & 5358aa7 & feat(problem-solution): add css file for the expected-outcomes-panel. & 26/04/2026 \\ \hline
-Viora-website & feature/problem-solution & c973efb & feat(problem-solution): add js file for the expected-outcomes-panel. & 26/04/2026 \\ \hline
-Viora-website & feature/problem-solution & 92996b7 & feat(problem-solution): add html file for the expected-outcomes-panel. & 26/04/2026 \\ \hline
-Viora-website & feature/role-benefits & 1b41ce9 & feat(role-benefits): add template for role benefits section. & 26/04/2026 \\ \hline
-Viora-website & feature/role-benefits & 71dedb0 & feat(role-benefits): add styles for role benefits section. & 26/04/2026 \\ \hline
-Viora-website & feature/role-benefits & 6099d38 & feat(role-benefits): add script for role benefits section. & 26/04/2026 \\ \hline
-Viora-website & feature/testimonial & 86627a8 & feat(testimonial): Add testimonial css file. & 26/04/2026 \\ \hline
-Viora-website & feature/testimonial & 602e6c3 & feat(testimonial): Add testimonial html file. & 26/04/2026 \\ \hline
-Viora-website & feature/testimonial & a13ca69 & feat(testimonial): Add testimonial js file. & 26/04/2026 \\ \hline
-Viora-website & feature/contact & 13500db & feat(contact): Add contact css file. & 26/04/2026 \\ \hline
-Viora-website & feature/contact & a085104 & feat(contact): Add contact html file. & 26/04/2026 \\ \hline
-Viora-website & feature/contact & bfbaf1d & feat(contact): Add contact js file. & 26/04/2026 \\ \hline
-Viora-website & feature/hero & d6a6945 & feat(hero): add template, styles and script for hero section. & 26/04/2026 \\ \hline
-Viora-website & feature/hero & 9364aaf & feat(hero): add script for ambient sound. & 26/04/2026 \\ \hline
-Viora-website & fix/landing-header & bd9b790 & fix(landing-header): change location of template, styles and script. & 26/04/2026 \\ \hline
-Viora-website & feature/footer & 3e69e45 & feat(footer): add template, styles and script for footer section. & 26/04/2026 \\ \hline
+viora-website & feature/plans-trial-afiliates & f32e856 & feat(plans-trial-affiliates): add pricing plans section with initial structure. & 26/04/2026 \\ \hline
+viora-website & feature/landing-header & 619c1a0 & feat(landing-header): implement landing page header styles and mobile drawer. & 26/04/2026 \\ \hline
+viora-website & feature/plans-trial-afiliates & 84f0dea & feat(plans-trial-affiliates): add css styles for plans trial affiliates section. & 26/04/2026 \\ \hline
+viora-website & feature/about-section & b57ba9b & feat(about): add about intro and team members panel components. & 26/04/2026 \\ \hline
+viora-website & feature/about-section & 13dd0c8 & feat(about): add learning from best panel with animations and layout. & 26/04/2026 \\ \hline
+viora-website & feature/about-section & 6d6d545 & feat(about): add mission panel with responsive design and parallax effect. & 26/04/2026 \\ \hline
+viora-website & feature/plans-trial-afiliates & 046c272 & feat(plans-trial-affiliates): implement plans trial affiliates section with html loading and initialization. & 26/04/2026 \\ \hline
+viora-website & feature/about-section & 7c137e8 & feat(about): implement about section with mission, team members, and learning panels. & 26/04/2026 \\ \hline
+viora-website & feature/landing-header & c06f8b9 & feat(landing-header): implement landing header HTML with i18n and accessibility support. & 26/04/2026 \\ \hline
+viora-website & feature/landing-header & e36c60f & feat(landing-header): implement landing header logic and smooth scroll navigation. & 26/04/2026 \\ \hline
+viora-website & feature/plans-trial-afiliates & e3fc6ad & feat(plans-trial-affiliates): add parallax intro section with pricing plans and images. & 26/04/2026 \\ \hline
+viora-website & feature/plans-trial-afiliates & e40f2a5 & feat(plans-trial-affiliates): add css styles for parallax intro section. & 26/04/2026 \\ \hline
+viora-website & & 9a8b785 & feat(plans-trial-affiliates): add parallax intro functionality with responsive image states. & 26/04/2026 \\ \hline
+viora-website & feature/plans-trial-afiliates & 4071c15 & feat(plans-trial-affiliates): add html, css, and js files for pricing plans panel component. & 26/04/2026 \\ \hline
+viora-website & feature/plans-trial-afiliates & bbf0b56 & feat(plans-trial-affiliates): add css styles for pricing plans panel component. & 26/04/2026 \\ \hline
+viora-website & feature/plans-trial-afiliates & f32fc07 & feat(plans-trial-affiliates): implement pricing plans panel functionality with active plan and billing options. & 26/04/2026 \\ \hline
+viora-website & feature/problem-solution & 3cc666a & feat(problem-solution): add html file for the problem-solution section. & 26/04/2026 \\ \hline
+viora-website & feature/problem-solution & 303e405 & feat(problem-solution): add css file for the problem-solution section. & 26/04/2026 \\ \hline
+viora-website & feature/problem-solution & 36ce286 & feat(problem-solution): add js file for the problem-solution section. & 26/04/2026 \\ \hline
+viora-website & feature/plans-trial-afiliates & c4f2c9b & feat(plans-trial-affiliates): add referrals info section with html, css, and js files. & 26/04/2026 \\ \hline
+viora-website & feature/problem-solution & 4aa1962 & feat(problem-solution): add html file for the solution panel. & 26/04/2026 \\ \hline
+viora-website & feature/plans-trial-afiliates & db699d2 & feat(plans-trial-affiliates): add referrals info section styles and layout. & 26/04/2026 \\ \hline
+viora-website & feature/problem-solution & 0ad082f & feat(problem-solution): add css file for the solution-panel. & 26/04/2026 \\ \hline
+viora-website & feature/plans-trial-afiliates & 31df806 & feat(plans-trial-affiliates): implement referrals carousel functionality with pointer events and responsive behavior. & 26/04/2026 \\ \hline
+viora-website & feature/problem-solution & c31e7cc & feat(problem-solution): add js file for the problem-panel. & 26/04/2026 \\ \hline
+viora-website & feature/problem-solution & 9116e2d & feat(problem-solution): add html file for the problem-panel. & 26/04/2026 \\ \hline
+viora-website & feature/problem-solution & 2dab8cf & feat(problem-solution): add css file for the problem-panel. & 26/04/2026 \\ \hline
+viora-website & feature/problem-solution & 5358aa7 & feat(problem-solution): add css file for the expected-outcomes-panel. & 26/04/2026 \\ \hline
+viora-website & feature/problem-solution & c973efb & feat(problem-solution): add js file for the expected-outcomes-panel. & 26/04/2026 \\ \hline
+viora-website & feature/problem-solution & 92996b7 & feat(problem-solution): add html file for the expected-outcomes-panel. & 26/04/2026 \\ \hline
+viora-website & feature/role-benefits & 1b41ce9 & feat(role-benefits): add template for role benefits section. & 26/04/2026 \\ \hline
+viora-website & feature/role-benefits & 71dedb0 & feat(role-benefits): add styles for role benefits section. & 26/04/2026 \\ \hline
+viora-website & feature/role-benefits & 6099d38 & feat(role-benefits): add script for role benefits section. & 26/04/2026 \\ \hline
+viora-website & feature/testimonial & 86627a8 & feat(testimonial): Add testimonial css file. & 26/04/2026 \\ \hline
+viora-website & feature/testimonial & 602e6c3 & feat(testimonial): Add testimonial html file. & 26/04/2026 \\ \hline
+viora-website & feature/testimonial & a13ca69 & feat(testimonial): Add testimonial js file. & 26/04/2026 \\ \hline
+viora-website & feature/contact & 13500db & feat(contact): Add contact css file. & 26/04/2026 \\ \hline
+viora-website & feature/contact & a085104 & feat(contact): Add contact html file. & 26/04/2026 \\ \hline
+viora-website & feature/contact & bfbaf1d & feat(contact): Add contact js file. & 26/04/2026 \\ \hline
+viora-website & feature/hero & d6a6945 & feat(hero): add template, styles and script for hero section. & 26/04/2026 \\ \hline
+viora-website & feature/hero & 9364aaf & feat(hero): add script for ambient sound. & 26/04/2026 \\ \hline
+viora-website & fix/landing-header & bd9b790 & fix(landing-header): change location of template, styles and script. & 26/04/2026 \\ \hline
+viora-website & feature/footer & 3e69e45 & feat(footer): add template, styles and script for footer section. & 26/04/2026 \\ \hline
 \end{longtable}
 
 #### Execution Evidence for Sprint Review
+
+&nbsp;
 
 Durante este incremento, se logró implementar con éxito la totalidad del Sprint Backlog planificado. Los resultados abarcan desde la presentación de la propuesta de valor central (Hero Section y paneles de Problema/Solución), pasando por la exploración dinámica de beneficios segmentada (Productores y Especialistas), hasta la integración del modelo de suscripción, programa de referidos, carrusel de testimonios interactivos, y la estructura de contacto.
 
