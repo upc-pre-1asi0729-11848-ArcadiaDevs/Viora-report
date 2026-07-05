@@ -123,23 +123,6 @@ En ArcadiaDevs, lideraré la infraestructura de Viora: integración continua, au
 
 \vspace{0.6cm}
 
-\textbf{Li Gayoso, Diana Carolina (U202415749) - CMO \& UX Lead}
-
-\noindent
-\begin{minipage}[c]{0.22\textwidth}
-\centering
-\includegraphics[width=0.9\linewidth]{report/assets/members/diana.png}
-\end{minipage}
-\hfill
-\begin{minipage}[c]{0.74\textwidth}
-\raggedright
-Soy Diana Li Gayoso, tengo 19 años, soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas y CMO de Viora. Tengo conocimientos de C++. Entre mis fortalezas destaco la perseverancia, resiliencia y responsabilidad, así como la puntualidad y la disciplina, esforzándome mucho en lo que hago.
-
-En ArcadiaDevs, lideraré como UX Lead, enfocándome en el diseño y la experiencia del usuario, coordinando a mis compañeros para diseñar el proyecto para asegurarnos de la calidad del producto para nuestros usuarios.
-\end{minipage}
-
-\vspace{0.6cm}
-
 \textbf{Espada Lazo, Piero Anthony (U20241d924) - COO, Researcher \& QA}
 
 \noindent
