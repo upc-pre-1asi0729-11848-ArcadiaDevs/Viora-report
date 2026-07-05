@@ -1,6 +1,12 @@
 # Student Outcome {-}
 
-El curso contribuye significativamente a lograr el **Student Outcome 3: "Comunica oralmente con efectividad a diferentes rangos de audiencia** y **Comunica por escrito con efectividad a diferentes rangos de audiencia**. Durante el desarrollo del proyecto **Viora**, el equipo ha demostrado esta competencia mediante la coordinación de roles técnicos y de gestión, asegurando que cada integrante aporte desde su especialidad para alcanzar los hitos establecidos en cada entrega, promoviendo un ambiente de respeto y cumplimiento de metas comunes.
+El curso contribuye al cumplimiento del Student Outcome ABET:
+
+**ABET – EAC - Student Outcome 3**
+
+**Criterio:** Capacidad de comunicarse efectivamente con un rango de audiencias.
+
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
 
 | Criterio Específico | Acciones Realizadas | Conclusiones |
 | :--- | :--- | :--- |
