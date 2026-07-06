@@ -241,7 +241,50 @@ A continuación, se exponen las capturas de pantalla de las principales vistas i
 
 #### Services Documentation Evidence for Sprint Review
 
-&nbsp;
+La documentación oficial y centralizada de todos estos endpoints se encuentra desplegada y accesible a través del siguiente enlace directo: \url{https://os-viora-platform.onrender.com/swagger-ui/index.html#/}
+
+A continuación, se presenta la tabla detallada de los endpoints documentados, indicando las acciones soportadas, la sintaxis de llamada, parámetros requeridos y ejemplos descriptivos del response esperado.
+
+\begin{longtable}{|p{0.25\textwidth}|p{0.20\textwidth}|p{0.20\textwidth}|p{0.25\textwidth}|}
+\hline
+\textbf{Sintaxis de Llamada} & \textbf{Acción Implementada} & \textbf{Parámetros y Request Body} & \textbf{Ejemplo y Explicación del Response} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Sintaxis de Llamada} & \textbf{Acción Implementada} & \textbf{Parámetros y Request Body} & \textbf{Ejemplo y Explicación del Response} \\ \hline
+\endhead
+
+POST /api/\allowbreak v1/\allowbreak intervention-requests & Crear solicitud de asistencia & Body: JSON con plotId, issueDescription, expectedOutcome. & \textbf{201 Created:} Solicitud registrada. Ej: \texttt{\{"id":1, "status":"PENDING"\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak intervention-requests & Listar las solicitudes pendientes & Parámetros query: Ninguno. Body: N/A. & \textbf{200 OK:} Arreglo JSON. Ej: \texttt{[\{"id":1, "plotId":2\}]} \\ \hline
+GET /api/\allowbreak v1/\allowbreak specialists & Listar a los especialistas (Marketplace) & Parámetros query: Ninguno. Body: N/A. & \textbf{200 OK:} Especialistas disponibles. Ej: \texttt{[\{"name":"Dr. Agro"\}} \\ \hline
+POST /api/\allowbreak v1/\allowbreak service-proposals & Enviar propuesta de servicio & Body: JSON con requestId, specialistId, proposedCost, description. & \textbf{201 Created:} Propuesta enviada. Ej: \texttt{\{"id":5, "proposedCost":50.00\}} \\ \hline
+PATCH /api/\allowbreak v1/\allowbreak service-proposals/\allowbreak \{id\} & Aceptar o rechazar propuesta & Path: id. Body: JSON con action (e.g., ACCEPT). & \textbf{200 OK:} Estado actualizado. Ej: \texttt{\{"status":"ACCEPTED"\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak interventions & Ver el panel de intervenciones activas & Parámetros query: Ninguno. Body: N/A. & \textbf{200 OK:} Intervenciones activas. Ej: \texttt{[\{"status":"IN\_PROGRESS"\}]} \\ \hline
+GET /api/\allowbreak v1/\allowbreak interventions/\allowbreak \{id\} & Ver detalle de una intervención & Path: id. Body: N/A. & \textbf{200 OK:} Detalle completo. Ej: \texttt{\{"id":10, "status":"IN\_PROGRESS"\}} \\ \hline
+POST /api/\allowbreak v1/\allowbreak treatment-prescriptions & Emitir receta de tratamiento & Body: JSON con interventionId, treatmentInstructions, durationDays. & \textbf{201 Created:} Receta generada. Ej: \texttt{\{"id":2, "durationDays":7\}} \\ \hline
+POST /api/\allowbreak v1/\allowbreak intervention-outcomes & Reportar el impacto del tratamiento & Body: JSON con interventionId, successRating, observations. & \textbf{201 Created:} Resultado guardado. Ej: \texttt{\{"successRating":"HIGH"\}} \\ \hline
+POST /api/\allowbreak v1/\allowbreak expenses & Registar un nuevo gasto operativo & Body: JSON con plotId, amount, category, date, description. & \textbf{201 Created:} Gasto registrado. Ej: \texttt{\{"id":15, "amount":150.50\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak expenses & Historial de gastos para analíticas & Parámetros query: Ninguno. Body: N/A. & \textbf{200 OK:} Lista de gastos. Ej: \texttt{[\{"category":"FERTILIZER"\}]} \\ \hline
+POST /api/\allowbreak v1/\allowbreak checkouts & Generar el inicio de pago & Body: JSON con planId, billingCycle. & \textbf{201 Created:} URL de MercadoPago generada. Ej: \texttt{\{"paymentUrl":"https..."\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak invoices & Listar comprobantes de pago & Parámetros query: Ninguno. Body: N/A. & \textbf{200 OK:} Lista de facturas. Ej: \texttt{[\{"amount":29.99, "status":"PAID"\}]} \\ \hline
+GET /api/\allowbreak v1/\allowbreak subscriptions & Consultar estado de suscripción & Parámetros query: Ninguno. Body: N/A. & \textbf{200 OK:} Estado del plan. Ej: \texttt{\{"plan":"PREMIUM", "active":true\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak referrals & Ver enlace y estadísticas de referidos & Parámetros query: Ninguno. Body: N/A. & \textbf{200 OK:} Estadísticas de referidos. Ej: \texttt{\{"referralCode":"AGRO2026"\}} \\ \hline
+POST /api/\allowbreak v1/\allowbreak coupon-redemptions & Canjear código de descuento & Body: JSON con couponCode. & \textbf{201 Created:} Cupón canjeado exitosamente. Ej: \texttt{\{"discountApplied":10.0\}} \\ \hline
+
+\end{longtable}
+
+Para respaldar el trabajo realizado en la configuración de la documentación, a continuación se proporciona el URL oficial del repositorio backend y la relación de commits vinculados a este esfuerzo en el cuarto sprint:
+
+\begin{itemize}
+    \item \textbf{Repositorio de Web Services:} \url{https://github.com/upc-pre-1asi0729-11848-arcadiadevs/viora-platform}
+    \item \textbf{Commits relacionados con Documentación:}
+    \begin{itemize}
+        \item \texttt{b3012ba}: \textit{feat(controllers): add intervention outcomes controller with documentation.}
+        \item \texttt{69c5fcb}: \textit{feat(controllers): add intervention execution controller with documentation.}
+        \item \texttt{aaf796e}: \textit{feat(controllers): add treatment prescriptions controller with documentation.}
+        \item \texttt{35fa20c}: \textit{feat(intervention): update intervention request metrics, intervention requests and specialist candidates controllers.}
+    \end{itemize}
+\end{itemize}
 
 #### Software Deployment Evidence for Sprint Review
 
