@@ -463,7 +463,7 @@ viora-webapp & develop & e1e3e80 & feat(agronomic) integrate dashboard caching a
 \end{longtable}
 
 
-\textbf{Repository URL:} \url{https://github.com/viora-platform}
+\textbf{Repository URL:} \url{https://github.com/upc-pre-1asi0729-11848-arcadiadevs/viora-platform}
 
 #### Execution Evidence for Sprint Review
 
@@ -599,7 +599,7 @@ Adicionalmente, a continuación se presenta una captura de imagen de la interacc
 Para respaldar el trabajo realizado en la configuración de la documentación, a continuación se proporciona el URL oficial del repositorio backend y la relación de commits vinculados a este esfuerzo:
 
 \begin{itemize}
-    \item \textbf{Repositorio de Web Services:} \url{https://github.com/viora-platform}
+    \item \textbf{Repositorio de Web Services:} \url{https://github.com/upc-pre-1asi0729-11848-arcadiadevs/viora-platform}
     \item \textbf{Commits relacionados con Documentación:}
     \begin{itemize}
         \item \texttt{22ec9fe}: \textit{feat(shared): add openapi configuration for endpoints\.}
