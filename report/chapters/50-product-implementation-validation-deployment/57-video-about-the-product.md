@@ -18,4 +18,3 @@ Finalmente, las versiones publicadas del video para su visualización se encuent
 * **YouTube (Integración Landing Page):** https://youtu.be/hsNiK7cX_3k
 
 \newpage
-\
