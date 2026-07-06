@@ -28,7 +28,7 @@ A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el c
 En esta sección se presenta la matriz Leadership-and-Collaboration Matrix (LACX) correspondiente al Sprint 4, diseñada para fortalecer la coordinación estratégica y la especialización técnica dentro del ecosistema Viora. Para este incremento, el alcance se ha enfocado en consolidar el ciclo de asistencia técnica y expandir las capacidades operativas del sistema. En consecuencia, el equipo ha distribuido las responsabilidades entre los contextos Shared, Agronomic, Surveillance, Intervention, y PAM (Profile & Asset Management), incorporando además los nuevos contextos de IAM (Identity and Access Management) y Billing para soportar la gestión de autenticación y suscripciones. Esta distribución garantiza que las historias de usuario y técnicas planificadas (como la gestión de solicitudes, emisión de propuestas, certificación de recetas agronómicas y procesamiento de pagos) cuenten con un liderazgo claro para su integración exitosa.
 
 | Team Member (Last Name, First Name) | GitHub Username | Shared Context Leader (L) / Collab (C) | Agronomic Context Leader (L) / Collab (C) | Surveillance Context Leader (L) / Collab (C) | Intervention Context Leader (L) / Collab (C) | PAM Context Leader (L) / Collab (C) | Brand & Communication Leader (L) / Collab (C) | IAM Context Leader (L) / Collab (C) | Billing Context Leader (L) / Collab (C) |
-|---|---|---|---|---|---|---|---|---|---|
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Espada, Piero   | espadita2510 / pieroedeveloper25 | C | C | L | C | C | C | L | C |
 | Carpio, Josue   | josf17                           | C | C | C | L | C | C | C | L |
 | Paredes, Victor | DaronCameloft                    | C | C | C | C | C | L | C | C |
@@ -41,6 +41,7 @@ En esta sección se presenta la matriz Leadership-and-Collaboration Matrix (LACX
 &nbsp;
 
 #### Development Evidence for Sprint Review
+
 &nbsp;
 
 Durante el Sprint 4, el equipo de desarrollo desplegó de manera exitosa los incrementos correspondientes en los tres repositorios principales del proyecto, consolidando la integración continua de la solución. En primer lugar, el backend (**`viora-platform`**) fue actualizado para exponer la nueva estructura de servicios RESTful y persistencia de datos, habilitando los bounded contexts de Identity and Access Management (IAM), Profile & Asset Management (PAM), Intervention y Billing. En segundo lugar, la aplicación web (**`viora-webapp`**) se desplegó incorporando las interfaces reactivas necesarias para el consumo de telemetría IoT, flujos de solicitud de intervención, emisión de prescripciones técnicas, flujos de suscripción (checkout) y la autenticación/registro de usuarios, permitiendo así una interacción directa entre productores y especialistas. Finalmente, la landing page (**`viora-website`**) fue actualizada y desplegada para integrar la actualización de las secciones audiovisuales (video promocional y presentación del equipo), reforzando la propuesta de valor y la estrategia de comunicación. Estas actualizaciones conjuntas evidencian la implementación técnica de las historias planificadas en el Sprint Backlog.
@@ -81,6 +82,8 @@ A continuación, se presenta la matriz de control de versiones correspondiente a
 | viora-platform | feature/billing/subscription-payment-method | 8206d3a | feat(billing): store the real card from the mercadopago payment. | - | 2026-07-03 |
 
 #### Execution Evidence for Sprint Review
+
+&nbsp;
 
 Para la revisión del Sprint 4, el equipo ha preparado un conjunto de evidencias de ejecución que demuestran el cumplimiento del Sprint Goal. La demostración principal abarca el flujo end-to-end del ecosistema colaborativo de respuesta fitosanitaria correspondiente al Bounded Context de **Intervention**. Durante la sesión, se ejecutó el ciclo de vida de una solicitud de intervención: desde la solicitud de servicio por parte de un productor olivarero, pasando por la recepción de propuestas de servicio (*Service Proposals*) de los especialistas candidatos, hasta la aceptación del presupuesto, la emisión de la prescripción de tratamiento y la resolución final del caso. Esto demuestra la interoperabilidad entre las nuevas pantallas de la aplicación web (`viora-webapp`) y los endpoints del backend (`viora-platform`).
 
@@ -176,6 +179,28 @@ A continuación, se exponen las capturas de pantalla de las principales vistas i
 \caption{Vista general del historial de gastos agrónomicos.}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/15-expense-history-overview.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+
+\begin{figure}[H]
+\caption{Marketplace de intervenciones para especialistas.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/26-specialist-intervention-marketplace.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Formulario para el envío de propuesta de servicio.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/27-send-proposal.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Vista de solicitudes de asistencia pendientes.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-evidence/sprint-4/28-assistance-requests.jpeg}
 \caption*{\textit{Nota.} Elaboración propia.}
 \end{figure}
 
@@ -283,13 +308,97 @@ La Landing Page continuó desplegada en Vercel con despliegue automático (CI/CD
 
 Pasos realizados:
 
+1. Se accedió a la vista del proyecto para confirmar la configuración del servicio desplegado.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-deployment/sprint-3/ws-vercel-proyect-view.jpeg}
+\caption{Vista del proyecto en Vercel.}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+2. Se verificó la importación del repositorio vinculado al proyecto.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-deployment/sprint-3/ws-vercel-hitguh-repo-import.jpeg}
+\caption{Importación del repositorio en Vercel.}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
 
 Enlace de la Landing Page: \url{https://viora-website.vercel.app/}
+
+**4. Web Application (viora-webapp) — Firebase Hosting**
+
+La Web Application fue actualizada en Firebase Hosting, desplegando la versión 1.1.0 que incluye la integración con los endpoints del backend agronómico, la creación de parcelas con mapeo de límites, y la conexión con los datos de monitoreo en tiempo real.
+
+Pasos realizados:
+
+1. Se inició sesión en Firebase CLI con las credenciales del equipo.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-deployment/sprint-3/wa-firebase-cli-login.jpeg}
+\caption{Inicio de sesión en Firebase CLI.}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+2. Se configuró el hosting vinculado al proyecto de Firebase.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-deployment/sprint-3/wa-firebase-cli-hosting-setup.jpeg}
+\caption{Configuración de hosting en Firebase.}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+3. Se ejecutó el proceso de despliegue mediante Firebase CLI.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-deployment/sprint-3/wa-firebase-cli-deployment-process.jpeg}
+\caption{Proceso de despliegue en Firebase CLI.}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+4. Se verificó el overview del proyecto en la consola de Firebase.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-deployment/sprint-3/wa-firebase-project-overview.jpeg}
+\caption{Overview del proyecto en Firebase.}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+5. Se revisaron las estadísticas del proyecto en Firebase.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-deployment/sprint-3/wa-firebase-project-stats.jpeg}
+\caption{Estadísticas del proyecto en Firebase.}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+Enlace de la Webapp: \url{https://viora-webapp.web.app}
 
 #### Team Collaboration Insights for Sprint Review
 
 &nbsp;
 
+En esta sección se detallan las actividades de implementación llevadas a cabo durante el Sprint 4, orientadas a la integración de las segundas versiones de los Video About-the-Team y About-the-Product, los módulos de intervención, soporte y suscripciones para la Webapp de Viora y el Webservice de Viora. El proceso de desarrollo se ejecutó de manera ágil y estructurada, garantizando que todos los miembros del equipo tuvieran una participación técnica activa. Para respaldar la trazabilidad del trabajo colaborativo, a continuación se presentan las evidencias extraídas directamente de los analíticos de GitHub (Contributors). Estas capturas ilustran el flujo de integración, con la participación de los 5 autores.
+
+\begin{figure}[H]
+\caption{Vista de Contributors de Github - Website}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-review/sprint-4/contributors-website.png}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Vista de Contributors de Github - Webapp}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-review/sprint-4/contributors-webapp.png}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Vista de Contributors de Github - Webservice}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-review/sprint-4/contributors-webservice.png}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
 
 
 \newpage
