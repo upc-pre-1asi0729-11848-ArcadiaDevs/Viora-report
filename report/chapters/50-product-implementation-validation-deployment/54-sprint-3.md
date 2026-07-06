@@ -20,7 +20,7 @@ A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el c
 | **Sprint 2 Review Summary** | Durante el Sprint 2, se cumplió satisfactoriamente con el 100% de los objetivos mediante la refactorización y despliegue de una nueva versión del Landing Page, junto con la construcción de la primera versión del dashboard de la aplicación web exclusiva para los productores olivareros, logrando entregar 38 story points distribuidos en 13 historias de usuario implementadas. El incremento fue desplegado con éxito en Firebase bajo una arquitectura responsiva, respaldada por un flujo de trabajo colaborativo de 161 commits. Por su parte, el Product Owner validó que el producto cumple con el Sprint Goal al consolidar que la primera versión muestra información relevante únicamente para el segmento de productores, aprobando la entrega sin observaciones técnicas pendientes. A pesar de ello, aún se deben realizar correciones menores de optimización visual. |
 | **Sprint 2 Retrospective Summary** | Durante el sprint 2, el equipo indentificó que el tiempo designado para la documentación e implementación era corto, por lo que al haber contratiempos la calidad de la entrega y alcance del sprint planning podría ser afectado; por ello, se acordó en definir deadlines definitivas y posibles, para que se pueda identificar las razones de sobreestimaciones. De esta manera, cada integrante podrá determinar sus puntos de mejora personales y el equipo podrá desarrollarse, además, en este sprint se ha designado más tiempo para su elaboración. |
 | **Sprint 3 Goal** | **Nuestro enfoque** está en proporcionar un ecosistema colaborativo de respuesta fitosanitaria y monitoreo inteligente que conecte a productores olivareros y especialistas fitosanitarios mediante alertas predictivas, diagnóstico territorial y coordinación de intervenciones técnicas; **creemos que esto proporciona** una reducción del tiempo de reacción frente a amenazas biológicas y climáticas, una mayor capacidad de prevención operativa y una trazabilidad integral de las acciones ejecutadas tanto para productores como para especialistas dentro del ecosistema Viora; **esto se confirmará cuando** los productores puedan identificar riesgos activos en sus parcelas, solicitar asistencia técnica y dar seguimiento a las intervenciones realizadas, mientras los especialistas puedan prospectar zonas críticas, gestionar solicitudes de servicio y validar tratamientos sobre la base de información climática, satelital y agronómica consolidada. |
-| **Sprint 3 Velocity** | 100 |
+| **Sprint 3 Velocity** | 97 |
 | **Sum of Story Points** | 97 |
 
 #### Aspect Leaders and Collaborators
@@ -30,7 +30,7 @@ A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el c
 En esta sección se presenta la matriz Leadership-and-Collaboration Matrix (LACX) correspondiente al Sprint 3, diseñada para fortalecer la coordinación estratégica y la especialización técnica dentro del ecosistema Viora durante el desarrollo de la segunda versión de la aplicación web y la primera versión operativa del Servicio Web. Para este incremento, el alcance se ha reorganizado en torno a bounded contexts alineados con los principales procesos del negocio y los pain points identificados en los segmentos de productores olivareros y especialistas fitosanitarios. En consecuencia, el equipo ha distribuido las responsabilidades entre los contextos Shared, Agronomic, Surveillance, Intervention, y PAM (Profile & Asset Management), además de considerar la evolución y refinamiento de la Landing Page.
 
 | Team Member (Last Name, First Name) | GitHub Username | Shared Context Leader (L) / Collab (C) | Agronomic Context Leader (L) / Collab (C) | Surveillance Context Leader (L) / Collab (C) | Intervention Context Leader (L) / Collab (C) | PAM Context Leader (L) / Collab (C) | Brand & Communication Leader (L) / Collab (C) |
-|---|---|---|---|---|---|---|---|---|
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Carpio, Josue   | josf17                           | C | C | C | C | L | C |
 | Espada, Piero   | espadita2510 / pieroedeveloper25 | C | C | L | C | C | C |
 | Li, Diana       | peruvianMiau                     | C | C | C | L | C | C |
@@ -42,126 +42,126 @@ En esta sección se presenta la matriz Leadership-and-Collaboration Matrix (LACX
 
 &nbsp;
 
-El objetivo principal de este Sprint 3 es desarrollar la segunda versión de la aplicación web y la primera versión operativa del Servicio Web de Viora, mediante la incorporación de capacidades de autenticación segura, monitoreo fitosanitario inteligente, sincronización climática y satelital, gestión de alertas epidemiológicas y coordinación de intervenciones técnicas entre productores olivareros y especialistas fitosanitarios. Asimismo, el sprint contempla la consolidación de procesos de trazabilidad agronómica, reputación comunitaria y administración de perfiles y activos agrícolas, junto con el refinamiento incremental de la Landing Page y funcionalidades implementadas en iteraciones anteriores.
+El objetivo principal de este Sprint 3 es desarrollar la segunda versión de la aplicación web y la primera versión operativa del Servicio Web de Viora, mediante la incorporación de capacidades de autenticación segura, monitoreo fitosanitario inteligente, sincronización climática y satelital, gestión de alertas epidemiológicas y coordinación de intervenciones técnicas entre productores olivareros y especialistas fitosanitarios. Asimismo, el sprint contempla la consolidación de procesos de trazabilidad agronómica, y administración de perfiles, junto con el refinamiento incremental de la Landing Page y funcionalidades implementadas en iteraciones anteriores.
 
 \begin{figure}[H]
 \caption{Vista General del Sprint Backlog 3}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/sprint-backlog/sb3.png}
-\caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://trello.com/invite/b/6a1b2ed803a5bfcd16c6439c/ATTIf0554d374fee985e464bf104446c8676C57DDFD2/1asi0729-viora-sb3}
+\caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://tinyurl.com/1asi0729-trello-sb3}
 \end{figure}
 
-\begin{longtable}{|p{0.05\textwidth}|p{0.14\textwidth}|p{0.05\textwidth}|p{0.14\textwidth}|p{0.24\textwidth}|p{0.08\textwidth}|p{0.12\textwidth}|p{0.07\textwidth}|}
+\begin{longtable}{|p{0.05\textwidth}|p{0.14\textwidth}|p{0.05\textwidth}|p{0.14\textwidth}|p{0.24\textwidth}|p{0.06\textwidth}|p{0.10\textwidth}|p{0.06\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Sprint \#}} & \multicolumn{6}{l|}{Sprint 3} \\ \hline
 \multicolumn{2}{|l|}{\textbf{User Story}} & \multicolumn{6}{l|}{\textbf{Work-Item / Task}} \\ \hline
-\textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Estimation (Hours)} & \textbf{Assigned To} & \textbf{Status} \\ \hline
+\textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Est. (Hrs)} & \textbf{Assigned To} & \textbf{Status} \\ \hline
 \endfirsthead
 
 \hline
 \multicolumn{2}{|l|}{\textbf{User Story}} & \multicolumn{6}{l|}{\textbf{Work-Item / Task (Continuación)}} \\ \hline
-\textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Estimation} & \textbf{Assigned To} & \textbf{Status} \\ \hline
+\textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Est. (Hrs)} & \textbf{Assigned To} & \textbf{Status} \\ \hline
 \endhead
 
-% US47
-US47 & Exploración de beneficios para el Productor & TK01 & Presentación de todos los beneficios del segmento de productores & Implementación de cards con todos los beneficios ofrecidos para el segmento de productores & 1.0 & Paredes, Victor & Done \\ \hline
+% US45
+US45 & Exploración de beneficios para el Productor & TK01 & Presentación de todos los beneficios del segmento de productores & Implementación de cards con todos los beneficios ofrecidos para el segmento de productores & 1.0 & Paredes, Victor & Done \\ \hline
 
-% US48
-US48 & Exploración de beneficios para el Especialista & TK01 & Presentación de todos los beneficios del segmento de especialistas & Implementación de cards con todos los beneficios ofrecidos para el segmento de especialistas fitosanitarios & 1.0 & Paredes, Victor & Done \\ \hline
+% US46
+US46 & Exploración de beneficios para el Especialista & TK01 & Presentación de todos los beneficios del segmento de especialistas & Implementación de cards con todos los beneficios ofrecidos para el segmento de especialistas fitosanitarios & 1.0 & Paredes, Victor & Done \\ \hline
 
-% US51
-US51 & Exploración del equipo detrás de la plataforma & TK01 & Sección de video e imágenes del equipo & Implementación de placeholder para imágenes del equipo trabajo y el video About the team & 1.0 & Paredes, Victor & Done \\ \hline
+% US49
+US49 & Exploración del equipo detrás de la plataforma & TK01 & Sección de video e imágenes del equipo & Implementación de placeholder para imágenes del equipo trabajo y el video About the team & 1.0 & Paredes, Victor & Done \\ \hline
 
-% US08
-US08 & Monitoreo de telemetría IoT para decisiones hídricas & TK01 & Datos inválidos mostrados & Corregir que aparezcan elementos no existenten en la lista de dispositivos IoT & 1.0 & Paredes, Victor & Done \\ \hline
+% US06
+US06 & Monitoreo de telemetría IoT para decisiones hídricas & TK01 & Datos inválidos mostrados & Corregir que aparezcan elementos no existenten en la lista de dispositivos IoT & 1.0 & Paredes, Victor & Done \\ \hline
 
-% US15
-US15 & Alerta por frío insuficiente & TK01 & Componente de alerta de frío & Implementación de tipo de alerta fenológica de frío y filtro & 0.5 & Paredes, Victor & Done \\ \hline
+% US13
+US13 & Alerta por frío insuficiente & TK01 & Componente de alerta de frío & Implementación de tipo de alerta fenológica de frío y filtro & 0.5 & Paredes, Victor & Done \\ \hline
 
-% US21
-US21 & Consulta de zonas con alerta & TK01 & Radar fitosanitario con Mapbox & Implementación de mapa interactivo con marcadores georreferenciados de alertas epidemiológicas. & 2.0 & Paredes, Victor & Done \\ \hline
+% US19
+US19 & Consulta de zonas con alerta & TK01 & Radar fitosanitario con Mapbox & Implementación de mapa interactivo con marcadores georreferenciados de alertas epidemiológicas. & 2.0 & Paredes, Victor & Done \\ \hline
 
-% US22
-US22 & Filtrado de alertas por gravedad & TK01 & Filtro de severidad y tipo de plaga & Implementación de filtros dinámicos para alertas de plagas. & 1.0 & Paredes, Victor & To-do \\ \cline{3-8}
+% US20
+US20 & Filtrado de alertas por gravedad & TK01 & Filtro de severidad y tipo de plaga & Implementación de filtros dinámicos para alertas de plagas. & 1.0 & Paredes, Victor & To-do \\ \cline{3-8}
 & & TK02 & Panel de alertas filtradas & Implementación de listado sincronizado con las alertas visibles en el mapa. & 2.0 & Paredes, Victor & To-do \\ \hline
 
-% US24
-US24 & Identificación de especialistas cercanos & TK01 & Lista de especialistas disponibles & Implementación de lista de técnicos con datos de disponibilidad. & 1.0 & Espada, Piero & To-do \\ \cline{3-8}
+% US22
+US22 & Identificación de especialistas cercanos & TK01 & Lista de especialistas disponibles & Implementación de lista de técnicos con datos de disponibilidad. & 1.0 & Espada, Piero & To-do \\ \cline{3-8}
 & & TK02 & Indisposición de especialistas & Implementación de componente de especialistas no disponibles & 0.5 & Espada, Piero & To-do \\ \hline
 
-% US25
-US25 & Solicitud formal de intervención & TK01 & Solicitud de invervención & Implementación de creación de solicitud con estado en espera. & 1.0 & Li, Diana & To-do \\ \hline
+% US23
+US23 & Solicitud formal de intervención & TK01 & Solicitud de invervención & Implementación de creación de solicitud con estado en espera. & 1.0 & Li, Diana & To-do \\ \hline
 
-% US26
-US26 & Evaluación de disponibilidad operativa & TK01 & Lista de solicitudes en espera & Implementación de lista de solicitudes sin respuesta. & 1.0 & Li, Diana & To-do \\ \cline{3-8}
+% US24
+US24 & Evaluación de disponibilidad operativa & TK01 & Lista de solicitudes en espera & Implementación de lista de solicitudes sin respuesta. & 1.0 & Li, Diana & To-do \\ \cline{3-8}
 & & TK02 & Información de solicitud & Implementación de popup con datos de la unidad productiva y alerta. & 1.5 & Li, Diana & To-do \\ \hline
 
-% US27
-US27 & Resolución de la solicitud de intervención & TK01 & Aceptación de solicitud & Implementación de aceptación del especialista y visualización del productor. & 1.0 & Trinidad, Jahat & To-do \\ \cline{3-8}
+% US25
+US25 & Resolución de la solicitud de intervención & TK01 & Aceptación de solicitud & Implementación de aceptación del especialista y visualización del productor. & 1.0 & Trinidad, Jahat & To-do \\ \cline{3-8}
 & & TK02 & Lista de solicitudes rechazadas & Implementación de lista de solicitudes rechazadas. & 0.5 & Trinidad, Jahat & To-do \\ \cline{3-8}
 & & TK03 & Lista de solicitudes en proceso & Implementación de lista de solicitudes recientemente aceptadas preeliminarmente. & 0.5 & Trinidad, Jahat & To-do \\ \hline
 
-% US43
-US43 & Evaluación preliminar de la unidad productiva & TK01 & Información consolidada de la parcela & Implementación de resumen de últimos datos de trazabilidad de la parcela y últimas alertas recibidas & 2.0 & Trinidad, Jahat & To-do \\ \cline{3-8}
+% US26
+US26 & Evaluación preliminar de la unidad productiva & TK01 & Información consolidada de la parcela & Implementación de resumen de últimos datos de trazabilidad de la parcela y últimas alertas recibidas & 2.0 & Trinidad, Jahat & To-do \\ \cline{3-8}
 & & TK02 & Visualización del mapa de la parcela & Configurar Mapbox SDK para mostrar la parcela. & 1.0 & Trinidad, Jahat & To-do \\ \hline
 
-% US29
-US29 & Emisión de propuesta de servicio & TK01 & Creación de presupuesto & Implementación de formulario relacionado con la parcela asignada. & 1.0 & Carpio, Josue & To-do \\ \cline{3-8}
+% US27
+US27 & Emisión de propuesta de servicio & TK01 & Creación de presupuesto & Implementación de formulario relacionado con la parcela asignada. & 1.0 & Carpio, Josue & To-do \\ \cline{3-8}
 & & TK02 & Muestra de presupuesto & Implementación de cambio de estado de solicitud en aceptada & 0.5 & Carpio, Josue & To-do \\ \hline
 
-% US30
-US30 & Resolución de la propuesta de servicio & TK01 & Resolución de propuesta & Implementación de visualización del formulario para solo leer con opciones de aceptar o rechazar. & 1.0 & Santi, Fabrizio & To-do \\ \cline{3-8}
+% US28
+US28 & Resolución de la propuesta de servicio & TK01 & Resolución de propuesta & Implementación de visualización del formulario para solo leer con opciones de aceptar o rechazar. & 1.0 & Santi, Fabrizio & To-do \\ \cline{3-8}
 & & TK02 & Repetición del ciclo de búsqueda & Implementación de cambio de estado y retomar actividad de búsqueda de especialistas & 0.5 & Santi, Fabrizio & To-do \\ \cline{3-8}
 & & TK03 & Lista de propuestas rechazadas & Implementación de lista de propuestas rechazadas del especialista & 1.0 & Santi, Fabrizio & To-do \\ \hline
 
-% US31
-US31 & Habilitación de canal de comunicación directo & TK01 & Botón de contacto habilitado & Implementación de popup con datos de correo y whatsapp. & 1.0 & Trinidad, Jahat & To-do \\ \cline{3-8}
+% US29
+US29 & Habilitación de canal de comunicación directo & TK01 & Botón de contacto habilitado & Implementación de popup con datos de correo y whatsapp. & 1.0 & Trinidad, Jahat & To-do \\ \cline{3-8}
 & & TK02 & Botón de contacto deshabilitado & Implementación de tooltip para comunicar que se habilirá al aceptar una propuesta. & 0.5 & Trinidad, Jahat & To-do \\ \hline
 
-% US32
-US32 & Revisión de antecedentes agronómicos en campo & TK01 & Información de trazabilidad de la parcela & Implementación de resumen de últimos datos de trazabilidad de la parcela & 1.0 & Trinidad, Jahat & To-do \\ \cline{3-8}
+% US30
+US30 & Revisión de antecedentes agronómicos en campo & TK01 & Información de trazabilidad de la parcela & Implementación de resumen de últimos datos de trazabilidad de la parcela & 1.0 & Trinidad, Jahat & To-do \\ \cline{3-8}
 & & TK02 & Información de últimas alertas similares & Implementación de lista de alertas similares & 1.0 & Trinidad, Jahat & To-do \\ \hline
 
-% US33
-US33 & Registro de datos de inspección física & TK01 & Formulario de inspección física & Implementación de formulario para registrar observaciones biológicas y daños detectados. & 1.0 & Paredes, Victor & To-do \\ \cline{3-8}
+% US31
+US31 & Registro de datos de inspección física & TK01 & Formulario de inspección física & Implementación de formulario para registrar observaciones biológicas y daños detectados. & 1.0 & Paredes, Victor & To-do \\ \cline{3-8}
 & & TK02 & Registro de evidencias de inspección & Implementación de carga de imágenes y notas técnicas relacionadas a la parcela. & 1.5 & Paredes, Victor & To-do \\ \cline{3-8}
 & & TK03 & Resumen de hallavzgos de campo & Implementación de componente con resumen de observaciones registradas. & 0.5 & Paredes, Victor & To-do \\ \hline
 
-% US34
-US34 & Emisión de prescripción de agrofármacos & TK01 & Formulario de receta técnica & Implementación de formulario para registrar agrofármacos, dosis y método de aplicación. & 1.0 & Carpio, Josue & To-do \\ \cline{3-8}
+% US32
+US32 & Emisión de prescripción de agrofármacos & TK01 & Formulario de receta técnica & Implementación de formulario para registrar agrofármacos, dosis y método de aplicación. & 1.0 & Carpio, Josue & To-do \\ \cline{3-8}
 & & TK02 & Resumen de prescripción emitida & Implementación de componente de visualización de receta técnica generada. & 0.5 & Carpio, Josue & To-do \\ \cline{3-8}
 & & TK03 & Notificación de nueva receta & Implementación de mensaje de disponibilidad de plan de tratamiento para el productor. & 0.5 & Carpio, Josue & To-do \\ \hline
 
-% US07
-US07 & Delimitación de área productiva & TK01 & Configuración de Mapbox SDK & Implementación de mapa interactivo para delimitación de parcelas. & 2.0 & Victor, Paredes & Done \\ \cline{3-8}
+% US05
+US05 & Delimitación de área productiva & TK01 & Configuración de Mapbox SDK & Implementación de mapa interactivo para delimitación de parcelas. & 2.0 & Victor, Paredes & Done \\ \cline{3-8}
 & & TK02 & Herramienta de dibujo de polígonos & Implementación de selección de puntos y cierre de área geográfica. & 2.0 & Victor, Paredes & Done \\ \cline{3-8}
 & & TK03 & Validación de polígono incompleto & Implementación de validación para impedir parcelas sin cierre correcto. & 1.0 & Victor, Paredes & Done \\ \cline{3-8}
 & & TK04 & Visualización de parcela registrada & Implementación de componente de visualización de límites geográficos registrados. & 1.0 & Victor, Paredes & Done \\ \cline{3-8}
 & & TK05 & Vinculación climática automática & Implementación de asociación automática entre parcela y datos climáticos zonales. & 0.5 & Victor, Paredes & Done \\ \text{3-8}
 & & TK06 & Lista de parcelas & Implementación de lista de parcelas, con selección para ver el detalle de cada una y botón para la creación de una nueva. & 1.0 & Victor, Paredes & Done \\ \hline
 
-% US16
-US16 & Plan de fertilización ajustado al clima & TK01 & Generación de recomendación agronómica & Implementación de estrategia compensatoria según riesgo climático o fenológico. & 1.5 & Paredes, Victor & Done \\ \cline{3-8}
+% US14
+US14 & Plan de fertilización ajustado al clima & TK01 & Generación de recomendación agronómica & Implementación de estrategia compensatoria según riesgo climático o fenológico. & 1.5 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK02 & Resumen de tratamiento recomendado & Implementación de visualización de insumos y dosis sugeridas para mitigación. & 1.0 & Paredes, Victor & Done \\ \text{3-8}
 & & TK03 & Ajuste de ventana de aplicación & Implementación de actualización de recomendación según cambios climáticos. & 0.5 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK04 & Alerta de modificación climática & Implementación de notificación sobre cambio de ventana óptima de aplicación. & 0.5 & Paredes, Victor & Done \\ \hline
 
-% US35
-US35 & Certificación de aplicación de receta técnica & TK01 & Formulario de certificación de aplicación & Implementación de registro de fecha y dosificación aplicada en campo. & 1.0 & Li, Diana & To-do \\ \cline{3-8}
+% US33
+US33 & Certificación de aplicación de receta técnica & TK01 & Formulario de certificación de aplicación & Implementación de registro de fecha y dosificación aplicada en campo. & 1.0 & Li, Diana & To-do \\ \cline{3-8}
 & & TK02 & Actualización de historial de parcela & Implementación de consolidación de trazabilidad posterior a intervención. & 1.0 & Li, Diana & To-do \\ \text{3-8}
 & & TK03 & Advertencia de aplicación fuera de ventana & Implementación de mensaje de posible reducción de eficacia climática. & 0.5 & Li, Diana & To-do \\ \hline
 
-% US17
-US17 & Certificación de aplicación del plan de mitigación & TK01 & Formulario de certificación de intervención & Implementación de registro de fecha e insumos aplicados en campo. & 1.5 & Victor, Paredes & Done \\ \cline{3-8}
+% US15
+US15 & Certificación de aplicación del plan de mitigación & TK01 & Formulario de certificación de intervención & Implementación de registro de fecha e insumos aplicados en campo. & 1.5 & Victor, Paredes & Done \\ \cline{3-8}
 & & TK02 & Validación de datos obligatorios & Implementación de validación de insumos utilizados y fecha de intervención. & 0.5 & Victor, Paredes & Done \\ \hline
 
-% US36
-US36 & Consolidación del gasto de intervención & TK01 & Formulario de registro de gastos & Implementación de ingreso de costos operativos y agrofármacos utilizados. & 1.0 & Li, Diana & To-do \\ \cline{3-8}
+% US34
+US34 & Consolidación del gasto de intervención & TK01 & Formulario de registro de gastos & Implementación de ingreso de costos operativos y agrofármacos utilizados. & 1.0 & Li, Diana & To-do \\ \cline{3-8}
 & & TK02 & Actualización de métricas financieras & Implementación de recálculo de rentabilidad asociado a la parcela. & 1.0 & Li, Diana & To-do \\ \text{3-8}
 & & TK03 & Resumen económico de intervención & Implementación de visualización consolidada de gastos registrados. & 0.5 & Li, Diana & To-do \\ \hline
 
-% US18
-US18 & Consolidación del gasto de mitigación climática & TK01 & Formulario de gasto de mitigación climática & Implementación de ingreso de costos asociados al plan nutricional. & 1.0 & Victor, Paredes & Done \\ \cline{3-8}
+% US16
+US16 & Consolidación del gasto de mitigación climática & TK01 & Formulario de gasto de mitigación climática & Implementación de ingreso de costos asociados al plan nutricional. & 1.0 & Victor, Paredes & Done \\ \cline{3-8}
 & & TK02 & Validación de declaración financiera & Implementación de bloqueo de cierre sin registro de costos. & 0.5 & Victor, Paredes & Done \\ \text{3-8}
 & & TK03 & Actualización de rentabilidad productiva & Implementación de recálculo financiero posterior a la mitigación climática. & 1.0 & Victor, Paredes & Done \\ \hline
 
@@ -270,89 +270,89 @@ TS19 & Listar alertas epidemiológicas zonales & TK01 & Crear GetAlertsBySeverit
 & & TK08 & Exponer endpoint REST de alertas recientes & Añadir GET /api/v1/alerts?sort=recent\&limit=3 en AlertsController, retornando 200 OK con lista de AlertResource, 200 OK con arreglo vacío o 403 Forbidden cuando falle la propiedad. & 0.6 & Santi, Fabrizio & To-do \\ \hline
 
 % TS20
-TS20 & Crear solicitud de intervención técnica & TK01 & Definir InterventionRequest Aggregate Root & Definir InterventionRequest como aggregate root en la capa de dominio con InterventionRequestId, AlertId, ProducerUserId, SpecialistId y InterventionRequestStatus, inicializando estado en PENDING\_SPECIALIST\_REVIEW. & 0.6 & & To-do \\ \cline{3-8}
-& & TK02 & Definir InterventionRequestRepository & Crear InterventionRequestRepository en la capa de dominio con métodos save(InterventionRequest), findById(InterventionRequestId), existsByAlertIdAndStatusIn(AlertId, StatusCollection) y findByIdAndParticipant(InterventionRequestId, UserId). & 0.6 & & To-do \\ \text{3-8}
-& & TK03 & Implementar InterventionRequestRepository con Spring Data JPA & Crear InterventionRequestRepositoryImpl y SpringDataInterventionRequestRepository extends JpaRepository<InterventionRequest, Long>. Configurar columnas alert\_id, producer\_user\_id, specialist\_id y status, agregar índices por alert\_id + status y specialist\_id + status, e implementar existsByAlertIdAndStatusIn y findByIdAndParticipant usando @Query cuando el participante pueda ser productor o especialista. & 1.0 & & To-do \\ \cline{3-8}
-& & TK04 & Crear CreateInterventionRequestCommand & Crear CreateInterventionRequestCommand en la capa de aplicación con AlertId, ProducerUserId y SpecialistId, validando identificadores obligatorios para abrir el caso de atención. & 0.6 & & To-do \\ \cline{3-8}
-& & TK05 & Implementar InterventionRequestCommandService & Implementar InterventionRequestCommandService con handle(CreateInterventionRequestCommand), verificando existencia de alerta, disponibilidad de especialista y ausencia de solicitud activa para la misma alerta. & 0.7 & & To-do \\ \cline{3-8}
-& & TK06 & Exponer endpoint REST de solicitud de intervención & Crear InterventionRequestsController con POST /api/v1/interventions/requests, usando CreateInterventionRequestResource y InterventionRequestResource, retornando 201 Created o 400 Bad Request. & 0.6 & & To-do \\ \cline{3-8}
-& & TK07 & Definir SpecialistCandidateResource & Crear SpecialistCandidateResource en interfaces/rest con SpecialistId, FullName, ProfessionalSummary, AvailabilityStatus, ServiceZone, Rating y ProfileImageUrl para mostrar candidatos antes de crear la solicitud de intervención. & 0.7 & & To-do \\ \cline{3-8}
-& & TK08 & Crear GetSpecialistCandidatesByAlertIdQuery & Crear GetSpecialistCandidatesByAlertIdQuery en la capa de aplicación con AlertId y AuthenticatedProducerId, validando que la alerta pertenezca al productor autenticado antes de buscar candidatos. & 0.7 & & To-do \\ \cline{3-8}
-& & TK09 & Implementar SpecialistCandidateQueryService & Implementar SpecialistCandidateQueryService con handle(GetSpecialistCandidatesByAlertIdQuery), recuperando especialistas disponibles por zona de atención, disponibilidad operativa y relación con la alerta, retornando Result con lista vacía cuando no existan candidatos. & 0.8 & & To-do \\ \text{3-8}
-& & TK10 & Exponer endpoint REST de especialistas candidatos & Añadir GET /api/v1/interventions/candidates?alertId=\{alertId\} en InterventionRequestsController, retornando 200 OK con SpecialistCandidateResource, 200 OK con arreglo vacío, 403 Forbidden o 404 Not Found. & 0.7 & & To-do \\ \hline
+TS20 & Crear solicitud de intervención técnica & TK01 & Definir InterventionRequest Aggregate Root & Definir InterventionRequest como aggregate root en la capa de dominio con InterventionRequestId, AlertId, ProducerUserId, SpecialistId y InterventionRequestStatus, inicializando estado en PENDING\_SPECIALIST\_REVIEW. & 0.6 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK02 & Definir InterventionRequestRepository & Crear InterventionRequestRepository en la capa de dominio con métodos save(InterventionRequest), findById(InterventionRequestId), existsByAlertIdAndStatusIn(AlertId, StatusCollection) y findByIdAndParticipant(InterventionRequestId, UserId). & 0.6 & Paredes, Victor & To-do \\ \text{3-8}
+& & TK03 & Implementar InterventionRequestRepository con Spring Data JPA & Crear InterventionRequestRepositoryImpl y SpringDataInterventionRequestRepository extends JpaRepository<InterventionRequest, Long>. Configurar columnas alert\_id, producer\_user\_id, specialist\_id y status, agregar índices por alert\_id + status y specialist\_id + status, e implementar existsByAlertIdAndStatusIn y findByIdAndParticipant usando @Query cuando el participante pueda ser productor o especialista. & 1.0 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK04 & Crear CreateInterventionRequestCommand & Crear CreateInterventionRequestCommand en la capa de aplicación con AlertId, ProducerUserId y SpecialistId, validando identificadores obligatorios para abrir el caso de atención. & 0.6 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK05 & Implementar InterventionRequestCommandService & Implementar InterventionRequestCommandService con handle(CreateInterventionRequestCommand), verificando existencia de alerta, disponibilidad de especialista y ausencia de solicitud activa para la misma alerta. & 0.7 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK06 & Exponer endpoint REST de solicitud de intervención & Crear InterventionRequestsController con POST /api/v1/interventions/requests, usando CreateInterventionRequestResource y InterventionRequestResource, retornando 201 Created o 400 Bad Request. & 0.6 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK07 & Definir SpecialistCandidateResource & Crear SpecialistCandidateResource en interfaces/rest con SpecialistId, FullName, ProfessionalSummary, AvailabilityStatus, ServiceZone, Rating y ProfileImageUrl para mostrar candidatos antes de crear la solicitud de intervención. & 0.7 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK08 & Crear GetSpecialistCandidatesByAlertIdQuery & Crear GetSpecialistCandidatesByAlertIdQuery en la capa de aplicación con AlertId y AuthenticatedProducerId, validando que la alerta pertenezca al productor autenticado antes de buscar candidatos. & 0.7 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK09 & Implementar SpecialistCandidateQueryService & Implementar SpecialistCandidateQueryService con handle(GetSpecialistCandidatesByAlertIdQuery), recuperando especialistas disponibles por zona de atención, disponibilidad operativa y relación con la alerta, retornando Result con lista vacía cuando no existan candidatos. & 0.8 & Paredes, Victor & To-do \\ \text{3-8}
+& & TK10 & Exponer endpoint REST de especialistas candidatos & Añadir GET /api/v1/interventions/candidates?alertId=\{alertId\} en InterventionRequestsController, retornando 200 OK con SpecialistCandidateResource, 200 OK con arreglo vacío, 403 Forbidden o 404 Not Found. & 0.7 & Paredes, Victor & To-do \\ \hline
 
 % TS21
-TS21 & Consultar y actualizar estado de intervención & TK01 & Definir InterventionRequestStatusPolicy & Crear InterventionRequestStatusPolicy en la capa de dominio con canTransition(CurrentStatus, NextStatus), permitiendo solo transiciones válidas como PENDING\_SPECIALIST\_REVIEW a ACCEPTED o DECLINED. & 0.6 & & To-do \\ \cline{3-8}
-& & TK02 & Crear GetInterventionRequestByIdQuery & Crear GetInterventionRequestByIdQuery en la capa de aplicación con InterventionRequestId y AuthenticatedUserId para consultar una solicitud solo si el usuario participa en ella. & 0.6 & & To-do \\ \cline{3-8}
-& & TK03 & Crear UpdateInterventionRequestStatusCommand & Crear UpdateInterventionRequestStatusCommand en la capa de aplicación con InterventionRequestId, AuthenticatedUserId y NextStatus para aceptar o declinar una intervención. & 0.6 & & To-do \\ \cline{3-8}
-& & TK04 & Implementar consultas para solicitudes y contexto técnico & Extender SpringDataInterventionRequestRepository con consultas por requestId, specialistId, status y participante. Para el contexto técnico, implementar consultas de soporte que recuperen Alert, Plot, AgronomicStatistic y eventos relevantes mediante repositorios existentes, evitando N+1 con @EntityGraph o consultas específicas cuando se necesite información agregada. & 0.9 & & To-do \\ \cline{3-8}
-& & TK05 & Implementar InterventionRequestQueryService & Implementar InterventionRequestQueryService con handle(GetInterventionRequestByIdQuery), recuperando la solicitud y retornando FORBIDDEN cuando el usuario autenticado no sea participante. & 0.7 & & To-do \\ \cline{3-8}
-& & TK06 & Implementar actualización de estado de intervención & Implementar handle(UpdateInterventionRequestStatusCommand) en InterventionRequestCommandService, usando InterventionRequestStatusPolicy y persistiendo el nuevo estado con InterventionRequestRepository. & 0.7 & & To-do \\ \cline{3-8}
-& & TK07 & Exponer endpoints REST de consulta y estado & Añadir GET /api/v1/interventions/requests/\{requestId\} y PATCH /api/v1/interventions/requests/\{requestId\}/status, retornando 200 OK, 400 Bad Request, 403 Forbidden o 404 Not Found según el Result. & 0.6 & & To-do \\ \cline{3-8}
-& & TK08 & Crear GetInterventionRequestsBySpecialistQuery & Crear GetInterventionRequestsBySpecialistQuery en la capa de aplicación con SpecialistId, AuthenticatedUserId y Status opcional para listar solicitudes entrantes del especialista autenticado. & 0.6 & & To-do \\ \cline{3-8}
-& & TK09 & Implementar listado de solicitudes en InterventionRequestQueryService & Implementar handle(GetInterventionRequestsBySpecialistQuery) en InterventionRequestQueryService, validando que SpecialistId corresponda al usuario autenticado y retornando InterventionRequestResource con resumen del problema, severidad y ubicación general. & 0.7 & & To-do \\ \text{3-8}
-& & TK10 & Exponer endpoint REST de solicitudes entrantes & Añadir GET /api/v1/interventions/requests?specialistId=\{specialistId\}\&status=\{status\} en InterventionRequestsController, retornando 200 OK con lista de InterventionRequestResource o 403 Forbidden. & 0.6 & & To-do \\ \cline{3-8}
-& & TK11 & Definir InterventionTechnicalContextResource & Crear InterventionTechnicalContextResource en interfaces/rest con AlertSummary, PlotSummary, AgronomicHistory, Severity y LocationSummary para mostrar el contexto técnico de una solicitud aceptada. & 0.7 & & To-do \\ \cline{3-8}
-& & TK12 & Crear GetInterventionTechnicalContextQuery & Crear GetInterventionTechnicalContextQuery en la capa de aplicación con InterventionRequestId y AuthenticatedUserId, validando que el usuario participe en la solicitud antes de consultar el contexto técnico. & 0.7 & & To-do \\ \cline{3-8}
-& & TK13 & Implementar contexto técnico en InterventionRequestQueryService & Implementar handle(GetInterventionTechnicalContextQuery), consultando alerta activa, historial agronómico relevante, severidad y datos de parcela; retornar NOT\_FOUND si la solicitud no existe y FORBIDDEN si el usuario no participa. & 0.8 & & To-do \\ \cline{3-8}
-& & TK14 & Exponer endpoint REST de contexto técnico & Añadir GET /api/v1/interventions/requests/\{requestId\}/technical-context, retornando 200 OK con InterventionTechnicalContextResource, 403 Forbidden o 404 Not Found. & 0.7 & & To-do \\ \hline
+TS21 & Consultar y actualizar estado de intervención & TK01 & Definir InterventionRequestStatusPolicy & Crear InterventionRequestStatusPolicy en la capa de dominio con canTransition(CurrentStatus, NextStatus), permitiendo solo transiciones válidas como PENDING\_SPECIALIST\_REVIEW a ACCEPTED o DECLINED. & 0.6 & Li, Diana & To-do \\ \cline{3-8}
+& & TK02 & Crear GetInterventionRequestByIdQuery & Crear GetInterventionRequestByIdQuery en la capa de aplicación con InterventionRequestId y AuthenticatedUserId para consultar una solicitud solo si el usuario participa en ella. & 0.6 & Li, Diana & To-do \\ \cline{3-8}
+& & TK03 & Crear UpdateInterventionRequestStatusCommand & Crear UpdateInterventionRequestStatusCommand en la capa de aplicación con InterventionRequestId, AuthenticatedUserId y NextStatus para aceptar o declinar una intervención. & 0.6 & Li, Diana & To-do \\ \cline{3-8}
+& & TK04 & Implementar consultas para solicitudes y contexto técnico & Extender SpringDataInterventionRequestRepository con consultas por requestId, specialistId, status y participante. Para el contexto técnico, implementar consultas de soporte que recuperen Alert, Plot, AgronomicStatistic y eventos relevantes mediante repositorios existentes, evitando N+1 con @EntityGraph o consultas específicas cuando se necesite información agregada. & 0.9 & Li, Diana & To-do \\ \cline{3-8}
+& & TK05 & Implementar InterventionRequestQueryService & Implementar InterventionRequestQueryService con handle(GetInterventionRequestByIdQuery), recuperando la solicitud y retornando FORBIDDEN cuando el usuario autenticado no sea participante. & 0.7 & Li, Diana & To-do \\ \cline{3-8}
+& & TK06 & Implementar actualización de estado de intervención & Implementar handle(UpdateInterventionRequestStatusCommand) en InterventionRequestCommandService, usando InterventionRequestStatusPolicy y persistiendo el nuevo estado con InterventionRequestRepository. & 0.7 & Li, Diana & To-do \\ \cline{3-8}
+& & TK07 & Exponer endpoints REST de consulta y estado & Añadir GET /api/v1/interventions/requests/\{requestId\} y PATCH /api/v1/interventions/requests/\{requestId\}/status, retornando 200 OK, 400 Bad Request, 403 Forbidden o 404 Not Found según el Result. & 0.6 & Li, Diana & To-do \\ \cline{3-8}
+& & TK08 & Crear GetInterventionRequestsBySpecialistQuery & Crear GetInterventionRequestsBySpecialistQuery en la capa de aplicación con SpecialistId, AuthenticatedUserId y Status opcional para listar solicitudes entrantes del especialista autenticado. & 0.6 & Li, Diana & To-do \\ \cline{3-8}
+& & TK09 & Implementar listado de solicitudes en InterventionRequestQueryService & Implementar handle(GetInterventionRequestsBySpecialistQuery) en InterventionRequestQueryService, validando que SpecialistId corresponda al usuario autenticado y retornando InterventionRequestResource con resumen del problema, severidad y ubicación general. & 0.7 & Li, Diana & To-do \\ \text{3-8}
+& & TK10 & Exponer endpoint REST de solicitudes entrantes & Añadir GET /api/v1/interventions/requests?specialistId=\{specialistId\}\&status=\{status\} en InterventionRequestsController, retornando 200 OK con lista de InterventionRequestResource o 403 Forbidden. & 0.6 & Li, Diana & To-do \\ \cline{3-8}
+& & TK11 & Definir InterventionTechnicalContextResource & Crear InterventionTechnicalContextResource en interfaces/rest con AlertSummary, PlotSummary, AgronomicHistory, Severity y LocationSummary para mostrar el contexto técnico de una solicitud aceptada. & 0.7 & Li, Diana & To-do \\ \cline{3-8}
+& & TK12 & Crear GetInterventionTechnicalContextQuery & Crear GetInterventionTechnicalContextQuery en la capa de aplicación con InterventionRequestId y AuthenticatedUserId, validando que el usuario participe en la solicitud antes de consultar el contexto técnico. & 0.7 & Li, Diana & To-do \\ \cline{3-8}
+& & TK13 & Implementar contexto técnico en InterventionRequestQueryService & Implementar handle(GetInterventionTechnicalContextQuery), consultando alerta activa, historial agronómico relevante, severidad y datos de parcela; retornar NOT\_FOUND si la solicitud no existe y FORBIDDEN si el usuario no participa. & 0.8 & Li, Diana & To-do \\ \cline{3-8}
+& & TK14 & Exponer endpoint REST de contexto técnico & Añadir GET /api/v1/interventions/requests/\{requestId\}/technical-context, retornando 200 OK con InterventionTechnicalContextResource, 403 Forbidden o 404 Not Found. & 0.7 & Li, Diana & To-do \\ \hline
 
 % TS22
-TS22 & Formalizar propuesta de servicio & TK01 & Definir Proposal Aggregate Root & Definir Proposal como aggregate root en la capa de dominio con ProposalId, InterventionRequestId, SpecialistId, Budget, OperationalPlan y ProposalStatus, validando presupuesto positivo y plan operativo no vacío. & 0.6 & & To-do \\ \cline{3-8}
-& & TK02 & Definir ProposalRepository & Crear ProposalRepository en la capa de dominio con métodos save(Proposal), findByInterventionRequestId(InterventionRequestId) y existsByInterventionRequestId(InterventionRequestId). & 0.6 & & To-do \\ \cline{3-8}
-& & TK03 & Implementar ProposalRepository con Spring Data JPA & Crear ProposalRepositoryImpl y SpringDataProposalRepository extends JpaRepository<Proposal, Long>. Configurar columnas intervention\_request\_id, specialist\_id, budget, operational\_plan y status, agregar restricción única para intervention\_request\_id cuando aplique una sola propuesta activa, e implementar findByInterventionRequestId y existsByInterventionRequestId. & 0.9 & & To-do \\ \cline{3-8}
-& & TK04 & Crear CreateProposalCommand & Crear CreateProposalCommand en la capa de aplicación con InterventionRequestId, SpecialistId, Budget y OperationalPlan, validando datos requeridos antes de formalizar la propuesta. & 0.6 & & To-do \\ \cline{3-8}
-& & TK05 & Implementar ProposalCommandService & Implementar ProposalCommandService con handle(CreateProposalCommand), validando intervención aceptada, especialista asignado, ausencia de propuesta previa y persistencia mediante ProposalRepository. & 0.7 & & To-do \\ \cline{3-8}
-& & TK06 & Exponer endpoint REST de propuesta de servicio & Añadir POST /api/v1/interventions/\{interventionId\}/proposals, usando CreateProposalResource y ProposalResource, retornando 201 Created o 400 Bad Request. & 0.6 & & To-do \\ \cline{3-8}
-& & TK07 & Crear ResolveProposalStatusCommand & Crear ResolveProposalStatusCommand en la capa de aplicación con InterventionRequestId, ProposalId, ProducerUserId y ProposalStatus para aceptar o declinar una propuesta pendiente. & 0.7 & & To-do \\ \cline{3-8}
-& & TK08 & Agregar regla de transición en Proposal & Añadir domain logic en Proposal para permitir transición de PENDING a ACCEPTED o DECLINED, rechazando cambios cuando la propuesta ya fue resuelta. & 0.6 & & To-do \\ \cline{3-8}
-& & TK09 & Extender ProposalCommandService para resolución & Implementar handle(ResolveProposalStatusCommand) en ProposalCommandService, validando productor participante, propuesta existente, estado pendiente y persistiendo el nuevo estado mediante ProposalRepository. & 0.7 & & To-do \\ \cline{3-8}
-& & TK10 & Exponer endpoint REST de resolución de propuesta & Añadir PATCH /api/v1/interventions/\{interventionId\}/proposals/\{proposalId\}/status, usando UpdateProposalStatusResource y retornando 200 OK con ProposalResource, 400 Bad Request, 403 Forbidden o 404 Not Found. & 0.6 & & To-do \\ \hline
+TS22 & Formalizar propuesta de servicio & TK01 & Definir Proposal Aggregate Root & Definir Proposal como aggregate root en la capa de dominio con ProposalId, InterventionRequestId, SpecialistId, Budget, OperationalPlan y ProposalStatus, validando presupuesto positivo y plan operativo no vacío. & 0.6 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK02 & Definir ProposalRepository & Crear ProposalRepository en la capa de dominio con métodos save(Proposal), findByInterventionRequestId(InterventionRequestId) y existsByInterventionRequestId(InterventionRequestId). & 0.6 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK03 & Implementar ProposalRepository con Spring Data JPA & Crear ProposalRepositoryImpl y SpringDataProposalRepository extends JpaRepository<Proposal, Long>. Configurar columnas intervention\_request\_id, specialist\_id, budget, operational\_plan y status, agregar restricción única para intervention\_request\_id cuando aplique una sola propuesta activa, e implementar findByInterventionRequestId y existsByInterventionRequestId. & 0.9 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK04 & Crear CreateProposalCommand & Crear CreateProposalCommand en la capa de aplicación con InterventionRequestId, SpecialistId, Budget y OperationalPlan, validando datos requeridos antes de formalizar la propuesta. & 0.6 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK05 & Implementar ProposalCommandService & Implementar ProposalCommandService con handle(CreateProposalCommand), validando intervención aceptada, especialista asignado, ausencia de propuesta previa y persistencia mediante ProposalRepository. & 0.7 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK06 & Exponer endpoint REST de propuesta de servicio & Añadir POST /api/v1/interventions/\{interventionId\}/proposals, usando CreateProposalResource y ProposalResource, retornando 201 Created o 400 Bad Request. & 0.6 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK07 & Crear ResolveProposalStatusCommand & Crear ResolveProposalStatusCommand en la capa de aplicación con InterventionRequestId, ProposalId, ProducerUserId y ProposalStatus para aceptar o declinar una propuesta pendiente. & 0.7 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK08 & Agregar regla de transición en Proposal & Añadir domain logic en Proposal para permitir transición de PENDING a ACCEPTED o DECLINED, rechazando cambios cuando la propuesta ya fue resuelta. & 0.6 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK09 & Extender ProposalCommandService para resolución & Implementar handle(ResolveProposalStatusCommand) en ProposalCommandService, validando productor participante, propuesta existente, estado pendiente y persistiendo el nuevo estado mediante ProposalRepository. & 0.7 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK10 & Exponer endpoint REST de resolución de propuesta & Añadir PATCH /api/v1/interventions/\{interventionId\}/proposals/\{proposalId\}/status, usando UpdateProposalStatusResource y retornando 200 OK con ProposalResource, 400 Bad Request, 403 Forbidden o 404 Not Found. & 0.6 & Paredes, Victor & To-do \\ \hline
 
 % TS23
-TS23 & Obtener datos de contacto directo protegidos & TK01 & Crear GetContactByInterventionIdQuery & Crear GetContactByInterventionIdQuery en la capa de aplicación con InterventionRequestId y AuthenticatedUserId, validando que el usuario participe en la intervención. & 0.6 & & To-do \\ \cline{3-8}
-& & TK02 & Implementar ContactQueryService & Implementar ContactQueryService con handle(GetContactByInterventionIdQuery), validando intervención existente, propuesta aceptada y participación del usuario antes de retornar datos de contacto. & 0.7 & & To-do \\ \cline{3-8}
-& & TK03 & Implementar consultas protegidas de contacto & Crear un componente de infraestructura para recuperar datos de contacto desde ProfileRepository y ProposalRepository solo cuando la propuesta esté ACCEPTED. La consulta debe validar intervention\_request\_id, participante autenticado y estado confirmado antes de construir ContactResource, evitando exponer teléfonos o correos desde endpoints generales. & 0.9 & & To-do \\ \text{3-8}
-& & TK04 & Definir ContactResource & Crear ContactResource en interfaces/rest con datos de contacto permitidos para productor y especialista, evitando exponer información cuando el acuerdo no esté confirmado. & 0.6 & & To-do \\ \cline{3-8}
-& & TK05 & Exponer endpoint REST de datos de contacto & Añadir GET /api/v1/interventions/\{interventionId\}/contacts, retornando 200 OK con ContactResource, 403 Forbidden cuando no exista acuerdo confirmado y 404 Not Found si la intervención no existe. & 0.6 & & To-do \\ \hline
+TS23 & Obtener datos de contacto directo protegidos & TK01 & Crear GetContactByInterventionIdQuery & Crear GetContactByInterventionIdQuery en la capa de aplicación con InterventionRequestId y AuthenticatedUserId, validando que el usuario participe en la intervención. & 0.6 & Li, Diana & To-do \\ \cline{3-8}
+& & TK02 & Implementar ContactQueryService & Implementar ContactQueryService con handle(GetContactByInterventionIdQuery), validando intervención existente, propuesta aceptada y participación del usuario antes de retornar datos de contacto. & 0.7 & Li, Diana & To-do \\ \cline{3-8}
+& & TK03 & Implementar consultas protegidas de contacto & Crear un componente de infraestructura para recuperar datos de contacto desde ProfileRepository y ProposalRepository solo cuando la propuesta esté ACCEPTED. La consulta debe validar intervention\_request\_id, participante autenticado y estado confirmado antes de construir ContactResource, evitando exponer teléfonos o correos desde endpoints generales. & 0.9 & Li, Diana & To-do \\ \text{3-8}
+& & TK04 & Definir ContactResource & Crear ContactResource en interfaces/rest con datos de contacto permitidos para productor y especialista, evitando exponer información cuando el acuerdo no esté confirmado. & 0.6 & Li, Diana & To-do \\ \cline{3-8}
+& & TK05 & Exponer endpoint REST de datos de contacto & Añadir GET /api/v1/interventions/\{interventionId\}/contacts, retornando 200 OK con ContactResource, 403 Forbidden cuando no exista acuerdo confirmado y 404 Not Found si la intervención no existe. & 0.6 & Li, Diana & To-do \\ \hline
 
 % TS24
-TS24 & Registrar hallazgos de inspección física & TK01 & Definir Inspection Aggregate Root & Definir Inspection como aggregate root en la capa de dominio con InspectionId, InterventionRequestId, SpecialistId, Findings y EvidenceImageUrls, aplicando invariantes de hallazgos no vacíos y URLs HTTPS para evidencia. & 0.6 & & To-do \\ \cline{3-8}
-& & TK02 & Definir InspectionRepository & Crear InspectionRepository en la capa de dominio con métodos save(Inspection), findAllByInterventionRequestId(InterventionRequestId) y existsByInterventionRequestId(InterventionRequestId). & 0.6 & & To-do \\ \cline{3-8}
-& & TK03 & Implementar InspectionRepository con Spring Data JPA & Crear InspectionRepositoryImpl y SpringDataInspectionRepository extends JpaRepository<Inspection, Long>. Configurar columnas intervention\_request\_id, specialist\_id, findings y evidence\_image\_urls. Persistir evidenceImageUrls con @ElementCollection o converter JSON según la estrategia del proyecto, e implementar findAllByInterventionRequestId y existsByInterventionRequestId. & 1.0 & & To-do \\ \cline{3-8}
-& & TK04 & Crear CreateInspectionCommand & Crear CreateInspectionCommand en la capa de aplicación con InterventionRequestId, SpecialistId, Findings y EvidenceImageUrls, validando intervención aceptada y especialista asignado. & 0.7 & & To-do \\ \cline{3-8}
-& & TK05 & Implementar almacenamiento de evidencias con Cloudflare Images & Implementar InspectionEvidenceStorageService usando Cloudflare Images para subir imágenes de evidencia, validar formatos permitidos y retornar una colección de URLs públicas. & 1.0 & & To-do \\ \cline{3-8}
-& & TK06 & Implementar InspectionCommandService & Implementar InspectionCommandService con handle(CreateInspectionCommand), validando pertenencia del especialista, adjuntando EvidenceImageUrls y persistiendo Inspection con InspectionRepository. & 0.8 & & To-do \\ \cline{3-8}
-& & TK07 & Exponer endpoint REST de inspección física & Crear InspectionsController con POST /api/v1/interventions/\{interventionId\}/inspections, acptando JSON o multipart/form-data, y retornando 201 Created con InspectionResource o 400 Bad Request. & 0.6 & & To-do \\ \cline{3-8}
-& & TK08 & Definir PlotTraceabilityResource & Crear PlotTraceabilityResource en interfaces/rest con Certifications, Prescriptions, Expenses, Alerts y AgronomicEvents para mostrar la trazabilidad histórica durante la inspección. & 0.7 & & To-do \\ \cline{3-8}
-& & TK09 & Crear GetInterventionTraceabilityQuery & Crear GetInterventionTraceabilityQuery en la capa de aplicación con InterventionRequestId y AuthenticatedUserId, validando participación del especialista o productor antes de recuperar trazabilidad. & 0.8 & & To-do \\ \cline{3-8}
-& & TK10 & Implementar TraceabilityQueryService & Implementar TraceabilityQueryService con handle(GetInterventionTraceabilityQuery), recuperando eventos agronómicos, alertas, recetas, certificaciones y gastos vinculados a la parcela de la intervención. & 0.9 & & To-do \\ \cline{3-8}
-& & TK11 & Exponer endpoint REST de trazabilidad histórica & Añadir GET /api/v1/interventions/\{interventionId\}/traceability, retornando 200 OK con PlotTraceabilityResource, 403 Forbidden o 404 Not Found. & 0.7 & & To-do \\ \hline
+TS24 & Registrar hallazgos de inspección física & TK01 & Definir Inspection Aggregate Root & Definir Inspection como aggregate root en la capa de dominio con InspectionId, InterventionRequestId, SpecialistId, Findings y EvidenceImageUrls, aplicando invariantes de hallazgos no vacíos y URLs HTTPS para evidencia. & 0.6 & Espada, Piero & To-do \\ \cline{3-8}
+& & TK02 & Definir InspectionRepository & Crear InspectionRepository en la capa de dominio con métodos save(Inspection), findAllByInterventionRequestId(InterventionRequestId) y existsByInterventionRequestId(InterventionRequestId). & 0.6 & Espada, Piero & To-do \\ \cline{3-8}
+& & TK03 & Implementar InspectionRepository con Spring Data JPA & Crear InspectionRepositoryImpl y SpringDataInspectionRepository extends JpaRepository<Inspection, Long>. Configurar columnas intervention\_request\_id, specialist\_id, findings y evidence\_image\_urls. Persistir evidenceImageUrls con @ElementCollection o converter JSON según la estrategia del proyecto, e implementar findAllByInterventionRequestId y existsByInterventionRequestId. & 1.0 & Espada, Piero & To-do \\ \cline{3-8}
+& & TK04 & Crear CreateInspectionCommand & Crear CreateInspectionCommand en la capa de aplicación con InterventionRequestId, SpecialistId, Findings y EvidenceImageUrls, validando intervención aceptada y especialista asignado. & 0.7 & Espada, Piero & To-do \\ \cline{3-8}
+& & TK05 & Implementar almacenamiento de evidencias con Cloudflare Images & Implementar InspectionEvidenceStorageService usando Cloudflare Images para subir imágenes de evidencia, validar formatos permitidos y retornar una colección de URLs públicas. & 1.0 & Espada, Piero & To-do \\ \cline{3-8}
+& & TK06 & Implementar InspectionCommandService & Implementar InspectionCommandService con handle(CreateInspectionCommand), validando pertenencia del especialista, adjuntando EvidenceImageUrls y persistiendo Inspection con InspectionRepository. & 0.8 & Espada, Piero & To-do \\ \cline{3-8}
+& & TK07 & Exponer endpoint REST de inspección física & Crear InspectionsController con POST /api/v1/interventions/\{interventionId\}/inspections, acptando JSON o multipart/form-data, y retornando 201 Created con InspectionResource o 400 Bad Request. & 0.6 & Espada, Piero & To-do \\ \cline{3-8}
+& & TK08 & Definir PlotTraceabilityResource & Crear PlotTraceabilityResource en interfaces/rest con Certifications, Prescriptions, Expenses, Alerts y AgronomicEvents para mostrar la trazabilidad histórica durante la inspección. & 0.7 & Espada, Piero & To-do \\ \cline{3-8}
+& & TK09 & Crear GetInterventionTraceabilityQuery & Crear GetInterventionTraceabilityQuery en la capa de aplicación con InterventionRequestId y AuthenticatedUserId, validando participación del especialista o productor antes de recuperar trazabilidad. & 0.8 & Espada, Piero & To-do \\ \cline{3-8}
+& & TK10 & Implementar TraceabilityQueryService & Implementar TraceabilityQueryService con handle(GetInterventionTraceabilityQuery), recuperando eventos agronómicos, alertas, recetas, certificaciones y gastos vinculados a la parcela de la intervención. & 0.9 & Espada, Piero & To-do \\ \cline{3-8}
+& & TK11 & Exponer endpoint REST de trazabilidad histórica & Añadir GET /api/v1/interventions/\{interventionId\}/traceability, retornando 200 OK con PlotTraceabilityResource, 403 Forbidden o 404 Not Found. & 0.7 & Espada, Piero & To-do \\ \hline
 
 % TS25
-TS25 & Emitir receta técnica fitosanitaria & TK01 & Definir Prescription Aggregate Root & Definir Prescription como aggregate root en la capa de dominio con PrescriptionId, InterventionRequestId, SpecialistId, Inputs, Dosage, ApplicationDate y WeatherWarning, validando insumos, dosis y fecha de aplicación obligatorios. & 0.6 & & To-do \\ \cline{3-8}
-& & TK02 & Definir PrescriptionRepository & Crear PrescriptionRepository en la capa de dominio con métodos save(Prescription), findByInterventionRequestId(InterventionRequestId) y existsByInterventionRequestId(InterventionRequestId). & 0.6 & & To-do \\ \cline{3-8}
-& & TK03 & Implementar PrescriptionRepository con Spring Data JPA & Crear PrescriptionRepositoryImpl y SpringDataPrescriptionRepository extends JpaRepository<Prescription, Long>. Configurar columnas intervention\_request\_id, specialist\_id, dosage, application\_date y weather\_warning. Persistir Inputs como @ElementCollection o converter JSON, e implementar findByInterventionRequestId y existsByInterventionRequestId. & 0.9 & & To-do \\ \cline{3-8}
-& & TK04 & Crear WeatherApplicationWindowValidator & Crear WeatherApplicationWindowValidator como domain service para evaluar ApplicationDate contra condiciones climáticas y retornar advertencias sin bloquear la generación de la receta. & 0.6 & & To-do \\ \cline{3-8}
-& & TK05 & Crear CreatePrescriptionCommand & Crear CreatePrescriptionCommand en la capa de aplicación con InterventionRequestId, SpecialistId, Inputs, Dosage y ApplicationDate, validando que exista inspección previa antes de emitir receta. & 0.6 & & To-do \\ \cline{3-8}
-& & TK06 & Implementar PrescriptionCommandService & Implementar PrescriptionCommandService con handle(CreatePrescriptionCommand), validando especialista asignado, ejecutando WeatherApplicationWindowValidator y persistiendo Prescription con PrescriptionRepository. & 0.7 & & To-do \\ \cline{3-8}
-& & TK07 & Exponer endpoint REST de receta técnica & Crear PrescriptionsController con POST /api/v1/interventions/\{interventionId\}/prescriptions, usando CreatePrescriptionResource y PrescriptionResource, retornando 201 Created o 400 Bad Request. & 0.6 & & To-do \\ \hline
+TS25 & Emitir receta técnica fitosanitaria & TK01 & Definir Prescription Aggregate Root & Definir Prescription como aggregate root en la capa de dominio con PrescriptionId, InterventionRequestId, SpecialistId, Inputs, Dosage, ApplicationDate y WeatherWarning, validando insumos, dosis y fecha de aplicación obligatorios. & 0.6 & Carpio, Josue & To-do \\ \cline{3-8}
+& & TK02 & Definir PrescriptionRepository & Crear PrescriptionRepository en la capa de dominio con métodos save(Prescription), findByInterventionRequestId(InterventionRequestId) y existsByInterventionRequestId(InterventionRequestId). & 0.6 & Carpio, Josue & To-do \\ \cline{3-8}
+& & TK03 & Implementar PrescriptionRepository con Spring Data JPA & Crear PrescriptionRepositoryImpl y SpringDataPrescriptionRepository extends JpaRepository<Prescription, Long>. Configurar columnas intervention\_request\_id, specialist\_id, dosage, application\_date y weather\_warning. Persistir Inputs como @ElementCollection o converter JSON, e implementar findByInterventionRequestId y existsByInterventionRequestId. & 0.9 & Carpio, Josue & To-do \\ \cline{3-8}
+& & TK04 & Crear WeatherApplicationWindowValidator & Crear WeatherApplicationWindowValidator como domain service para evaluar ApplicationDate contra condiciones climáticas y retornar advertencias sin bloquear la generación de la receta. & 0.6 & Carpio, Josue & To-do \\ \cline{3-8}
+& & TK05 & Crear CreatePrescriptionCommand & Crear CreatePrescriptionCommand en la capa de aplicación con InterventionRequestId, SpecialistId, Inputs, Dosage y ApplicationDate, validando que exista inspección previa antes de emitir receta. & 0.6 & Carpio, Josue & To-do \\ \cline{3-8}
+& & TK06 & Implementar PrescriptionCommandService & Implementar PrescriptionCommandService con handle(CreatePrescriptionCommand), validando especialista asignado, ejecutando WeatherApplicationWindowValidator y persistiendo Prescription con PrescriptionRepository. & 0.7 & Carpio, Josue & To-do \\ \cline{3-8}
+& & TK07 & Exponer endpoint REST de receta técnica & Crear PrescriptionsController con POST /api/v1/interventions/\{interventionId\}/prescriptions, usando CreatePrescriptionResource y PrescriptionResource, retornando 201 Created o 400 Bad Request. & 0.6 & Carpio, Josue & To-do \\ \hline
 
 % TS26
-TS26 & Certificar ejecución de tratamientos en campo & TK01 & Definir Certification Aggregate Root & Definir Certification como aggregate root en la capa de dominio con CertificationId, PlotId, PrescriptionId, ProducerUserId y ExecutionDate, validando fecha de ejecución no futura y prescripción obligatoria. & 0.6 & & To-do \\ \cline{3-8}
-& & TK02 & Definir CertificationRepository & Crear CertificationRepository en la capa de dominio con métodos save(Certification), findByPrescriptionId(PrescriptionId), findAllByPlotId(PlotId) y existsByPrescriptionId(PrescriptionId). & 0.6 & & To-do \\ \cline{3-8}
-& & TK03 & Implementar CertificationRepository con Spring Data JPA & Crear CertificationRepositoryImpl y SpringDataCertificationRepository extends JpaRepository<Certification, Long>. Configurar columnas plot\_id, prescription\_id, producer\_user\_id y execution\_date, restricción única por prescription\_id para evitar duplicidad y consultas findByPrescriptionId, findAllByPlotId y existsByPrescriptionId. & 0.9 & & To-do \\ \cline{3-8}
-& & TK04 & Crear CreateCertificationCommand & Crear CreateCertificationCommand en la capa de aplicación con PlotId, PrescriptionId, ProducerUserId y ExecutionDate, validando datos necesarios para certificar ejecución. & 0.6 & & To-do \\ \cline{3-8}
-& & TK05 & Implementar CertificationCommandService & Implementar CertificationCommandService con handle(CreateCertificationCommand), validando propiedad de parcela, existencia de prescripción, ausencia de certificación previa y persistencia con CertificationRepository. & 0.7 & & To-do \\ \text{3-8}
-& & TK06 & Exponer endpoint REST de certificación & Crear CertificationsController con POST /api/v1/plots/\{plotId\}/certifications, usando CreateCertificationResource y CertificationResource, retornando 201 Created, 400 Bad Request o 403 Forbidden. & 0.6 & & To-do \\ \hline
+TS26 & Certificar ejecución de tratamientos en campo & TK01 & Definir Certification Aggregate Root & Definir Certification como aggregate root en la capa de dominio con CertificationId, PlotId, PrescriptionId, ProducerUserId y ExecutionDate, validando fecha de ejecución no futura y prescripción obligatoria. & 0.6 & Trinidad, Jahat & To-do \\ \cline{3-8}
+& & TK02 & Definir CertificationRepository & Crear CertificationRepository en la capa de dominio con métodos save(Certification), findByPrescriptionId(PrescriptionId), findAllByPlotId(PlotId) y existsByPrescriptionId(PrescriptionId). & 0.6 & Trinidad, Jahat & To-do \\ \cline{3-8}
+& & TK03 & Implementar CertificationRepository con Spring Data JPA & Crear CertificationRepositoryImpl y SpringDataCertificationRepository extends JpaRepository<Certification, Long>. Configurar columnas plot\_id, prescription\_id, producer\_user\_id y execution\_date, restricción única por prescription\_id para evitar duplicidad y consultas findByPrescriptionId, findAllByPlotId y existsByPrescriptionId. & 0.9 & Trinidad, Jahat & To-do \\ \cline{3-8}
+& & TK04 & Crear CreateCertificationCommand & Crear CreateCertificationCommand en la capa de aplicación con PlotId, PrescriptionId, ProducerUserId y ExecutionDate, validando datos necesarios para certificar ejecución. & 0.6 & Trinidad, Jahat & To-do \\ \cline{3-8}
+& & TK05 & Implementar CertificationCommandService & Implementar CertificationCommandService con handle(CreateCertificationCommand), validando propiedad de parcela, existencia de prescripción, ausencia de certificación previa y persistencia con CertificationRepository. & 0.7 & Trinidad, Jahat & To-do \\ \text{3-8}
+& & TK06 & Exponer endpoint REST de certificación & Crear CertificationsController con POST /api/v1/plots/\{plotId\}/certifications, usando CreateCertificationResource y CertificationResource, retornando 201 Created, 400 Bad Request o 403 Forbidden. & 0.6 & Trinidad, Jahat & To-do \\ \hline
 
 % TS27
-TS27 & Consolidar gastos operativos de mitigación & TK01 & Definir Expense Aggregate Root & Definir Expense como aggregate root en la capa de dominio con ExpenseId, PlotId, ProducerUserId, LaborCosts, InputCosts y TotalCost, calculando TotalCost desde reglas de dominio y rechazando costos negativos. & 0.6 & & To-do \\ \cline{3-8}
-& & TK02 & Definir ExpenseRepository & Crear ExpenseRepository en la capa de dominio con métodos save(Expense), findAllByPlotId(PlotId) y sumTotalCostByPlotId(PlotId) para consolidar gastos por parcela. & 0.6 & & To-do \\ \cline{3-8}
-& & TK03 & Implementar ExpenseRepository con Spring Data JPA & Crear ExpenseRepositoryImpl y SpringDataExpenseRepository extends JpaRepository<Expense, Long>. Configurar columnas plot\_id, producer\_user\_id, labor\_costs, input\_costs y total\_cost usando BigDecimal con precisión adecuada para PostgreSQL, e implementar findAllByPlotId y sumTotalCostByPlotId mediante @Query con COALESCE para evitar nulos. & 0.9 & & To-do \\ \cline{3-8}
-& & TK04 & Crear CreateExpenseCommand & Crear CreateExpenseCommand en la capa de aplicación con PlotId, ProducerUserId, LaborCosts e InputCosts, validando costos obligatorios y no negativos. & 0.6 & & To-do \\ \cline{3-8}
-& & TK05 & Implementar ExpenseCommandService & Implementar ExpenseCommandService con handle(CreateExpenseCommand), validando propiedad de parcela, creando Expense, persistiendo el gasto y actualizando métricas financieras asociadas. & 0.7 & & To-do \\ \cline{3-8}
-& & TK06 & Exponer endpoint REST de gastos operativos & Crear ExpensesController con POST /api/v1/plots/\{plotId\}/expenses, usando CreateExpenseResource y ExpenseResource, retornando 201 Created, 400 Bad Request o 403 Forbidden. & 0.6 & & To-do \\ \hline
+TS27 & Consolidar gastos operativos de mitigación & TK01 & Definir Expense Aggregate Root & Definir Expense como aggregate root en la capa de dominio con ExpenseId, PlotId, ProducerUserId, LaborCosts, InputCosts y TotalCost, calculando TotalCost desde reglas de dominio y rechazando costos negativos. & 0.6 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK02 & Definir ExpenseRepository & Crear ExpenseRepository en la capa de dominio con métodos save(Expense), findAllByPlotId(PlotId) y sumTotalCostByPlotId(PlotId) para consolidar gastos por parcela. & 0.6 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK03 & Implementar ExpenseRepository con Spring Data JPA & Crear ExpenseRepositoryImpl y SpringDataExpenseRepository extends JpaRepository<Expense, Long>. Configurar columnas plot\_id, producer\_user\_id, labor\_costs, input\_costs y total\_cost usando BigDecimal con precisión adecuada para PostgreSQL, e implementar findAllByPlotId y sumTotalCostByPlotId mediante @Query con COALESCE para evitar nulos. & 0.9 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK04 & Crear CreateExpenseCommand & Crear CreateExpenseCommand en la capa de aplicación con PlotId, ProducerUserId, LaborCosts e InputCosts, validando costos obligatorios y no negativos. & 0.6 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK05 & Implementar ExpenseCommandService & Implementar ExpenseCommandService con handle(CreateExpenseCommand), validando propiedad de parcela, creando Expense, persistiendo el gasto y actualizando métricas financieras asociadas. & 0.7 & Paredes, Victor & To-do \\ \cline{3-8}
+& & TK06 & Exponer endpoint REST de gastos operativos & Crear ExpensesController con POST /api/v1/plots/\{plotId\}/expenses, usando CreateExpenseResource y ExpenseResource, retornando 201 Created, 400 Bad Request o 403 Forbidden. & 0.6 & Paredes, Victor & To-do \\ \hline
 
 % TS31
 TS31 & Implementar Estrategia de Nomenclatura Snake\_Case y Pluralización & TK01 & Crear SnakeCasePhysicalNamingStrategy & Crear SnakeCasePhysicalNamingStrategy en la capa de infraestructura para convertir nombres camelCase a snake\_case en columnas, por ejemplo emailAddress a email\_address. & 0.2 & Li, Diana & Done \\ \cline{3-8}
