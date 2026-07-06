@@ -48,7 +48,7 @@ El objetivo principal de este Sprint es establecer la presencia digital estraté
 \caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://tinyurl.com/1asi0729-trello-sb1}
 \end{figure}
 
-\begin{longtable}{|p{0.05\textwidth}|p{0.14\textwidth}|p{0.05\textwidth}|p{0.14\textwidth}|p{0.24\textwidth}|p{0.08\textwidth}|p{0.12\textwidth}|p{0.07\textwidth}|}
+\begin{longtable}{|p{0.05\textwidth}|p{0.14\textwidth}|p{0.05\textwidth}|p{0.14\textwidth}|p{0.24\textwidth}|p{0.06\textwidth}|p{0.10\textwidth}|p{0.06\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Sprint \#}} & \multicolumn{6}{l|}{Sprint 1} \\ \hline
 \multicolumn{2}{|l|}{\textbf{User Story}} & \multicolumn{6}{l|}{\textbf{Work-Item / Task}} \\ \hline
