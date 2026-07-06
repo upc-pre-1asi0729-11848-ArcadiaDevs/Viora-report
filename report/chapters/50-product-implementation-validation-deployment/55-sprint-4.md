@@ -49,7 +49,7 @@ El objetivo principal de este Sprint 4 es consolidar el flujo end-to-end de asis
 \caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://tinyurl.com/1asi0729-trello-sb4}
 \end{figure}
 
-\begin{longtable}{|p{0.07\textwidth}|p{0.18\textwidth}|p{0.07\textwidth}|p{0.20\textwidth}|p{0.26\textwidth}|p{0.05\textwidth}|p{0.08\textwidth}|p{0.06\textwidth}|}
+\begin{longtable}{|p{0.05\textwidth}|p{0.14\textwidth}|p{0.05\textwidth}|p{0.14\textwidth}|p{0.24\textwidth}|p{0.06\textwidth}|p{0.10\textwidth}|p{0.06\textwidth}|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Sprint \#}} & \multicolumn{6}{l|}{Sprint 4} \\ \hline
 \multicolumn{2}{|l|}{\textbf{User Story}} & \multicolumn{6}{l|}{\textbf{Work-Item / Task}} \\ \hline
@@ -57,6 +57,7 @@ El objetivo principal de este Sprint 4 es consolidar el flujo end-to-end de asis
 \endfirsthead
 
 \hline
+\multicolumn{2}{|l|}{\textbf{User Story}} & \multicolumn{6}{l|}{\textbf{Work-Item / Task (Continuación)}} \\ \hline
 \textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Est. (Hrs)} & \textbf{Assigned To} & \textbf{Status} \\ \hline
 \endhead
 
@@ -238,41 +239,41 @@ A continuación, se presenta la matriz de control de versiones correspondiente a
 \hline
 \textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
 \endhead
-viora-website & feature/add-video-about-the-product & f977179 & feat(video): add real product video and team video playback controls. & 18/06/2026 \\ \hline
-viora-website & feature/fix-url-video-about-the-team & 07ab424 & feat(about-us): update youtube link for team video. & 21/06/2026 \\ \hline
-viora-webapp & feature/intervention/interventions-overview & 53198ed & feat(intervention): wire interventions route and navigation. & 01/07/2026 \\ \hline
-viora-webapp & feature/intervention/interventions-overview & 6bb1b3b & feat(intervention): add interventions overview screen. & 01/07/2026 \\ \hline
-viora-webapp & feature/intervention/interventions-overview & 4ffea22 & feat(intervention): add interventions store with lifecycle actions. & 01/07/2026 \\ \hline
-viora-webapp & feature/intervention/interventions-overview & ab33f77 & feat(intervention): add interventions domain model and api client. & 01/07/2026 \\ \hline
-viora-webapp & feature/agronomic/expense-history & 01d4228 & feat(intervention): register accepted proposal cost as a specialist expense. & 01/07/2026 \\ \hline
-viora-webapp & feature/intervention/expert-assistance-overview & 38dbe7f & feat(intervention): add specialist contact entity and response assembler for specialist details. & 01/07/2026 \\ \hline
-viora-webapp & feature/intervention/expert-assistance-overview & dfa7fc5 & feat(intervention): add service proposal entity and response handling for intervention requests. & 01/07/2026 \\ \hline
-viora-webapp & feature/intervention/expert-assistance-overview & 1d54c5b & feat(intervention): enhance specialist candidate resource with role and availability mapping. & 01/07/2026 \\ \hline
-viora-platform & feature/intervention/interventions-overview & 0f900ce & feat(intervention): simulate specialist prescription for the intervention lifecycle. & 01/07/2026 \\ \hline
-viora-platform & feature/intervention/interventions-overview & 43bca25 & feat(intervention): expose interventions overview rest endpoint. & 01/07/2026 \\ \hline
-viora-platform & feature/intervention/interventions-overview & ec3a46c & feat(intervention): add grower interventions read model composing the lifecycle. & 01/07/2026 \\ \hline
-viora-platform & feature/agronomic/nutrition-plan-expiry & bb59d68 & feat(agronomic): expire dynamic nutrition plans past their application window. & 01/07/2026 \\ \hline
-viora-platform & feature/iam/change-password & 6987545 & feat(auth): add change password in user aggregate. & 01/07/2026 \\ \hline
-viora-platform & feature/intervention/specialist-case-flow & 4bc703c & feat(intervention): link service proposals to request status and add specialist-response simulation. & 01/07/2026 \\ \hline
-viora-platform & feature/intervention/specialist-case-flow & 1538fe9 & feat(intervention): rank real specialists and expose profile with gated contact. & 01/07/2026 \\ \hline
-viora-platform & feature/intervention/specialist-case-flow & ff51a49 & feat(intervention): add specialist aggregate with seeded catalog and contact channels. & 01/07/2026 \\ \hline
-viora-platform & feature/intervention/list-grower-requests & 458f562 & feat(intervention): list grower requests by plot and expose plot id and timestamps. & 01/07/2026 \\ \hline
-viora-webapp & feature/billing/subscription & 3ca875a & feat(billing): add subscription overview screen with mercadopago checkout. & 02/07/2026 \\ \hline
-viora-webapp & feature/profile/settings-screens & becec1c & feat(profile): enhance coupon design with improved dimensions and hover effects. & 02/07/2026 \\ \hline
-viora-webapp & feature/profile/settings-screens & 6ef619d & feat(profile): keep coupon width stable and add a 3d tilt on the coupon detail. & 02/07/2026 \\ \hline
-viora-webapp & feature/profile/settings-screens & c6a6613 & feat(iam): add account-security frontend gateway. & 02/07/2026 \\ \hline
-viora-webapp & feature/intervention/interventions-overview & 621a12c & feat(surveillance): scope pest risk and probable threat to the selected plot. & 02/07/2026 \\ \hline
-viora-webapp & feature/intervention/interventions-overview & f94e775 & feat(intervention): resolve the linked alert when an intervention is closed as resolved. & 02/07/2026 \\ \hline
-viora-webapp & feature/billing/subscription & a5bf536 & feat(billing): surface mercadopago payment result on return. & 03/07/2026 \\ \hline
-viora-platform & feature/iam/authentication & 06d3e28 & feat(iam): seed the team test account. & 03/07/2026 \\ \hline
-viora-platform & feature/iam/authentication & 476d710 & feat(profile): expose profile bootstrap through an acl facade. & 03/07/2026 \\ \hline
-viora-platform & feature/iam/authentication & a959e67 & feat(billing): expose referral reward grant through an acl facade. & 03/07/2026 \\ \hline
-viora-platform & feature/iam/authentication & 2b7e0c8 & feat(iam): add brevo transactional email service. & 03/07/2026 \\ \hline
-viora-platform & feature/iam/authentication & f90c711 & feat(iam): add email identity and verification token flow. & 03/07/2026 \\ \hline
-viora-platform & feature/billing/subscription-payment-method & 8206d3a & feat(billing): store the real card from the mercadopago payment. & 03/07/2026 \\ \hline
-viora-website & chore/update-price & ab6d1c6 & chore(update): update specialist plan pricing. & 06/07/2026 \\ \hline
-viora-website & chore/update-video & c908246 & chore(video): update youtube link for team video. & 06/07/2026 \\ \hline
-viora-website & fix/pricing & 54f5c63 & fix(pricing): update pricing format in english and spanish localization files. & 06/07/2026 \\ \hline
+viora-website & feature/\allowbreak add-video-about-the-product & f977179 & feat(video): add real product video and team video playback controls. & 18/06/2026 \\ \hline
+viora-website & feature/\allowbreak fix-url-video-about-the-team & 07ab424 & feat(about-us): update youtube link for team video. & 21/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak intervention/\allowbreak interventions-overview & 53198ed & feat(intervention): wire interventions route and navigation. & 01/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak intervention/\allowbreak interventions-overview & 6bb1b3b & feat(intervention): add interventions overview screen. & 01/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak intervention/\allowbreak interventions-overview & 4ffea22 & feat(intervention): add interventions store with lifecycle actions. & 01/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak intervention/\allowbreak interventions-overview & ab33f77 & feat(intervention): add interventions domain model and api client. & 01/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak expense-history & 01d4228 & feat(intervention): register accepted proposal cost as a specialist expense. & 01/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak intervention/\allowbreak expert-assistance-overview & 38dbe7f & feat(intervention): add specialist contact entity and response assembler for specialist details. & 01/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak intervention/\allowbreak expert-assistance-overview & dfa7fc5 & feat(intervention): add service proposal entity and response handling for intervention requests. & 01/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak intervention/\allowbreak expert-assistance-overview & 1d54c5b & feat(intervention): enhance specialist candidate resource with role and availability mapping. & 01/07/2026 \\ \hline
+viora-platform & feature/\allowbreak intervention/\allowbreak interventions-overview & 0f900ce & feat(intervention): simulate specialist prescription for the intervention lifecycle. & 01/07/2026 \\ \hline
+viora-platform & feature/\allowbreak intervention/\allowbreak interventions-overview & 43bca25 & feat(intervention): expose interventions overview rest endpoint. & 01/07/2026 \\ \hline
+viora-platform & feature/\allowbreak intervention/\allowbreak interventions-overview & ec3a46c & feat(intervention): add grower interventions read model composing the lifecycle. & 01/07/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak nutrition-plan-expiry & bb59d68 & feat(agronomic): expire dynamic nutrition plans past their application window. & 01/07/2026 \\ \hline
+viora-platform & feature/\allowbreak iam/\allowbreak change-password & 6987545 & feat(auth): add change password in user aggregate. & 01/07/2026 \\ \hline
+viora-platform & feature/\allowbreak intervention/\allowbreak specialist-case-flow & 4bc703c & feat(intervention): link service proposals to request status and add specialist-response simulation. & 01/07/2026 \\ \hline
+viora-platform & feature/\allowbreak intervention/\allowbreak specialist-case-flow & 1538fe9 & feat(intervention): rank real specialists and expose profile with gated contact. & 01/07/2026 \\ \hline
+viora-platform & feature/\allowbreak intervention/\allowbreak specialist-case-flow & ff51a49 & feat(intervention): add specialist aggregate with seeded catalog and contact channels. & 01/07/2026 \\ \hline
+viora-platform & feature/\allowbreak intervention/\allowbreak list-grower-requests & 458f562 & feat(intervention): list grower requests by plot and expose plot id and timestamps. & 01/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak billing/\allowbreak subscription & 3ca875a & feat(billing): add subscription overview screen with mercadopago checkout. & 02/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak profile/\allowbreak settings-screens & becec1c & feat(profile): enhance coupon design with improved dimensions and hover effects. & 02/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak profile/\allowbreak settings-screens & 6ef619d & feat(profile): keep coupon width stable and add a 3d tilt on the coupon detail. & 02/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak profile/\allowbreak settings-screens & c6a6613 & feat(iam): add account-security frontend gateway. & 02/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak intervention/\allowbreak interventions-overview & 621a12c & feat(surveillance): scope pest risk and probable threat to the selected plot. & 02/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak intervention/\allowbreak interventions-overview & f94e775 & feat(intervention): resolve the linked alert when an intervention is closed as resolved. & 02/07/2026 \\ \hline
+viora-webapp & feature/\allowbreak billing/\allowbreak subscription & a5bf536 & feat(billing): surface mercadopago payment result on return. & 03/07/2026 \\ \hline
+viora-platform & feature/\allowbreak iam/\allowbreak authentication & 06d3e28 & feat(iam): seed the team test account. & 03/07/2026 \\ \hline
+viora-platform & feature/\allowbreak iam/\allowbreak authentication & 476d710 & feat(profile): expose profile bootstrap through an acl facade. & 03/07/2026 \\ \hline
+viora-platform & feature/\allowbreak iam/\allowbreak authentication & a959e67 & feat(billing): expose referral reward grant through an acl facade. & 03/07/2026 \\ \hline
+viora-platform & feature/\allowbreak iam/\allowbreak authentication & 2b7e0c8 & feat(iam): add brevo transactional email service. & 03/07/2026 \\ \hline
+viora-platform & feature/\allowbreak iam/\allowbreak authentication & f90c711 & feat(iam): add email identity and verification token flow. & 03/07/2026 \\ \hline
+viora-platform & feature/\allowbreak billing/\allowbreak subscription-payment-method & 8206d3a & feat(billing): store the real card from the mercadopago payment. & 03/07/2026 \\ \hline
+viora-website & chore/\allowbreak update-price & ab6d1c6 & chore(update): update specialist plan pricing. & 06/07/2026 \\ \hline
+viora-website & chore/\allowbreak update-video & c908246 & chore(video): update youtube link for team video. & 06/07/2026 \\ \hline
+viora-website & fix/\allowbreak pricing & 54f5c63 & fix(pricing): update pricing format in english and spanish localization files. & 06/07/2026 \\ \hline
 \end{longtable}
 
 #### Execution Evidence for Sprint Review
@@ -434,6 +435,8 @@ A continuación, se exponen las capturas de pantalla de las principales vistas i
 \end{figure}
 
 #### Services Documentation Evidence for Sprint Review
+
+&nbsp;
 
 La documentación oficial y centralizada de todos estos endpoints se encuentra desplegada y accesible a través del siguiente enlace directo: \url{https://os-viora-platform.onrender.com/swagger-ui/index.html#/}
 
