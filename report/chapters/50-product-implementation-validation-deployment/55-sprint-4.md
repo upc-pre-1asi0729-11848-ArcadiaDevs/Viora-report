@@ -40,6 +40,188 @@ En esta sección se presenta la matriz Leadership-and-Collaboration Matrix (LACX
 
 &nbsp;
 
+El objetivo principal de este Sprint 4 es consolidar el flujo end-to-end de asistencia experta (Intervention Bounded Context) y la monetización del ecosistema Viora, desarrollando capacidades integrales de gestión de solicitudes técnicas, emisión de propuestas, certificación de recetas agronómicas y cálculo de costos de intervención. Paralelamente, se integra el módulo de facturación (Billing) con flujos de suscripción, referidos y cupones, así como el despliegue del módulo completo de autenticación y seguridad (IAM). Finalmente, el sprint incluye la optimización de los elementos de conversión de la Landing Page, garantizando que el ciclo completo desde la captación hasta la resolución técnica en campo sea fluido y rastreable.
+
+\begin{figure}[H]
+\caption{Vista General del Sprint Backlog 4}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-backlog/sb4.png}
+\caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://tinyurl.com/1asi0729-trello-sb4}
+\end{figure}
+
+\begin{longtable}{|p{0.07\textwidth}|p{0.18\textwidth}|p{0.07\textwidth}|p{0.20\textwidth}|p{0.26\textwidth}|p{0.05\textwidth}|p{0.08\textwidth}|p{0.06\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Sprint \#}} & \multicolumn{6}{l|}{Sprint 4} \\ \hline
+\multicolumn{2}{|l|}{\textbf{User Story}} & \multicolumn{6}{l|}{\textbf{Work-Item / Task}} \\ \hline
+\textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Est. (Hrs)} & \textbf{Assigned To} & \textbf{Status} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Est. (Hrs)} & \textbf{Assigned To} & \textbf{Status} \\ \hline
+\endhead
+
+% US01
+US01 & Acceso a la cuenta según rol & TK01 & Formulario Sign In Base & Implementación de formulario sign in base & 1.0 & Espada, Piero & Done \\ \hline
+
+% US02
+US02 & Registro de cuenta por tipo de perfil & TK01 & Formulario Sign Up Base & Implementación de formulario sign up base & 1.0 & Espada, Piero & Done \\ \hline
+
+% US03
+US03 & Cierre de sesión seguro & TK01 & Invalidación de sesión de usuario & Implementación de invalidación de sesión de usuario & 1.0 & Espada, Piero & Done \\ \hline
+
+% US04
+US04 & Actualización de información básica & TK01 & Formulario de edición básica & Implementación de formulario de edición básica & 1.0 & Espada, Piero & Done \\ \hline
+
+% US06
+US06 & Monitoreo de telemetría IoT para decisiones hídricas & TK01 & Consumo de telemetría IoT & Implementación de consumo de telemetría iot & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US07
+US07 & Publicación de perfil profesional & TK01 & Publicación de perfil profesional & Implementación de publicación de perfil profesional & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US08
+US08 & Gestión de estado de disponibilidad & TK01 & Toggle de disponibilidad operativo & Implementación de toggle de disponibilidad operativo & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US22
+US22 & Identificación de especialistas cercanos & TK01 & Geolocalización de especialistas & Implementación de geolocalización de especialistas & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US23
+US23 & Solicitud formal de intervención & TK01 & Botón de solicitud formal & Implementación de botón de solicitud formal & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US24
+US24 & Evaluación de disponibilidad operativa & TK01 & Visualización de bandeja de entrada & Implementación de visualización de bandeja de entrada & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US25
+US25 & Resolución de la solicitud de intervención & TK01 & Acciones de Aceptación/Rechazo & Implementación de acciones de aceptación/rechazo & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US26
+US26 & Evaluación preliminar de la unidad productiva & TK01 & Consulta de diagnóstico preliminar & Implementación de consulta de diagnóstico preliminar & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US27
+US27 & Emisión de propuesta de servicio & TK01 & Formulario de propuesta económica & Implementación de formulario de propuesta económica & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US28
+US28 & Resolución de la propuesta de servicio & TK01 & Aprobación de cotización & Implementación de aprobación de cotización & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US29
+US29 & Habilitación de canal de comunicación directo & TK01 & Habilitar canal directo & Implementación de habilitar canal directo & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US30
+US30 & Revisión de antecedentes agronómicos en campo & TK01 & Acceso a historia en campo móvil & Implementación de acceso a historia en campo móvil & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US31
+US31 & Registro de datos de inspección física & TK01 & Formulario de observaciones clínicas & Implementación de formulario de observaciones clínicas & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US32
+US32 & Emisión de prescripción de agrofármacos & TK01 & Emisión digital de receta & Implementación de emisión digital de receta & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US33
+US33 & Certificación de aplicación de receta técnica & TK01 & Confirmación de tratamiento en campo & Implementación de confirmación de tratamiento en campo & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US34
+US34 & Consolidación del gasto de intervención & TK01 & Registro de gastos ejecutados & Implementación de registro de gastos ejecutados & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US35
+US35 & Registro de disposición de recontratación & TK01 & Preferencia de recontratación & Implementación de preferencia de recontratación & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US36
+US36 & Publicación de caso de éxito profesional & TK01 & Publicación de éxito profesional & Implementación de publicación de éxito profesional & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US37
+US37 & Actualización de credenciales de seguridad & TK01 & Actualización de credencial local & Implementación de actualización de credencial local & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US38
+US38 & Generación de enlace de invitación & TK01 & Compartir enlace de invitación & Implementación de compartir enlace de invitación & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US39
+US39 & Registro de cuenta mediante enlace de invitación & TK01 & Registro mediante referido & Implementación de registro mediante referido & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US40
+US40 & Registro del origen de invitación & TK01 & Panel de control de referidos & Implementación de panel de control de referidos & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US41
+US41 & Pago de la suscripción & TK01 & Vista de pasarela Checkout & Implementación de vista de pasarela checkout & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US42
+US42 & Cancelación de servicio y emisión de devoluciones & TK01 & Formulario de cancelación de plan & Implementación de formulario de cancelación de plan & 1.0 & Paredes, Victor & Done \\ \hline
+
+% US51
+US51 & Visualización del video promocional del producto & TK01 & Integrar video promocional & Implementación de integrar video promocional & 1.0 & Carpio, Josue & Done \\ \hline
+
+% US52
+US52 & Exploración del video del proceso y testimonios del equipo & TK01 & Integrar video sobre el equipo & Implementación de integrar video sobre el equipo & 1.0 & Carpio, Josue & Done \\ \hline
+
+% TS01
+TS01 & Autenticación de usuarios e inicio de sesión seguro & TK01 & Implementar TokenService y HashingService & Implementación de implementar tokenservice y hashingservice & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
+& & TK02 & Crear SignInCommand & Implementación de crear signincommand & 0.5 & Trinidad, Jahat & Done \\ \cline{3-8}
+& & TK03 & Exponer endpoint REST de login & Implementación de exponer endpoint rest de login & 0.5 & Trinidad, Jahat & Done \\ \hline
+
+% TS02
+TS02 & Crear cuenta de usuario por rol & TK01 & Definir User Aggregate Root & Implementación de definir user aggregate root & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
+& & TK02 & Implementar UserRepository con Spring Data JPA & Implementación de implementar userrepository con spring data jpa & 0.5 & Trinidad, Jahat & Done \\ \cline{3-8}
+& & TK03 & Crear SignUpCommand & Implementación de crear signupcommand & 0.5 & Trinidad, Jahat & Done \\ \cline{3-8}
+& & TK04 & Exponer endpoint REST de registro & Implementación de exponer endpoint rest de registro & 0.5 & Trinidad, Jahat & Done \\ \hline
+
+% TS03
+TS03 & Consultar y modificar perfil de usuario & TK01 & Definir Profile Aggregate Root & Implementación de definir profile aggregate root & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
+& & TK02 & Implementar ProfileRepository con Spring Data JPA & Implementación de implementar profilerepository con spring data jpa & 0.5 & Paredes, Victor & Done \\ \cline{3-8}
+& & TK03 & Crear UpdateProfileCommand & Implementación de crear updateprofilecommand & 0.5 & Paredes, Victor & Done \\ \cline{3-8}
+& & TK04 & Exponer endpoints REST de perfiles & Implementación de exponer endpoints rest de perfiles & 0.5 & Paredes, Victor & Done \\ \hline
+
+% TS04
+TS04 & Generar enlace de invitación y referidos & TK01 & Crear GenerateInvitationCommand & Implementación de crear generateinvitationcommand & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
+& & TK02 & Exponer endpoint REST de referidos & Implementación de exponer endpoint rest de referidos & 0.5 & Paredes, Victor & Done \\ \hline
+
+% TS17
+TS17 & Crear solicitud de intervención técnica & TK01 & Definir InterventionRequest Aggregate Root & Implementación de definir interventionrequest aggregate root & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK02 & Implementar InterventionRequestRepository con Spring Data JPA & Implementación de implementar interventionrequestrepository con spring data jpa & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK03 & Definir InterventionRequestRepository & Implementación de definir interventionrequestrepository & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK04 & Crear CreateInterventionRequestCommand & Implementación de crear createinterventionrequestcommand & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK05 & Implementar InterventionRequestCommandService & Implementación de implementar interventionrequestcommandservice & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK06 & Exponer endpoint REST de creación de solicitud & Implementación de exponer endpoint rest de creación de solicitud & 0.5 & Santi, Fabrizio & Done \\ \hline
+
+% TS18
+TS18 & Consultar y actualizar estado de intervención & TK01 & Crear UpdateInterventionStatusCommand & Implementación de crear updateinterventionstatuscommand & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK02 & Exponer endpoint REST de estado & Implementación de exponer endpoint rest de estado & 0.5 & Santi, Fabrizio & Done \\ \hline
+
+% TS19
+TS19 & Formalizar propuesta de servicio & TK01 & Definir ServiceProposal Entity & Implementación de definir serviceproposal entity & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK02 & Crear SubmitServiceProposalCommand & Implementación de crear submitserviceproposalcommand & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK03 & Exponer endpoint REST de propuestas & Implementación de exponer endpoint rest de propuestas & 0.5 & Santi, Fabrizio & Done \\ \hline
+
+% TS20
+TS20 & Obtener datos de contacto directo protegidos & TK01 & Obtener datos de contacto directo protegidos & Implementación de obtener datos de contacto directo protegidos & 1.0 & Santi, Fabrizio & Done \\ \hline
+
+% TS21
+TS21 & Registrar hallazgos de inspección física & TK01 & Definir InspectionFinding Value Object & Implementación de definir inspectionfinding value object & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK02 & Exponer endpoint REST de hallazgos & Implementación de exponer endpoint rest de hallazgos & 0.5 & Santi, Fabrizio & Done \\ \hline
+
+% TS22
+TS22 & Emitir receta técnica fitosanitaria & TK01 & Definir TechnicalRecipe Entity & Implementación de definir technicalrecipe entity & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK02 & Exponer endpoint REST de recetas & Implementación de exponer endpoint rest de recetas & 0.5 & Santi, Fabrizio & Done \\ \hline
+
+% TS23
+TS23 & Certificar ejecución de tratamientos en campo & TK01 & Implementar CertifyTreatmentExecutionCommand & Implementación de implementar certifytreatmentexecutioncommand & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK02 & Exponer endpoint REST de certificación & Implementación de exponer endpoint rest de certificación & 0.5 & Santi, Fabrizio & Done \\ \hline
+
+% TS24
+TS24 & Consolidar gastos operativos de mitigación & TK01 & Definir InterventionCost Entity & Implementación de definir interventioncost entity & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK02 & Exponer endpoint REST de costos & Implementación de exponer endpoint rest de costos & 0.5 & Santi, Fabrizio & Done \\ \hline
+
+% TS25
+TS25 & Cerrar intervención y evaluar servicio público & TK01 & Crear CloseInterventionCommand & Implementación de crear closeinterventioncommand & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK02 & Exponer endpoint REST de cierre & Implementación de exponer endpoint rest de cierre & 0.5 & Santi, Fabrizio & Done \\ \hline
+
+% TS26
+TS26 & Procesar pago de suscripción y vigencia de planes & TK01 & Definir Subscription Aggregate Root & Implementación de definir subscription aggregate root & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
+& & TK02 & Implementar SubscriptionRepository con Spring Data JPA & Implementación de implementar subscriptionrepository con spring data jpa & 0.5 & Paredes, Victor & Done \\ \cline{3-8}
+& & TK03 & Crear ProcessPaymentCommand & Implementación de crear processpaymentcommand & 0.5 & Paredes, Victor & Done \\ \cline{3-8}
+& & TK04 & Exponer endpoint REST de pagos & Implementación de exponer endpoint rest de pagos & 0.5 & Paredes, Victor & Done \\ \hline
+
+% TS27
+TS27 & Cancelar renovación automática de suscripción & TK01 & Crear CancelSubscriptionCommand & Implementación de crear cancelsubscriptioncommand & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
+& & TK02 & Exponer endpoint REST de cancelación & Implementación de exponer endpoint rest de cancelación & 0.5 & Paredes, Victor & Done \\ \hline
+\end{longtable}
+
 #### Development Evidence for Sprint Review
 
 &nbsp;
@@ -48,38 +230,50 @@ Durante el Sprint 4, el equipo de desarrollo desplegó de manera exitosa los inc
 
 A continuación, se presenta la matriz de control de versiones correspondiente al Sprint 4, la cual detalla el historial de commits más importantes de los repositorios (cabe destacar que todos los repositorios mencionados se encuentran alojados bajo el prefijo de la organización upc-pre-1asi0729-11848-arcadiadevs/):
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| viora-webapp | feature/intervention/interventions-overview | 53198ed | feat(intervention): wire interventions route and navigation. | - | 2026-07-01 |
-| viora-webapp | feature/intervention/interventions-overview | 6bb1b3b | feat(intervention): add interventions overview screen. | - | 2026-07-01 |
-| viora-webapp | feature/intervention/interventions-overview | 4ffea22 | feat(intervention): add interventions store with lifecycle actions. | - | 2026-07-01 |
-| viora-webapp | feature/intervention/interventions-overview | ab33f77 | feat(intervention): add interventions domain model and api client. | - | 2026-07-01 |
-| viora-webapp | feature/agronomic/expense-history | 01d4228 | feat(intervention): register accepted proposal cost as a specialist expense. | - | 2026-07-01 |
-| viora-webapp | feature/intervention/expert-assistance-overview | 38dbe7f | feat(intervention): add specialist contact entity and response assembler for specialist details. | - | 2026-07-01 |
-| viora-webapp | feature/intervention/expert-assistance-overview | dfa7fc5 | feat(intervention): add service proposal entity and response handling for intervention requests. | - | 2026-07-01 |
-| viora-webapp | feature/intervention/expert-assistance-overview | 1d54c5b | feat(intervention): enhance specialist candidate resource with role and availability mapping. | - | 2026-07-01 |
-| viora-platform | feature/intervention/interventions-overview | 0f900ce | feat(intervention): simulate specialist prescription for the intervention lifecycle. | - | 2026-07-01 |
-| viora-platform | feature/intervention/interventions-overview | 43bca25 | feat(intervention): expose interventions overview rest endpoint. | - | 2026-07-01 |
-| viora-platform | feature/intervention/interventions-overview | ec3a46c | feat(intervention): add grower interventions read model composing the lifecycle. | - | 2026-07-01 |
-| viora-platform | feature/agronomic/nutrition-plan-expiry | bb59d68 | feat(agronomic): expire dynamic nutrition plans past their application window. | - | 2026-07-01 |
-| viora-platform | feature/iam/change-password | 6987545 | feat(auth): add change password in user aggregate. | - | 2026-07-01 |
-| viora-platform | feature/intervention/specialist-case-flow | 4bc703c | feat(intervention): link service proposals to request status and add specialist-response simulation. | - | 2026-07-01 |
-| viora-platform | feature/intervention/specialist-case-flow | 1538fe9 | feat(intervention): rank real specialists and expose profile with gated contact. | - | 2026-07-01 |
-| viora-platform | feature/intervention/specialist-case-flow | ff51a49 | feat(intervention): add specialist aggregate with seeded catalog and contact channels. | - | 2026-07-01 |
-| viora-platform | feature/intervention/list-grower-requests | 458f562 | feat(intervention): list grower requests by plot and expose plot id and timestamps. | - | 2026-07-01 |
-| viora-webapp | feature/billing/subscription | 3ca875a | feat(billing): add subscription overview screen with mercadopago checkout. | - | 2026-07-02 |
-| viora-webapp | feature/profile/settings-screens | becec1c | feat(profile): enhance coupon design with improved dimensions and hover effects. | - | 2026-07-02 |
-| viora-webapp | feature/profile/settings-screens | 6ef619d | feat(profile): keep coupon width stable and add a 3d tilt on the coupon detail. | - | 2026-07-02 |
-| viora-webapp | feature/profile/settings-screens | c6a6613 | feat(iam): add account-security frontend gateway. | - | 2026-07-02 |
-| viora-webapp | feature/intervention/interventions-overview | 621a12c | feat(surveillance): scope pest risk and probable threat to the selected plot. | - | 2026-07-02 |
-| viora-webapp | feature/intervention/interventions-overview | f94e775 | feat(intervention): resolve the linked alert when an intervention is closed as resolved. | - | 2026-07-02 |
-| viora-webapp | feature/billing/subscription | a5bf536 | feat(billing): surface mercadopago payment result on return. | - | 2026-07-03 |
-| viora-platform | feature/iam/authentication | 06d3e28 | feat(iam): seed the team test account. | - | 2026-07-03 |
-| viora-platform | feature/iam/authentication | 476d710 | feat(profile): expose profile bootstrap through an acl facade. | - | 2026-07-03 |
-| viora-platform | feature/iam/authentication | a959e67 | feat(billing): expose referral reward grant through an acl facade. | - | 2026-07-03 |
-| viora-platform | feature/iam/authentication | 2b7e0c8 | feat(iam): add brevo transactional email service. | - | 2026-07-03 |
-| viora-platform | feature/iam/authentication | f90c711 | feat(iam): add email identity and verification token flow. | - | 2026-07-03 |
-| viora-platform | feature/billing/subscription-payment-method | 8206d3a | feat(billing): store the real card from the mercadopago payment. | - | 2026-07-03 |
+\begin{longtable}{|p{0.15\textwidth}|p{0.15\textwidth}|p{0.10\textwidth}|p{0.40\textwidth}|p{0.10\textwidth}|}
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
+\endhead
+viora-website & feature/add-video-about-the-product & f977179 & feat(video): add real product video and team video playback controls. & 18/06/2026 \\ \hline
+viora-website & feature/fix-url-video-about-the-team & 07ab424 & feat(about-us): update youtube link for team video. & 21/06/2026 \\ \hline
+viora-webapp & feature/intervention/interventions-overview & 53198ed & feat(intervention): wire interventions route and navigation. & 01/07/2026 \\ \hline
+viora-webapp & feature/intervention/interventions-overview & 6bb1b3b & feat(intervention): add interventions overview screen. & 01/07/2026 \\ \hline
+viora-webapp & feature/intervention/interventions-overview & 4ffea22 & feat(intervention): add interventions store with lifecycle actions. & 01/07/2026 \\ \hline
+viora-webapp & feature/intervention/interventions-overview & ab33f77 & feat(intervention): add interventions domain model and api client. & 01/07/2026 \\ \hline
+viora-webapp & feature/agronomic/expense-history & 01d4228 & feat(intervention): register accepted proposal cost as a specialist expense. & 01/07/2026 \\ \hline
+viora-webapp & feature/intervention/expert-assistance-overview & 38dbe7f & feat(intervention): add specialist contact entity and response assembler for specialist details. & 01/07/2026 \\ \hline
+viora-webapp & feature/intervention/expert-assistance-overview & dfa7fc5 & feat(intervention): add service proposal entity and response handling for intervention requests. & 01/07/2026 \\ \hline
+viora-webapp & feature/intervention/expert-assistance-overview & 1d54c5b & feat(intervention): enhance specialist candidate resource with role and availability mapping. & 01/07/2026 \\ \hline
+viora-platform & feature/intervention/interventions-overview & 0f900ce & feat(intervention): simulate specialist prescription for the intervention lifecycle. & 01/07/2026 \\ \hline
+viora-platform & feature/intervention/interventions-overview & 43bca25 & feat(intervention): expose interventions overview rest endpoint. & 01/07/2026 \\ \hline
+viora-platform & feature/intervention/interventions-overview & ec3a46c & feat(intervention): add grower interventions read model composing the lifecycle. & 01/07/2026 \\ \hline
+viora-platform & feature/agronomic/nutrition-plan-expiry & bb59d68 & feat(agronomic): expire dynamic nutrition plans past their application window. & 01/07/2026 \\ \hline
+viora-platform & feature/iam/change-password & 6987545 & feat(auth): add change password in user aggregate. & 01/07/2026 \\ \hline
+viora-platform & feature/intervention/specialist-case-flow & 4bc703c & feat(intervention): link service proposals to request status and add specialist-response simulation. & 01/07/2026 \\ \hline
+viora-platform & feature/intervention/specialist-case-flow & 1538fe9 & feat(intervention): rank real specialists and expose profile with gated contact. & 01/07/2026 \\ \hline
+viora-platform & feature/intervention/specialist-case-flow & ff51a49 & feat(intervention): add specialist aggregate with seeded catalog and contact channels. & 01/07/2026 \\ \hline
+viora-platform & feature/intervention/list-grower-requests & 458f562 & feat(intervention): list grower requests by plot and expose plot id and timestamps. & 01/07/2026 \\ \hline
+viora-webapp & feature/billing/subscription & 3ca875a & feat(billing): add subscription overview screen with mercadopago checkout. & 02/07/2026 \\ \hline
+viora-webapp & feature/profile/settings-screens & becec1c & feat(profile): enhance coupon design with improved dimensions and hover effects. & 02/07/2026 \\ \hline
+viora-webapp & feature/profile/settings-screens & 6ef619d & feat(profile): keep coupon width stable and add a 3d tilt on the coupon detail. & 02/07/2026 \\ \hline
+viora-webapp & feature/profile/settings-screens & c6a6613 & feat(iam): add account-security frontend gateway. & 02/07/2026 \\ \hline
+viora-webapp & feature/intervention/interventions-overview & 621a12c & feat(surveillance): scope pest risk and probable threat to the selected plot. & 02/07/2026 \\ \hline
+viora-webapp & feature/intervention/interventions-overview & f94e775 & feat(intervention): resolve the linked alert when an intervention is closed as resolved. & 02/07/2026 \\ \hline
+viora-webapp & feature/billing/subscription & a5bf536 & feat(billing): surface mercadopago payment result on return. & 03/07/2026 \\ \hline
+viora-platform & feature/iam/authentication & 06d3e28 & feat(iam): seed the team test account. & 03/07/2026 \\ \hline
+viora-platform & feature/iam/authentication & 476d710 & feat(profile): expose profile bootstrap through an acl facade. & 03/07/2026 \\ \hline
+viora-platform & feature/iam/authentication & a959e67 & feat(billing): expose referral reward grant through an acl facade. & 03/07/2026 \\ \hline
+viora-platform & feature/iam/authentication & 2b7e0c8 & feat(iam): add brevo transactional email service. & 03/07/2026 \\ \hline
+viora-platform & feature/iam/authentication & f90c711 & feat(iam): add email identity and verification token flow. & 03/07/2026 \\ \hline
+viora-platform & feature/billing/subscription-payment-method & 8206d3a & feat(billing): store the real card from the mercadopago payment. & 03/07/2026 \\ \hline
+viora-website & chore/update-price & ab6d1c6 & chore(update): update specialist plan pricing. & 06/07/2026 \\ \hline
+viora-website & chore/update-video & c908246 & chore(video): update youtube link for team video. & 06/07/2026 \\ \hline
+viora-website & fix/pricing & 54f5c63 & fix(pricing): update pricing format in english and spanish localization files. & 06/07/2026 \\ \hline
+\end{longtable}
 
 #### Execution Evidence for Sprint Review
 
