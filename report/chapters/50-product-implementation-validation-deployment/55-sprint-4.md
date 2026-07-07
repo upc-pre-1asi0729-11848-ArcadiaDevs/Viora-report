@@ -434,6 +434,8 @@ A continuación, se exponen las capturas de pantalla de las principales vistas i
 \caption*{\textit{Nota.} Elaboración propia.}
 \end{figure}
 
+Video sprint 3: [https://tinyurl.com/viora-sprint-4](https://tinyurl.com/viora-sprint-4)
+
 #### Services Documentation Evidence for Sprint Review
 
 &nbsp;
